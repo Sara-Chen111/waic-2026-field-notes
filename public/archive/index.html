@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WAIC 2026 参展商与现场影像浏览档案">
+    <title>WAIC 2026 · 展会浏览档案</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#exhibitor-grid">跳至展商列表</a>
+
+    <header class="masthead" aria-labelledby="page-title">
+      <div class="masthead__rule" aria-hidden="true"></div>
+      <div class="masthead__meta">
+        <span>上海 · 多展馆联动</span>
+        <span>参观档案 / 2026</span>
+      </div>
+
+      <div class="masthead__main">
+        <div class="edition-mark" aria-hidden="true">
+          <span>WAIC</span>
+          <strong>26</strong>
+        </div>
+        <div class="masthead__copy">
+          <p class="eyebrow">World Artificial Intelligence Conference</p>
+          <h1 id="page-title">世界人工智能大会<br>展商浏览档案</h1>
+          <p class="masthead__intro">
+            以展馆、行业与细分领域为线索，翻阅 2026 WAIC 参展机构与世博展览馆现场记录。
+          </p>
+        </div>
+        <div class="catalog-mark">
+          <span>ONLINE INDEX</span>
+          <b>展会信息在线浏览</b>
+          <small>资料按展商名称与现场照片交叉整理</small>
+        </div>
+      </div>
+
+      <dl class="overview" aria-label="展会信息概览">
+        <div>
+          <dt>收录展商</dt>
+          <dd><span id="stat-exhibitors">—</span><small>家</small></dd>
+        </div>
+        <div>
+          <dt>覆盖展馆</dt>
+          <dd><span id="stat-halls">—</span><small>个</small></dd>
+        </div>
+        <div>
+          <dt>现场照片</dt>
+          <dd><span id="stat-photos">—</span><small>张</small></dd>
+        </div>
+        <div class="overview__note">
+          <dt>档案说明</dt>
+          <dd>点击展商卡片，在独立档案浮窗中查看企业简介、展位信息与现场影像。</dd>
+        </div>
+      </dl>
+    </header>
+
+    <main>
+      <section class="filter-shell" aria-labelledby="filter-title">
+        <div class="filter-shell__heading">
+          <div>
+            <span class="section-number" aria-hidden="true">01</span>
+            <div>
+              <p class="kicker">DIRECTORY FILTER</p>
+              <h2 id="filter-title">查找参展商</h2>
+            </div>
+          </div>
+          <div class="filter-actions">
+            <button class="text-button" id="clear-filters" type="button" disabled>
+              清空筛选
+            </button>
+            <button
+              class="icon-button filter-toggle"
+              id="filter-toggle"
+              type="button"
+              aria-expanded="true"
+              aria-controls="filter-content"
+              title="收起筛选面板"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+              <span class="sr-only">收起筛选面板</span>
+            </button>
+          </div>
+        </div>
+
+        <form class="filters" id="filter-content" role="search">
+          <label class="search-field">
+            <span class="field-label">关键词搜索</span>
+            <span class="search-field__control">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="6.5"></circle>
+                <path d="m16 16 4 4"></path>
+              </svg>
+              <input
+                id="search-input"
+                type="search"
+                autocomplete="off"
+                placeholder="搜索公司、业务、产品或展位"
+              >
+              <kbd aria-hidden="true">⌘ K</kbd>
+            </span>
+          </label>
+
+          <label class="select-field">
+            <span class="field-label">展馆</span>
+            <select id="hall-filter">
+              <option value="">全部展馆</option>
+            </select>
+          </label>
+
+          <label class="select-field">
+            <span class="field-label">行业分类</span>
+            <select id="industry-filter">
+              <option value="">全部行业</option>
+            </select>
+          </label>
+
+          <label class="select-field">
+            <span class="field-label">细分领域</span>
+            <select id="subfield-filter">
+              <option value="">全部领域</option>
+            </select>
+          </label>
+        </form>
+      </section>
+
+      <section class="directory" aria-labelledby="directory-title">
+        <div class="directory__heading">
+          <div>
+            <span class="section-number" aria-hidden="true">02</span>
+            <div>
+              <p class="kicker">EXHIBITOR ARCHIVE</p>
+              <h2 id="directory-title">参展商目录</h2>
+            </div>
+          </div>
+          <p class="result-count" aria-live="polite">
+            当前显示 <strong id="visible-count">0</strong>
+            <span>/</span>
+            <span id="total-count">0</span> 家
+          </p>
+        </div>
+
+        <div class="active-filters" id="active-filters" aria-label="当前筛选条件"></div>
+
+        <div class="loading-state" id="loading-state" role="status">
+          <span class="loading-state__line"></span>
+          <p>正在编排展商档案…</p>
+        </div>
+
+        <div class="exhibitor-grid" id="exhibitor-grid" aria-live="polite"></div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-state__index">∅</span>
+          <h3>没有找到符合条件的展商</h3>
+          <p>可以调整关键词或减少筛选条件，再翻一页。</p>
+          <button class="solid-button" id="empty-clear" type="button">查看全部展商</button>
+        </div>
+
+        <div class="error-state" id="error-state" hidden role="alert">
+          <span class="empty-state__index">!</span>
+          <h3>展商数据暂时无法读取</h3>
+          <p id="error-message">请检查数据文件是否完整。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>WAIC 2026 · EXHIBITION FIELD NOTES</p>
+      <p>信息来源：参展商信息表与世博展览馆现场照片</p>
+    </footer>
+
+    <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-dialog-title">
+      <div class="detail-dialog__shell">
+        <header class="detail-dialog__header">
+          <div>
+            <p class="kicker">EXHIBITOR PROFILE</p>
+            <h2 id="detail-dialog-title">展商档案</h2>
+          </div>
+          <button class="icon-button detail-dialog__close" id="detail-dialog-close" type="button" aria-label="关闭展商档案" title="关闭展商档案">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 6 12 12M18 6 6 18"></path>
+            </svg>
+          </button>
+        </header>
+        <div class="detail-dialog__content" id="detail-dialog-content"></div>
+      </div>
+    </dialog>
+
+    <dialog class="lightbox" id="photo-lightbox" aria-labelledby="lightbox-caption">
+      <button class="lightbox__close" type="button" aria-label="关闭照片">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="上一张照片">←</button>
+      <figure>
+        <img id="lightbox-image" alt="">
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="下一张照片">→</button>
+      <span class="lightbox__count" id="lightbox-count"></span>
+    </dialog>
+
+    <script src="assets/data-fallback.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2329 @@
+{
+  "matches": [
+    {
+      "company": "01.SPACE",
+      "photos": [
+        "assets/photos/eac6a2b2455cc1.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/01.SPACE.JPG"
+      ]
+    },
+    {
+      "company": "AUREN INNOVATION LIMITED",
+      "photos": [
+        "assets/photos/b73c6399cd1a9e.jpg",
+        "assets/photos/fcbd9d24bad3c4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/AUREN-1.JPG",
+        "waic2026展会照片/AUREN.JPG"
+      ]
+    },
+    {
+      "company": "BEINGBEING PRIVATE LIMITED",
+      "photos": [
+        "assets/photos/ae8f692541c8c2.jpg",
+        "assets/photos/bc3cf162ec0bb3.jpg",
+        "assets/photos/c0a14926d04a6f.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "beingbeing 家庭陪伴玩具",
+          "description": "把 AI 毛绒玩具与家长 App 结合，陪孩子执行任务和共同冒险，并沉淀家庭记忆。",
+          "evidence": "照片展板写有“会回答问题的玩具很多，肯陪着孩子一起冒险的，只有这一只”。",
+          "photo": "waic2026展会照片/我不在乎-2.JPG"
+        }
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/我不在乎-2.JPG",
+        "waic2026展会照片/我不在乎-3.JPG",
+        "waic2026展会照片/我不在乎.JPG"
+      ]
+    },
+    {
+      "company": "CHANCE ART & TECHNOLOGY PTE. LTD.",
+      "photos": [
+        "assets/photos/03043671d81760.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/CHANCE ART & TECHNOLOGY PTE.JPG"
+      ]
+    },
+    {
+      "company": "CORVIA AI",
+      "photos": [
+        "assets/photos/1cdaf329aaef7b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/corvia AI.JPG"
+      ]
+    },
+    {
+      "company": "Digit Master AI Tech Co Limited",
+      "photos": [
+        "assets/photos/32d664417e1a5f.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "数宗 AI Agent OS",
+          "description": "面向企业与个人的数据洞察 Agent OS；个人版 Pebble 用于从信息噪音中发现机会，Brand Master 面向品牌洞察与增长。",
+          "evidence": "照片展板列出 Pebble 与 Brand Master 两个产品方向。",
+          "photo": "waic2026展会照片/数宗AI.JPG"
+        }
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/数宗AI.JPG"
+      ]
+    },
+    {
+      "company": "Dubrio LLC",
+      "photos": [
+        "assets/photos/a1120b9cb78d28.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/Dubrio LLC.JPG"
+      ]
+    },
+    {
+      "company": "Gray Matter Solutions Pte. Ltd.",
+      "photos": [
+        "assets/photos/df0f8ea6ad5624.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/Gray Matter.JPG"
+      ]
+    },
+    {
+      "company": "HooRii Technology (HK) Limited",
+      "photos": [
+        "assets/photos/efef324532273d.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/HooRii Technology.JPG"
+      ]
+    },
+    {
+      "company": "MeetSummer Technology Limited",
+      "photos": [
+        "assets/photos/8d7418466f2e0e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "MemoPin",
+          "description": "面向个人的 AI 入口，用于记录工作与生活点滴、沉淀长期记忆并推进重要事项。",
+          "evidence": "照片可见 “Remember everything that matters” 与“新一代个人AI入口”。",
+          "photo": "waic2026展会照片/MemoPin（H4-FT B006）.JPG"
+        }
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/MemoPin（H4-FT B006）.JPG"
+      ]
+    },
+    {
+      "company": "Mira",
+      "photos": [
+        "assets/photos/0025ff4cd16cc0.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/Mira.JPG"
+      ]
+    },
+    {
+      "company": "TideFlow 睡眠健康 / TideFlow Sleep",
+      "photos": [
+        "assets/photos/085888ccc4c2bc.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "TideFlow Sleep",
+          "description": "根据用户持续变化的睡眠状态识别主要睡眠问题，提供个性化引导与睡后洞察，把一次性建议转为持续改善流程。",
+          "evidence": "照片展板为 WAIC FUTURE TECH OPC 展项，标注 TideFlow Sleep 产品价值。",
+          "photo": "waic2026展会照片/TideFlow睡眠健康.JPG"
+        }
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/TideFlow睡眠健康.JPG"
+      ]
+    },
+    {
+      "company": "Zinc Technologies Pte Ltd",
+      "photos": [
+        "assets/photos/120134fd5bc4bb.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/zinc.JPG"
+      ]
+    },
+    {
+      "company": "一目科技有限公司 / Yimu Intelligence Co., Ltd.",
+      "photos": [
+        "assets/photos/53fd1d13aa6c8f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/一目YIMU.JPG"
+      ]
+    },
+    {
+      "company": "万达信息股份有限公司 / Wonders Information Co., Ltd.",
+      "photos": [
+        "assets/photos/75e1a3836f832c.jpg",
+        "assets/photos/cef856272523cc.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/万达信息-1.JPG",
+        "waic2026展会照片/万达信息-总.JPG"
+      ]
+    },
+    {
+      "company": "上海东方算芯科技有限公司 / Shanghai Eastern Computing Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/208edc238af8f8.jpg",
+        "assets/photos/4dd443dbba5ae3.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/东方算芯/东方算芯-1.JPG",
+        "waic2026展会照片/东方算芯/东方算芯-总.JPG"
+      ]
+    },
+    {
+      "company": "上海傲意信息科技有限公司 / OYMotion Technologies Co., Ltd.",
+      "photos": [
+        "assets/photos/61bb1cddd2f50e.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/傲意科技.JPG"
+      ]
+    },
+    {
+      "company": "上海六联智能科技有限公司 / Shanghai Sixunited Intelligent Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/7ab4cf6935fdb0.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/六联智能-总.JPG"
+      ]
+    },
+    {
+      "company": "上海幻辰新域信息科技有限公司 / Novix Tech",
+      "photos": [
+        "assets/photos/71f0f05a7d84f1.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/Novix tech.JPG"
+      ]
+    },
+    {
+      "company": "上海开普勒机器人有限公司 / KEPLER ROBOTICS CO LTD",
+      "photos": [
+        "assets/photos/cc0a4e50bfd1d1.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/开普勒.JPG"
+      ]
+    },
+    {
+      "company": "上海拓璞数控科技股份有限公司 / Shanghai Tuopu Numerical Control Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/7dc81344f704d8.jpg",
+        "assets/photos/87ac136dab3d16.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/拓璞-1.JPG",
+        "waic2026展会照片/拓璞-2.JPG"
+      ]
+    },
+    {
+      "company": "上海无问芯穹智能科技股份有限公司 / Shanghai Infrigence AI Technology Joint Stock Company Limited",
+      "photos": [
+        "assets/photos/e296d646196e29.jpg",
+        "assets/photos/ef6c10a9faedfd.jpg",
+        "assets/photos/3f8b294ed5b46f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/无问芯穹-1.JPG",
+        "waic2026展会照片/无问芯穹-2.JPG",
+        "waic2026展会照片/无问芯穹-总.JPG"
+      ]
+    },
+    {
+      "company": "上海日行迹智能科技有限公司 / Shanghai Analemma Intelligence Co., Ltd.",
+      "photos": [
+        "assets/photos/7223bcb983f399.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/行迹智能.JPG"
+      ]
+    },
+    {
+      "company": "上海智向智能科技有限公司 / Shanghai Noematrix Intelligence Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/97090db165a99d.jpg",
+        "assets/photos/2027967c73ed79.jpg",
+        "assets/photos/90bd42b3dfb532.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/noematrx-1.JPG",
+        "waic2026展会照片/noematrx-2.JPG",
+        "waic2026展会照片/noematrx.JPG"
+      ]
+    },
+    {
+      "company": "上海月之暗面科技有限公司 / Moonshot AI",
+      "photos": [
+        "assets/photos/efc2547ff9f6c0.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/kimi.JPG"
+      ]
+    },
+    {
+      "company": "上海模月智能科技有限公司 / Shanghai Suiyue Intelligent Technology Co., Ltd",
+      "photos": [
+        "assets/photos/5a7df879357383.jpg",
+        "assets/photos/1a68745c3b182f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/模月智能-2.JPG",
+        "waic2026展会照片/模月智能.JPG"
+      ]
+    },
+    {
+      "company": "上海永轴智造科技有限公司 / Shanghai Yongzhou Intelligent Manufacturing Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/184b1fdda65c4c.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/永轴智造.JPG"
+      ]
+    },
+    {
+      "company": "上海流形工坊科技有限公司 / ManiFactory",
+      "photos": [
+        "assets/photos/fa5ae2fa521f66.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/流形工坊.JPG"
+      ]
+    },
+    {
+      "company": "上海灵宇宙科技发展有限公司 / Shanghai Lingverse Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/8a6a69aba549d6.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/灵宇宙.JPG"
+      ]
+    },
+    {
+      "company": "上海熙香智能科技有限公司 / Shanghai Xixiang AI Kitchen Robotics Co., Ltd.",
+      "photos": [
+        "assets/photos/84e97359ad2090.jpg",
+        "assets/photos/792293ad1ca1a2.jpg",
+        "assets/photos/7e4c32f79710d7.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/熙香-1.JPG",
+        "waic2026展会照片/熙香-2.JPG",
+        "waic2026展会照片/熙香-总.JPG"
+      ]
+    },
+    {
+      "company": "上海现代服务业联合会 / Shanghai Services Federation",
+      "photos": [
+        "assets/photos/eab5a99f4a4dd9.jpg",
+        "assets/photos/c938cfb98dae70.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/上海现代服务业联合会-1.JPG",
+        "waic2026展会照片/上海现代服务业联合会-总.JPG"
+      ]
+    },
+    {
+      "company": "上海理想汽车科技有限公司 / Shanghai LiXiang Automobile Co., Ltd.",
+      "photos": [
+        "assets/photos/03d65d3f51d3c8.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/理想-总.JPG"
+      ]
+    },
+    {
+      "company": "上海神一信息科技有限公司 / MiTAC Computing Technology Corporation",
+      "photos": [
+        "assets/photos/a635bcf00625f3.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/神雲科技-总.JPG"
+      ]
+    },
+    {
+      "company": "上海移远通信技术股份有限公司 / Quectel Wireless Solutions Co., Ltd.",
+      "photos": [
+        "assets/photos/18da619ffac381.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/移远通信-总.JPG"
+      ]
+    },
+    {
+      "company": "上海稀宇极智科技有限公司 / MiniMax",
+      "photos": [
+        "assets/photos/ba7943155c5c3f.jpg",
+        "assets/photos/d2b961239b4de1.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/minimax-1.JPG",
+        "waic2026展会照片/minimax-总.JPG"
+      ]
+    },
+    {
+      "company": "上海章节零一信息科技有限公司 / Shanghai Chapter 01 Information Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/dd058fdd2d4a9b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/章节零一.JPG"
+      ]
+    },
+    {
+      "company": "上海算丰信息有限公司 / Suanova Information (Shanghai) Co., Ltd.",
+      "photos": [
+        "assets/photos/09403cc8d86b8d.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/算丰-总.JPG"
+      ]
+    },
+    {
+      "company": "上海美丽猪猪科技有限公司 / Shanghai Beautiful Pig Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/f87221e9d25799.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/美丽猪猪科技.JPG"
+      ]
+    },
+    {
+      "company": "上海苏波科技有限公司 / Shanghai Sudo Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/cb0c2bf76aa8ea.jpg",
+        "assets/photos/70b01b9ef448fb.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/sudo-1.JPG",
+        "waic2026展会照片/sudo.JPG"
+      ]
+    },
+    {
+      "company": "上海西井科技股份有限公司 / Shanghai Westwell Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/558b9cf846c7f9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/westwell-总.JPG"
+      ]
+    },
+    {
+      "company": "上海观点跃迁人工智能技术有限公司 / VIEWPOINT AI",
+      "photos": [
+        "assets/photos/3066f2651fe414.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/观点跃迁.JPG"
+      ]
+    },
+    {
+      "company": "上海觅深科技有限公司 / Mizzen Technologies Limited",
+      "photos": [
+        "assets/photos/a7e7e35eeeea59.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/觅深.JPG"
+      ]
+    },
+    {
+      "company": "上海超有氛围科技有限公司 / Shanghai Super Vibe Technology Co., Ltd",
+      "photos": [
+        "assets/photos/b20a3f6ba025db.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/上海超有氛围科技.JPG"
+      ]
+    },
+    {
+      "company": "上海造物纪元机器人有限公司 / Shanghai CreatEra Robotics Co., Ltd.",
+      "photos": [
+        "assets/photos/44827ef93e5320.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/造物纪元.JPG"
+      ]
+    },
+    {
+      "company": "上海阶跃星辰智能科技有限公司 / Shanghai StepFun Intelligent Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/4a1589e661fdbc.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/阶跃-1.JPG"
+      ]
+    },
+    {
+      "company": "东软云科技有限公司 / Neusoft Cloud Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/ec265e023e9698.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/东软云科技-总.JPG"
+      ]
+    },
+    {
+      "company": "中兴通讯股份有限公司 / ZTE Corporation",
+      "photos": [
+        "assets/photos/79a53c37119550.jpg",
+        "assets/photos/42b89d68d2a301.jpg",
+        "assets/photos/8a862e7dffe10b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中兴-1.JPG",
+        "waic2026展会照片/中兴-2.JPG",
+        "waic2026展会照片/中兴-总.JPG"
+      ]
+    },
+    {
+      "company": "中国南方电网有限责任公司 / China Southern Power Grid Co., Ltd.",
+      "photos": [
+        "assets/photos/417cfeb1b123e3.jpg",
+        "assets/photos/75dce8ac17ec14.jpg",
+        "assets/photos/21e591b9e97821.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中国南方电网-1.JPG",
+        "waic2026展会照片/中国南方电网-2.JPG",
+        "waic2026展会照片/中国南方电网-总.JPG"
+      ]
+    },
+    {
+      "company": "中国气象局 / China Meteorological Administration",
+      "photos": [
+        "assets/photos/88cb02b4636486.jpg",
+        "assets/photos/86350f7ee6ae38.jpg",
+        "assets/photos/b1af796ed125b1.jpg",
+        "assets/photos/0726176a878cf6.jpg",
+        "assets/photos/4454e5f5fa0b21.jpg",
+        "assets/photos/df687b0c38ba41.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中国气象局-1.JPG",
+        "waic2026展会照片/中国气象局-2.JPG",
+        "waic2026展会照片/中国气象局-3.JPG",
+        "waic2026展会照片/中国气象局-4.JPG",
+        "waic2026展会照片/中国气象局-5.JPG",
+        "waic2026展会照片/中国气象局-总.JPG"
+      ]
+    },
+    {
+      "company": "中国电子信息产业集团有限公司 / China Electronics Corporation",
+      "photos": [
+        "assets/photos/9b2d47fdd029ad.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中国电子-总.JPG"
+      ]
+    },
+    {
+      "company": "中国石油天然气集团有限公司 / China National Petroleum Corporation",
+      "photos": [
+        "assets/photos/71af0c30234793.jpg",
+        "assets/photos/a9249de236c030.jpg",
+        "assets/photos/16bb43e70a37c1.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中国石油-1.JPG",
+        "waic2026展会照片/中国石油-2.JPG",
+        "waic2026展会照片/中国石油-总.JPG"
+      ]
+    },
+    {
+      "company": "中国移动通信集团有限公司 / China Mobile Communications Group Co., Ltd.",
+      "photos": [
+        "assets/photos/c1fdc3a2da13c2.jpg",
+        "assets/photos/83daf30b48e338.jpg",
+        "assets/photos/b17c5ecfe22ac4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中国移动-1.JPG",
+        "waic2026展会照片/中国移动-2.JPG",
+        "waic2026展会照片/中国移动-总.JPG"
+      ]
+    },
+    {
+      "company": "中国联合网络通信集团有限公司 / China United Network Communications Group Co., Ltd.",
+      "photos": [
+        "assets/photos/7c89b491641cf5.jpg",
+        "assets/photos/73c99942579dd5.jpg",
+        "assets/photos/e315e7a2a9ace9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中国联通-1.JPG",
+        "waic2026展会照片/中国联通-2.JPG",
+        "waic2026展会照片/中国联通-总.JPG"
+      ]
+    },
+    {
+      "company": "中科创达软件股份有限公司 / ThunderSoft",
+      "photos": [
+        "assets/photos/df150016152be8.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/中科创达/中科创达-总.JPG"
+      ]
+    },
+    {
+      "company": "九识（苏州）智能科技有限公司 / Zelos (Suzhou) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/b0f14510de9311.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/九识/九识-总.JPG"
+      ]
+    },
+    {
+      "company": "云鼎科技股份有限公司 / Yunding Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/1f136a174eb4f4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/云鼎科技-总.JPG"
+      ]
+    },
+    {
+      "company": "交通银行股份有限公司 / Bank of Communications Co., Ltd",
+      "photos": [
+        "assets/photos/dac03d88c73f58.jpg",
+        "assets/photos/ea9b4e05df8319.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/交通银行-1.JPG",
+        "waic2026展会照片/交通银行-总.JPG"
+      ]
+    },
+    {
+      "company": "京东集团 / JD.COM",
+      "photos": [
+        "assets/photos/1d1077ebc1283e.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/京东-总.JPG"
+      ]
+    },
+    {
+      "company": "优理奇机器人科技（苏州）有限公司 / UniX AI Technology (Suzhou) Co., Ltd.",
+      "photos": [
+        "assets/photos/4fc5f23bdb9eb2.jpg",
+        "assets/photos/0783725d00c5e1.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/优理奇科技-1.JPG",
+        "waic2026展会照片/优理奇科技.JPG"
+      ]
+    },
+    {
+      "company": "信光（上海）科技有限公司 / Blinko Labs, Inc.",
+      "photos": [
+        "assets/photos/008fd6ce4828c3.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/Blinko Labs.JPG"
+      ]
+    },
+    {
+      "company": "光象（北京）科技有限公司 / SunRising AI Co., Ltd",
+      "photos": [
+        "assets/photos/ccc4f685c95fa4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/光象科技.JPG"
+      ]
+    },
+    {
+      "company": "北京与爱为舞科技有限公司 / Beijing Yuaiweiwu Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/abde7db9c5d2f0.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/与爱为舞-总.JPG"
+      ]
+    },
+    {
+      "company": "北京乙态科技发展股份有限公司 / Beijing Second State Technology Development Co., Ltd",
+      "photos": [
+        "assets/photos/5942e1072b72b9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/Second State.JPG"
+      ]
+    },
+    {
+      "company": "北京人形机器人创新中心有限公司 / Beijing Innovation Center for Humanoid Robotics (X-Humanoid)",
+      "photos": [
+        "assets/photos/ea14f9e488de17.jpg",
+        "assets/photos/44b7a154a0e460.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/北京人形.JPG",
+        "waic2026展会照片/国家地方共建人形机器人创新中心.JPG"
+      ]
+    },
+    {
+      "company": "北京动码印章科技有限公司 / Beijing Dongma Seal Technology Co., Ltd",
+      "photos": [
+        "assets/photos/5d599c5856904b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/动码印章-总.JPG"
+      ]
+    },
+    {
+      "company": "北京并行科技股份有限公司 / Beijing Paratera Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/fb4cc486de4b13.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/并行.JPG"
+      ]
+    },
+    {
+      "company": "北京数巅科技有限公司 / Beijing DiPEAK Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/f88a987e3771a7.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/数巅智能-总.JPG"
+      ]
+    },
+    {
+      "company": "北京新栈创新科技有限公司 / SlashVibe",
+      "photos": [
+        "assets/photos/a5747fe5c916f8.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/SlashVibe.JPG"
+      ]
+    },
+    {
+      "company": "北京星动纪元科技股份有限公司 / Beijing Xingdongjiyuan Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/5c2d66de48d251.jpg",
+        "assets/photos/3131f0ee38d8d5.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/星动纪元-1.JPG",
+        "waic2026展会照片/星动纪元.JPG"
+      ]
+    },
+    {
+      "company": "北京涛思数据科技有限公司 / TDengine",
+      "photos": [
+        "assets/photos/b42fdb252e3498.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/TDengine-总.JPG"
+      ]
+    },
+    {
+      "company": "北京电子数智科技有限责任公司 / Beijing Electronic Digital&Intelligence Co., Ltd",
+      "photos": [
+        "assets/photos/973247a927b886.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/北电数智.JPG"
+      ]
+    },
+    {
+      "company": "北京睿法智行科技有限公司 / Beijing LegalGo Intelligence Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/c7497cecfa4294.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "婚姻宝 AI 助手",
+          "description": "婚姻家事法律智能工具，可进行引导式案情梳理、生成法律结论与行动建议，并一键生成起诉状、离婚协议等法律文书。",
+          "evidence": "照片展板写明 Agent 自治架构、MCP 多智能体协同与 Context Engineering。",
+          "photo": "waic2026展会照片/婚姻宝AI助手.JPG"
+        }
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/婚姻宝AI助手.JPG"
+      ]
+    },
+    {
+      "company": "北京零一万物科技有限公司 / 01.AI",
+      "photos": [
+        "assets/photos/d144305ea395a6.jpg",
+        "assets/photos/a8770390833207.jpg",
+        "assets/photos/190f3ffb3fe0de.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/零一万物-1.JPG",
+        "waic2026展会照片/零一万物-2.JPG",
+        "waic2026展会照片/零一万物-总.JPG"
+      ]
+    },
+    {
+      "company": "北京面壁智能科技有限责任公司 / ModelBest Inc.",
+      "photos": [
+        "assets/photos/2311ba9a845961.jpg",
+        "assets/photos/0d021cf8577dcd.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/面壁智能-1.JPG",
+        "waic2026展会照片/面壁智能.JPG"
+      ]
+    },
+    {
+      "company": "华为技术有限公司 / Huawei Technologies Co., Ltd",
+      "photos": [
+        "assets/photos/e2e85e3bbb8074.jpg",
+        "assets/photos/55f9179fab0d41.jpg",
+        "assets/photos/19fa7278afe669.jpg",
+        "assets/photos/44eeeb5ec80ccf.jpg",
+        "assets/photos/685c6eae7035f5.jpg",
+        "assets/photos/9ffed389c10f7b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/华为/华为-总.JPG",
+        "waic2026展会照片/华为/华为2.JPG",
+        "waic2026展会照片/华为/华为3.JPG",
+        "waic2026展会照片/华为/华为4.JPG",
+        "waic2026展会照片/华为/华为5.JPG",
+        "waic2026展会照片/华为/华为6.JPG"
+      ]
+    },
+    {
+      "company": "友学伴（北京）教育科技有限公司 / UniGrow (Beijing) Education Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/eb7375773c1287.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/友学伴.JPG"
+      ]
+    },
+    {
+      "company": "叽里咕噜创意（杭州）科技有限公司 / Jiligulu Creative (Hangzhou) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/44b0c348f0cd61.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/叽里咕噜.JPG"
+      ]
+    },
+    {
+      "company": "启界互动（北京）科技有限公司 / OpenWorld (Beijing) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/2dae5e0f5b7588.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/启界互动.JPG"
+      ]
+    },
+    {
+      "company": "商汤科技 / SenseTime",
+      "photos": [
+        "assets/photos/50d66fb4996a39.jpg",
+        "assets/photos/d6f392de768215.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/商汤-1.JPG",
+        "waic2026展会照片/商汤-总.JPG"
+      ]
+    },
+    {
+      "company": "国家电网有限公司 / State Grid Corporation of China",
+      "photos": [
+        "assets/photos/74a0cbbdeb0646.jpg",
+        "assets/photos/cdc12811f9f0cf.jpg",
+        "assets/photos/07d4235288fd1d.jpg",
+        "assets/photos/fd022cc887cbb7.jpg",
+        "assets/photos/8282988a44174e.jpg",
+        "assets/photos/4d6088843db61a.jpg",
+        "assets/photos/d8237a79629548.jpg",
+        "assets/photos/a09e0d322bcf2d.jpg",
+        "assets/photos/d69639ac6b3ed0.jpg",
+        "assets/photos/aa8075a55acd22.jpg",
+        "assets/photos/74079ff1e7b40c.jpg",
+        "assets/photos/a998e72eaf3eb8.jpg",
+        "assets/photos/3046011bd2a94f.jpg",
+        "assets/photos/2e6890c4818c3e.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/国家电网-1.JPG",
+        "waic2026展会照片/国家电网-10.JPG",
+        "waic2026展会照片/国家电网-11.JPG",
+        "waic2026展会照片/国家电网-12.JPG",
+        "waic2026展会照片/国家电网-13.JPG",
+        "waic2026展会照片/国家电网-2.JPG",
+        "waic2026展会照片/国家电网-3.JPG",
+        "waic2026展会照片/国家电网-4.JPG",
+        "waic2026展会照片/国家电网-5.JPG",
+        "waic2026展会照片/国家电网-6.JPG",
+        "waic2026展会照片/国家电网-7.JPG",
+        "waic2026展会照片/国家电网-8.JPG",
+        "waic2026展会照片/国家电网-9.JPG",
+        "waic2026展会照片/国家电网-总.JPG"
+      ]
+    },
+    {
+      "company": "声扬科技（香港）有限公司 / VoiceAI Technologies Hong Kong Limited",
+      "photos": [
+        "assets/photos/6250f6002811b4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/声扬科技-总.JPG"
+      ]
+    },
+    {
+      "company": "宇树科技股份有限公司 / YuShu Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/3f847a339633c5.jpg",
+        "assets/photos/67fd91d697e958.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/宇树-1.JPG",
+        "waic2026展会照片/宇树.JPG"
+      ]
+    },
+    {
+      "company": "安徽交泰智能技术有限公司 / Anhui Linkedti Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/bd843f754a0ebf.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/交泰智能.JPG"
+      ]
+    },
+    {
+      "company": "安擎计算机信息股份有限公司 / Enginetech Computer Co., LTD",
+      "photos": [
+        "assets/photos/95dc8a64bd16c3.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/安擎-总.JPG"
+      ]
+    },
+    {
+      "company": "广州文远知行科技有限公司 / WeRide",
+      "photos": [
+        "assets/photos/f9c7639262ae0c.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/文远知行-总.JPG"
+      ]
+    },
+    {
+      "company": "思科科技（北京）有限公司 / Cisco Technologies (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/9d7dc7f2f04f73.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/CISCO/CISCO-总.JPG"
+      ]
+    },
+    {
+      "company": "或宇连接（深圳）科技有限责任公司 / ORULINK (Shenzhen) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/f8884837b73c12.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/或宇连接.JPG"
+      ]
+    },
+    {
+      "company": "数字华夏（深圳）科技有限公司 / DIGIT (SHEN ZHEN) TECHNOLOGY Co., LTD.",
+      "photos": [
+        "assets/photos/1a0a26e5418084.jpg",
+        "assets/photos/bcf089ace4650d.jpg",
+        "assets/photos/d450890c5c483b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/数字华夏-1.JPG",
+        "waic2026展会照片/数字华夏-2.JPG",
+        "waic2026展会照片/数字华夏.JPG"
+      ]
+    },
+    {
+      "company": "新华三技术有限公司 / New H3C Technologies Co., Ltd.",
+      "photos": [
+        "assets/photos/a6af895f3de217.jpg",
+        "assets/photos/fd7acb727b01dd.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/新华三-1.JPG",
+        "waic2026展会照片/新华三-总.JPG"
+      ]
+    },
+    {
+      "company": "施耐德电气（中国）有限公司 / Schneider Electric (China) Co., Ltd.",
+      "photos": [
+        "assets/photos/c5e198538ea7fc.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/施耐德电气.JPG"
+      ]
+    },
+    {
+      "company": "昆仑芯（北京）科技股份有限公司 / Kunlunxin Technology (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/efe447af41d5b8.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/昆仑芯/昆仑芯-总.JPG"
+      ]
+    },
+    {
+      "company": "智元创新（上海）科技股份有限公司 / AIGIBOT Innovation (Shanghai) Technology Co., Ltd",
+      "photos": [
+        "assets/photos/796708bc5f2702.jpg",
+        "assets/photos/ebd1b9e7a92378.jpg",
+        "assets/photos/37db258e0bba63.jpg",
+        "assets/photos/9f8d145725c739.jpg",
+        "assets/photos/8df0c653f1482a.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/智元-1.JPG",
+        "waic2026展会照片/智元-2.JPG",
+        "waic2026展会照片/智元-3.JPG",
+        "waic2026展会照片/智元-4.JPG",
+        "waic2026展会照片/智元.JPG"
+      ]
+    },
+    {
+      "company": "智身新创（苏州）智能科技有限公司 / Zhishen XinChuang (Suzhou) Intelligent Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/c4c2b4b755de50.jpg",
+        "assets/photos/2a610ce41d35db.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/智身科技-1.JPG",
+        "waic2026展会照片/智身科技.JPG"
+      ]
+    },
+    {
+      "company": "杭州哇嘟塔科技有限公司 / Hangzhou VAST Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/5fa7f2b6625c3b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/STT.JPG"
+      ]
+    },
+    {
+      "company": "杭州时之轨迹信息技术有限责任公司 / Software Object Pte. Ltd.",
+      "photos": [
+        "assets/photos/040dc58cb830a5.jpg",
+        "assets/photos/1fff924a6e8d72.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "Disbrief",
+          "description": "随身 4G 语音小设备；用户说出意图后，可调度个人电脑上的 Agent 团队执行任务，仅在需要决策时向手机发消息。",
+          "evidence": "照片展板标语为 “Talk to Dispatch your Agents, Anywhere, Anytime.”",
+          "photo": "waic2026展会照片/时之轨迹-2.JPG"
+        }
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/时之轨迹-2.JPG",
+        "waic2026展会照片/时之轨迹.JPG"
+      ]
+    },
+    {
+      "company": "杭州海康威视数字技术股份有限公司 / Hangzhou Hikvision Digital Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/511bfa6a45cb9f.jpg",
+        "assets/photos/2bb73b26841e82.jpg",
+        "assets/photos/e90a09cca78e5a.jpg",
+        "assets/photos/73120944e68454.jpg",
+        "assets/photos/1543b3c8e0aa30.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/海康威视-1.JPG",
+        "waic2026展会照片/海康威视-2.JPG",
+        "waic2026展会照片/海康威视-3.JPG",
+        "waic2026展会照片/海康威视-4.JPG",
+        "waic2026展会照片/海康威视-总.JPG"
+      ]
+    },
+    {
+      "company": "梅卡曼德（雄安）机器人科技股份有限公司 / Mech-Mind Robotics Technologies Co., Ltd.",
+      "photos": [
+        "assets/photos/88c41917ce8069.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/梅卡曼德.JPG"
+      ]
+    },
+    {
+      "company": "此芯科技集团有限公司 / CIX Technology Group Co., Ltd",
+      "photos": [
+        "assets/photos/c78782e6bcece5.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/此芯科技-总.JPG"
+      ]
+    },
+    {
+      "company": "比亚迪电子（国际）有限公司 / BYD Electronics (International) Company Limited",
+      "photos": [
+        "assets/photos/0cadfc1ca445a9.jpg",
+        "assets/photos/af6e42ebee1bd8.jpg",
+        "assets/photos/711e31855ffc9e.jpg",
+        "assets/photos/0a857b92aeb75b.jpg",
+        "assets/photos/a5e58fadcca2b1.jpg",
+        "assets/photos/0bb6fd54126c23.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/比亚迪/比亚迪-总.JPG",
+        "waic2026展会照片/比亚迪/比亚迪1.JPG",
+        "waic2026展会照片/比亚迪/比亚迪2.JPG",
+        "waic2026展会照片/比亚迪/比亚迪3.JPG",
+        "waic2026展会照片/比亚迪/比亚迪4.JPG",
+        "waic2026展会照片/比亚迪电子-总.JPG"
+      ]
+    },
+    {
+      "company": "江苏云幕智造科技有限公司 / Jiangsu Yunmu Intelligent Manufacturing Technology Co., Ltd",
+      "photos": [
+        "assets/photos/ccec70edf46c70.jpg",
+        "assets/photos/6f79db8da0adbf.jpg",
+        "assets/photos/6b059c316537d4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/云幕智造-1.JPG",
+        "waic2026展会照片/云幕智造-2.JPG",
+        "waic2026展会照片/云幕智造.JPG"
+      ]
+    },
+    {
+      "company": "浙江强脑科技有限公司 / Zhejiang Qiangnao Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/9485ef68462001.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/强脑科技.JPG"
+      ]
+    },
+    {
+      "company": "浙江海亮科技有限公司 / Hailiang Technology Group",
+      "photos": [
+        "assets/photos/d0ccb01048b2e7.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/海亮科技-总.JPG"
+      ]
+    },
+    {
+      "company": "浙江湃启科技有限公司 / Zhejiang Paiqi Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/d2a7cf65aef395.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "AI 情感计算与具身智能硬件",
+          "description": "聚焦前沿 AI 交互、情绪识别、具身智能、潮玩设计及元宇宙社交硬件，为儿童、年轻人和独居者提供情感陪伴。",
+          "evidence": "照片为浙江湃启科技有限公司展项介绍板，展位 H4-FT B003。",
+          "photo": "waic2026展会照片/湃启科技.JPG"
+        }
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/湃启科技.JPG"
+      ]
+    },
+    {
+      "company": "浪潮集团有限公司 / Inspur Group Co., Ltd.",
+      "photos": [
+        "assets/photos/afcce11147a6e7.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/浪潮-总.JPG"
+      ]
+    },
+    {
+      "company": "深信服科技股份有限公司 / Sangfor Technologies Inc",
+      "photos": [
+        "assets/photos/d01e636d9201c0.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/深信服科技.JPG"
+      ]
+    },
+    {
+      "company": "深圳市光速进化智能科技有限公司 / Shenzhen LIKO Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/6364ff8a9aeb76.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/光速进化.JPG"
+      ]
+    },
+    {
+      "company": "深圳市广和通无线股份有限公司 / Fibocom Wireless Inc.",
+      "photos": [
+        "assets/photos/bcc8495c9eb9ca.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/广和通.JPG"
+      ]
+    },
+    {
+      "company": "深圳市拾音教育咨询有限公司 / Shenzhen Shiyin Education Consultant Co. Ltd",
+      "photos": [
+        "assets/photos/2661dbf11ed50a.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "AI School OS",
+          "description": "OneOneTalk 与 BytePlus 联合打造的 AI 原生教学平台，覆盖备课、授课、练习、评估、学习分析与校园管理。",
+          "evidence": "照片展板写明覆盖 10+ 国家和地区、300+ 学校与学习场景，并服务 50+ 香港本地学校。",
+          "photo": "waic2026展会照片/AI School.JPG"
+        }
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/AI School.JPG"
+      ]
+    },
+    {
+      "company": "深圳市普渡科技有限公司 / SHENZHEN PIDU TECHNOLOGY Co., LTD.",
+      "photos": [
+        "assets/photos/5b71854a0c330e.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/普渡机器人.JPG"
+      ]
+    },
+    {
+      "company": "深圳市科盟创新机器人科技有限公司 / Shenzhen Komo Innovation Robotics Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/57883eeb2da27f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/科盟创新.JPG"
+      ]
+    },
+    {
+      "company": "深圳市道通智能航空技术股份有限公司 / Autel Robotics Co., Ltd.",
+      "photos": [
+        "assets/photos/243cc46d1f601c.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/道通智能-总.JPG"
+      ]
+    },
+    {
+      "company": "深圳诺因智能有限公司 / Shenzhen Knowin AI Co., Ltd.",
+      "photos": [
+        "assets/photos/ad23ed6c898c51.jpg",
+        "assets/photos/f98477450ac390.jpg",
+        "assets/photos/e2d04fc4a4547e.jpg",
+        "assets/photos/066fe4f1104425.jpg",
+        "assets/photos/f246c89710c2d4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/knowin-1.JPG",
+        "waic2026展会照片/knowin.JPG",
+        "waic2026展会照片/诺因-1.JPG",
+        "waic2026展会照片/诺因-2.JPG",
+        "waic2026展会照片/诺因.JPG"
+      ]
+    },
+    {
+      "company": "滴普科技股份有限公司 / Deepexi Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/b72917bc31c609.jpg",
+        "assets/photos/41b5e6fbb30ce1.jpg",
+        "assets/photos/6c109aa9f8d602.jpg",
+        "assets/photos/f1d839eae19b7c.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/滴普科技/滴普科技-1.JPG",
+        "waic2026展会照片/滴普科技/滴普科技-2.JPG",
+        "waic2026展会照片/滴普科技/滴普科技-3.JPG",
+        "waic2026展会照片/滴普科技/滴普科技-总.JPG"
+      ]
+    },
+    {
+      "company": "焕智 Ai-innopower / Spark-Innopower",
+      "photos": [
+        "assets/photos/b6998d31759623.jpg",
+        "assets/photos/c361a67725b42d.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/焕智-2.JPG",
+        "waic2026展会照片/焕智.JPG"
+      ]
+    },
+    {
+      "company": "瑞芯微电子股份有限公司 / Rockchip Electronics Co., Ltd.",
+      "photos": [
+        "assets/photos/156f8d749fad4e.jpg",
+        "assets/photos/9798fe58de0030.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/瑞芯微电子/瑞芯微电子-总.JPG",
+        "waic2026展会照片/瑞芯微电子/瑞芯微电子x智元.JPG"
+      ]
+    },
+    {
+      "company": "甄觉科技（上海）有限公司 / Zhenjue Technology",
+      "photos": [
+        "assets/photos/965ec9ad4d098b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/甄觉科技.JPG"
+      ]
+    },
+    {
+      "company": "百川智能科技有限公司 / Baichuan AI",
+      "photos": [
+        "assets/photos/000237b1b1ea7e.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/百川智能-总.JPG"
+      ]
+    },
+    {
+      "company": "百度在线网络技术（北京）有限公司 / Baidu Online Network Technology (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/c9720b6356fd53.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/百度-总.JPG"
+      ]
+    },
+    {
+      "company": "百融云创科技股份有限公司 / Bairong Inc.",
+      "photos": [
+        "assets/photos/0df09fccef1922.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/百融智能-总.JPG"
+      ]
+    },
+    {
+      "company": "睿尔曼智能科技（北京）股份有限公司 / RealMan Intelligent Technology (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/86528d235aabd9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/睿尔曼智能.JPG"
+      ]
+    },
+    {
+      "company": "神思电子技术股份有限公司 / Synthesis Electronic Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/4f25aa2a3cc6d5.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/神思.JPG"
+      ]
+    },
+    {
+      "company": "科大讯飞股份有限公司 / iFLYTEK Co., Ltd.",
+      "photos": [
+        "assets/photos/573e7613100c3e.jpg",
+        "assets/photos/de411f162336ea.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/科大讯飞-1.JPG",
+        "waic2026展会照片/科大讯飞-总.JPG"
+      ]
+    },
+    {
+      "company": "美格智能技术股份有限公司 / MeiG Smart Technology Co., Ltd",
+      "photos": [
+        "assets/photos/6f2e788c2547ae.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/美格/美格-总.JPG"
+      ]
+    },
+    {
+      "company": "联想集团 / Lenovo Group",
+      "photos": [
+        "assets/photos/303db6a7cf4e6f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/联想-总.JPG"
+      ]
+    },
+    {
+      "company": "脑控空间 / Mind Space",
+      "photos": [
+        "assets/photos/ebdaa336451a16.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/脑控空间.JPG"
+      ]
+    },
+    {
+      "company": "腾讯 / Tencent",
+      "photos": [
+        "assets/photos/4f594ea68d5c8f.jpg",
+        "assets/photos/0bf76111423647.jpg",
+        "assets/photos/99c5d0abc69b67.jpg",
+        "assets/photos/650ad175797f88.jpg",
+        "assets/photos/f469a8252cff17.jpg",
+        "assets/photos/11e7b5cd5643ca.jpg",
+        "assets/photos/f1093c7372f1dc.jpg",
+        "assets/photos/3fab97a40676b3.jpg",
+        "assets/photos/e2a5010b27ebef.jpg",
+        "assets/photos/a6437fdfd9a8a9.jpg",
+        "assets/photos/be6e9b228c2b12.jpg",
+        "assets/photos/ff162ca3b2495d.jpg",
+        "assets/photos/e2fa61847efb4e.jpg",
+        "assets/photos/d65b3425616a1c.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/腾讯-1.JPG",
+        "waic2026展会照片/腾讯-10.JPG",
+        "waic2026展会照片/腾讯-11.JPG",
+        "waic2026展会照片/腾讯-12.JPG",
+        "waic2026展会照片/腾讯-13.JPG",
+        "waic2026展会照片/腾讯-2.JPG",
+        "waic2026展会照片/腾讯-3.JPG",
+        "waic2026展会照片/腾讯-4.JPG",
+        "waic2026展会照片/腾讯-5.JPG",
+        "waic2026展会照片/腾讯-6.JPG",
+        "waic2026展会照片/腾讯-7.JPG",
+        "waic2026展会照片/腾讯-8.JPG",
+        "waic2026展会照片/腾讯-9.JPG",
+        "waic2026展会照片/腾讯-总.JPG"
+      ]
+    },
+    {
+      "company": "艾欧智能（深圳）有限公司 / IO-AI TECH",
+      "photos": [
+        "assets/photos/16ab3a232d6415.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/艾欧智能.JPG"
+      ]
+    },
+    {
+      "company": "节卡机器人股份有限公司 / JAKA Robotics",
+      "photos": [
+        "assets/photos/a9d8878dc2677c.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/jaka.JPG"
+      ]
+    },
+    {
+      "company": "蚂蚁科技集团股份有限公司 / ANT GROUP",
+      "photos": [
+        "assets/photos/0dd2e0ae60d059.jpg",
+        "assets/photos/8751cf87858bdb.jpg",
+        "assets/photos/a58e58d6e35336.jpg",
+        "assets/photos/6d8afae62b7533.jpg",
+        "assets/photos/a9a250a2ffb270.jpg",
+        "assets/photos/a8c2967f3499c6.jpg",
+        "assets/photos/9b39400bdd865f.jpg",
+        "assets/photos/b7767e45462bc9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/蚂蚁集团-1.JPG",
+        "waic2026展会照片/蚂蚁集团-2.JPG",
+        "waic2026展会照片/蚂蚁集团-3.JPG",
+        "waic2026展会照片/蚂蚁集团-4.JPG",
+        "waic2026展会照片/蚂蚁集团-5.JPG",
+        "waic2026展会照片/蚂蚁集团-6.JPG",
+        "waic2026展会照片/蚂蚁集团-总.JPG",
+        "waic2026展会照片/蚂蚁集团.JPG"
+      ]
+    },
+    {
+      "company": "记忆张量（上海）科技有限公司 / MemTensor (Shanghai) Technology Co., Ltd",
+      "photos": [
+        "assets/photos/a2c5f7a6bf07c6.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/记忆张量.JPG"
+      ]
+    },
+    {
+      "company": "设集赛宇（上海）科技有限公司 / D.Universe (Shanghai) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/21b1c0c0abad9f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/设集赛宇.JPG"
+      ]
+    },
+    {
+      "company": "语核（上海）科技有限公司 / LangCore (Shanghai) Technology Co., Ltd",
+      "photos": [
+        "assets/photos/7a00bf17a5964a.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/LangCore.JPG"
+      ]
+    },
+    {
+      "company": "谷歌广告（上海）有限公司 / Google Information Technology (China) Company Limited",
+      "photos": [
+        "assets/photos/0e1f989b1acebf.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "AI 社会公益 · 情绪云",
+          "description": "摄像头捕捉观众微表情，由开放模型实时驱动，把内在情绪转化为可视化的动态“情绪云”。",
+          "evidence": "照片文字写明基于心理学“镜像”原理，并使用 Gemma 4 实时驱动。",
+          "photo": "waic2026展会照片/google-情绪云.JPG"
+        }
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/google-情绪云.JPG"
+      ]
+    },
+    {
+      "company": "软通动力信息技术（集团）股份有限公司 / iSoftStone Information Technology (Group) Company Limited",
+      "photos": [
+        "assets/photos/895b948568ac09.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/软通动力-总.JPG"
+      ]
+    },
+    {
+      "company": "长飞光纤光缆股份有限公司 / Yangtze Optical Fibre and Cable Joint Stock Limited Company",
+      "photos": [
+        "assets/photos/faa3bf90ac161d.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/YOFC-总.JPG"
+      ]
+    },
+    {
+      "company": "问问智能信息科技有限公司 / Mobvoi",
+      "photos": [
+        "assets/photos/decab9d3384f65.jpg",
+        "assets/photos/02836c2b948513.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/出门问问-1.JPG",
+        "waic2026展会照片/出门问问-总.JPG"
+      ]
+    },
+    {
+      "company": "阿里巴巴集团控股有限公司 / Alibaba Group Holding Limited",
+      "photos": [
+        "assets/photos/6da3ba09583a97.jpg",
+        "assets/photos/feef9bf82bf06b.jpg",
+        "assets/photos/c655b7451b00bf.jpg",
+        "assets/photos/58f4093bf277e3.jpg",
+        "assets/photos/cef73c8f322d20.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/阿里巴巴-1.JPG",
+        "waic2026展会照片/阿里巴巴-2.JPG",
+        "waic2026展会照片/阿里巴巴-3.JPG",
+        "waic2026展会照片/阿里巴巴-4.JPG",
+        "waic2026展会照片/阿里巴巴-总.JPG"
+      ]
+    },
+    {
+      "company": "魔法原子机器人科技（无锡）有限公司 / MagicLab Robotics Technology (Wuxi) Co., Ltd",
+      "photos": [
+        "assets/photos/5365cf85835349.jpg",
+        "assets/photos/70dbe65e1febdd.jpg",
+        "assets/photos/5ce3987ca28460.jpg",
+        "assets/photos/e48f7191271f0c.jpg",
+        "assets/photos/28f3735a93d3d3.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/魔法原子-1.JPG",
+        "waic2026展会照片/魔法原子-2.JPG",
+        "waic2026展会照片/魔法原子-3.JPG",
+        "waic2026展会照片/魔法原子-4.JPG",
+        "waic2026展会照片/魔法原子.JPG"
+      ]
+    },
+    {
+      "company": "黑芝麻智能 / Black Sesame Technologies",
+      "photos": [
+        "assets/photos/2e2f0dc7d49fd9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "waic2026展会照片/黑芝麻智能/黑芝麻智能-总.JPG"
+      ]
+    }
+  ],
+  "unmatched": [
+    {
+      "group": "AI devices",
+      "photos": [
+        "waic2026展会照片/AI devices.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "EFORT",
+      "photos": [
+        "waic2026展会照片/EFORT.JPG"
+      ],
+      "reason": "filename alias or visible booth/company text"
+    },
+    {
+      "group": "GenesisX",
+      "photos": [
+        "waic2026展会照片/GenesisX.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "IMG_9530",
+      "photos": [
+        "waic2026展会照片/IMG_9530.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "IMG_9627",
+      "photos": [
+        "waic2026展会照片/IMG_9627.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "IMG_9683",
+      "photos": [
+        "waic2026展会照片/IMG_9683.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "IMG_9684",
+      "photos": [
+        "waic2026展会照片/IMG_9684.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "IMG_9728",
+      "photos": [
+        "waic2026展会照片/IMG_9728.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "hongkong tech",
+      "photos": [
+        "waic2026展会照片/hongkong tech.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "origin",
+      "photos": [
+        "waic2026展会照片/origin.JPG"
+      ],
+      "reason": "ambiguous company-name match"
+    },
+    {
+      "group": "ropet｜肉派派",
+      "photos": [
+        "waic2026展会照片/ropet｜肉派派-1.JPG",
+        "waic2026展会照片/ropet｜肉派派-2.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "二一三科技",
+      "photos": [
+        "waic2026展会照片/二一三科技.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "云生集团",
+      "photos": [
+        "waic2026展会照片/云生集团.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "优必选",
+      "photos": [
+        "waic2026展会照片/优必选-1.JPG",
+        "waic2026展会照片/优必选-2.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "元衍万物",
+      "photos": [
+        "waic2026展会照片/元衍万物.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "华光宏",
+      "photos": [
+        "waic2026展会照片/华光宏-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "卓誉科技",
+      "photos": [
+        "waic2026展会照片/卓誉科技.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "因克斯",
+      "photos": [
+        "waic2026展会照片/因克斯.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "国泰海通",
+      "photos": [
+        "waic2026展会照片/国泰海通-1.JPG",
+        "waic2026展会照片/国泰海通-2.JPG",
+        "waic2026展会照片/国泰海通-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "寻汇",
+      "photos": [
+        "waic2026展会照片/寻汇-1.JPG",
+        "waic2026展会照片/寻汇-2.JPG",
+        "waic2026展会照片/寻汇-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "展会-总",
+      "photos": [
+        "waic2026展会照片/展会-总/展会-总-2.JPG",
+        "waic2026展会照片/展会-总/展会-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "布科",
+      "photos": [
+        "waic2026展会照片/布科.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "库帕思",
+      "photos": [
+        "waic2026展会照片/库帕思-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "思朗科技",
+      "photos": [
+        "waic2026展会照片/思朗科技-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "思特奇",
+      "photos": [
+        "waic2026展会照片/思特奇-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "扫描全能王",
+      "photos": [
+        "waic2026展会照片/扫描全能王-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "智师益友",
+      "photos": [
+        "waic2026展会照片/智师益友-1.JPG",
+        "waic2026展会照片/智师益友-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "杨浦滨汇",
+      "photos": [
+        "waic2026展会照片/杨浦滨汇-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "枭兔科技",
+      "photos": [
+        "waic2026展会照片/枭兔科技.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "波涛科技",
+      "photos": [
+        "waic2026展会照片/波涛科技-1.JPG",
+        "waic2026展会照片/波涛科技-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "淘肯AI",
+      "photos": [
+        "waic2026展会照片/淘肯AI-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "深圳福田",
+      "photos": [
+        "waic2026展会照片/深圳福田-1.JPG",
+        "waic2026展会照片/深圳福田-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "潜脑科技",
+      "photos": [
+        "waic2026展会照片/潜脑科技-1.JPG",
+        "waic2026展会照片/潜脑科技-2.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "燧原科技",
+      "photos": [
+        "waic2026展会照片/燧原科技-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "爱予慧",
+      "photos": [
+        "waic2026展会照片/爱予慧-1.JPG",
+        "waic2026展会照片/爱予慧.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "相加智能",
+      "photos": [
+        "waic2026展会照片/相加智能.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "科搭codar",
+      "photos": [
+        "waic2026展会照片/科搭codar.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "科杰科技",
+      "photos": [
+        "waic2026展会照片/科杰科技-总.JPG"
+      ],
+      "reason": "ambiguous company-name match"
+    },
+    {
+      "group": "绒音科技",
+      "photos": [
+        "waic2026展会照片/绒音科技-2.JPG",
+        "waic2026展会照片/绒音科技-3.JPG",
+        "waic2026展会照片/绒音科技.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "自然映射",
+      "photos": [
+        "waic2026展会照片/自然映射-2.JPG",
+        "waic2026展会照片/自然映射.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "英业达",
+      "photos": [
+        "waic2026展会照片/英业达-1.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "蔚瀚",
+      "photos": [
+        "waic2026展会照片/蔚瀚.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "西岑科创小镇",
+      "photos": [
+        "waic2026展会照片/西岑科创小镇-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "金蝶",
+      "photos": [
+        "waic2026展会照片/金蝶-总.JPG"
+      ],
+      "reason": "filename alias or visible booth/company text"
+    },
+    {
+      "group": "长三角绿洲智谷",
+      "photos": [
+        "waic2026展会照片/长三角绿洲智谷-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "静安区示范",
+      "photos": [
+        "waic2026展会照片/静安区示范-总.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "首形",
+      "photos": [
+        "waic2026展会照片/首形.JPG"
+      ],
+      "reason": "no company-name match"
+    },
+    {
+      "group": "麦麦科技集团",
+      "photos": [
+        "waic2026展会照片/麦麦科技集团-总.JPG"
+      ],
+      "reason": "no company-name match"
+    }
+  ],
+  "summary": {
+    "sourcePhotoCount": 319,
+    "matchedPhotoCount": 256,
+    "matchedCompanyCount": 139,
+    "businessInfoCompanyCount": 9,
+    "unmatchedPhotoCount": 63
+  }
+}
