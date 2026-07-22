@@ -1,0 +1,4816 @@
+{
+  "matches": [
+    {
+      "company": "01.SPACE",
+      "photos": [
+        "assets/photos/fd93dcf2458b6f.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Engineer Agent；Cursor for 3B；Capture reality. Reshape the world；Build a playable world on a spatial canvas. Share a link, anyone can play at remix；Your co-creation crew. Creative agents each play a part, building with eee；Rit Designer Agent；BB x BK Hackers x；$i Director Agent",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/fd93dcf2458b6f.jpg"
+        }
+      ],
+      "ocrText": [
+        "Engineer Agent",
+        "Cursor for 3B",
+        "Capture reality. Reshape the world",
+        "Build a playable world on a spatial canvas. Share a link, anyone can play at remix",
+        "Your co-creation crew. Creative agents each play a part, building with eee",
+        "Rit Designer Agent",
+        "BB x BK Hackers x",
+        "$i Director Agent"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/01.SPACE.JPG"
+      ]
+    },
+    {
+      "company": "AUREN INNOVATION LIMITED",
+      "photos": [
+        "assets/photos/1015a354517b03.jpg",
+        "assets/photos/938430eb6a9b83.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "arable；/ Product Loop；‘ative pet p；ABE: READ Poll LM f",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/1015a354517b03.jpg"
+        }
+      ],
+      "ocrText": [
+        "arable",
+        "/ Product Loop",
+        "‘ative pet p",
+        "ABE: READ Poll LM f"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/AUREN-1.JPG",
+        "materials/现场原始照片/AUREN.JPG"
+      ]
+    },
+    {
+      "company": "BEINGBEING PRIVATE LIMITED",
+      "photos": [
+        "assets/photos/a914f65ff3a6c0.jpg",
+        "assets/photos/c560a9aeda22a0.jpg",
+        "assets/photos/e74242f4b17f83.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "beingbeing 家庭陪伴玩具",
+          "description": "把 AI 毛绒玩具与家长 App 结合，陪孩子执行任务和共同冒险，并沉淀家庭记忆。",
+          "evidence": "照片展板写有“会回答问题的玩具很多，肯陪着孩子一起冒险的，只有这一只”。",
+          "photo": "assets/photos/a914f65ff3a6c0.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "and keeping grandparents connected with grandchildren. The product's emotional core is an original IP character, Starfy, who；agent serves each person, it builds a three-dimensional understanding of the family as a whole (family context), enabling answers；beingbeing focuses on family Al. Its core product is an Al agent shared by the whole family — every member can use it, and as the；shares one soul and one memory across the app and the Al plush toy.；beingbeing Starfy；beingbeing；eingbeing；| SHS APP",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/a914f65ff3a6c0.jpg"
+        }
+      ],
+      "ocrText": [
+        "and keeping grandparents connected with grandchildren. The product's emotional core is an original IP character, Starfy, who",
+        "agent serves each person, it builds a three-dimensional understanding of the family as a whole (family context), enabling answers",
+        "beingbeing focuses on family Al. Its core product is an Al agent shared by the whole family — every member can use it, and as the",
+        "shares one soul and one memory across the app and the Al plush toy.",
+        "beingbeing Starfy",
+        "beingbeing",
+        "eingbeing",
+        "| SHS APP"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/我不在乎-2.JPG",
+        "materials/现场原始照片/我不在乎-3.JPG",
+        "materials/现场原始照片/我不在乎.JPG"
+      ]
+    },
+    {
+      "company": "CHANCE ART & TECHNOLOGY PTE. LTD.",
+      "photos": [
+        "assets/photos/fa6a256aabdfd4.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Thank You for Seeing the World with Us；Trending across North America；helps you act.；The input box was never；ent for real-world multi；the interface. It was the limitation.；Top 3 Download on the App Store #；Point your camera, and Al sees",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/fa6a256aabdfd4.jpg"
+        }
+      ],
+      "ocrText": [
+        "Thank You for Seeing the World with Us",
+        "Trending across North America",
+        "helps you act.",
+        "The input box was never",
+        "ent for real-world multi",
+        "the interface. It was the limitation.",
+        "Top 3 Download on the App Store #",
+        "Point your camera, and Al sees"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/CHANCE ART & TECHNOLOGY PTE.JPG"
+      ]
+    },
+    {
+      "company": "CORVIA AI",
+      "photos": [
+        "assets/photos/75ecf7a0523fdf.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Enterprise Agents；From Chat to Action；© Agents are designed to automate complex；business workflows and become tr；Al workforce；Corvia；Origin；WAIC FUTURE T",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/75ecf7a0523fdf.jpg"
+        }
+      ],
+      "ocrText": [
+        "Enterprise Agents",
+        "From Chat to Action",
+        "© Agents are designed to automate complex",
+        "business workflows and become tr",
+        "Al workforce",
+        "Corvia",
+        "Origin",
+        "WAIC FUTURE T"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/corvia AI.JPG"
+      ]
+    },
+    {
+      "company": "Digit Master AI Tech Co Limited",
+      "photos": [
+        "assets/photos/dd9e584c25b774.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "数宗 AI Agent OS",
+          "description": "面向企业与个人的数据洞察 Agent OS；个人版 Pebble 用于从信息噪音中发现机会，Brand Master 面向品牌洞察与增长。",
+          "evidence": "照片展板列出 Pebble 与 Brand Master 两个产品方向。",
+          "photo": "assets/photos/dd9e584c25b774.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Pebble, the personal version of the Agent OS built by Digit Master Al, helps you identify growth opportunities amid information；Digit Master Al develops the Digit Master Al Agent OS, designed to help enterprises and individuals uncover sustainable growth；Brand Master, the world’ s first marketing Agent OS driven by brand DNA, has been adopted by leading global brands and；Opportunities from complex data insights. The team comes from Alibaba, Imperial College London, and Nanjing University, and；has received investment from MiraclePlus and Xuhui Capital. By integrating multimodal context awareness with retrieval-aug-；mented technologies, the system enables Al to develop near-human task intuition.；Fortune Global 500 enterprises, as well as top-tier advertising groups worldwide, including Estée Lauder, L’ Oréal, Publicis,；Hakuhodo, and 7-Eleven. It has been recognized with the Top Digital Product of the Year award,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/dd9e584c25b774.jpg"
+        }
+      ],
+      "ocrText": [
+        "Pebble, the personal version of the Agent OS built by Digit Master Al, helps you identify growth opportunities amid information",
+        "Digit Master Al develops the Digit Master Al Agent OS, designed to help enterprises and individuals uncover sustainable growth",
+        "Brand Master, the world’ s first marketing Agent OS driven by brand DNA, has been adopted by leading global brands and",
+        "Opportunities from complex data insights. The team comes from Alibaba, Imperial College London, and Nanjing University, and",
+        "has received investment from MiraclePlus and Xuhui Capital. By integrating multimodal context awareness with retrieval-aug-",
+        "mented technologies, the system enables Al to develop near-human task intuition.",
+        "Fortune Global 500 enterprises, as well as top-tier advertising groups worldwide, including Estée Lauder, L’ Oréal, Publicis,",
+        "Hakuhodo, and 7-Eleven. It has been recognized with the Top Digital Product of the Year award,"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/数宗AI.JPG"
+      ]
+    },
+    {
+      "company": "Dubrio LLC",
+      "photos": [
+        "assets/photos/3471de6e7bf433.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Starts；PRODUCT & SOURCE；github.com/ce:；podcasts, and her media files into.a；$F for everything you watch. With；nd orain；© filmelip；local you cor by eet ear — and",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/3471de6e7bf433.jpg"
+        }
+      ],
+      "ocrText": [
+        "Starts",
+        "PRODUCT & SOURCE",
+        "github.com/ce:",
+        "podcasts, and her media files into.a",
+        "$F for everything you watch. With",
+        "nd orain",
+        "© filmelip",
+        "local you cor by eet ear — and"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/Dubrio LLC.JPG"
+      ]
+    },
+    {
+      "company": "Gray Matter Solutions Pte. Ltd.",
+      "photos": [
+        "assets/photos/31364dd25afe51.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "intervention, personalized brain health management, and long-term follow-up. The platform is remotely deployable, easy to；neurocognitive tests, it assesses processing speed, executive function attention/impulse control, and working memory, while；Gray Matter Solutions；early detection, subtyping, and ongoing management of Mild Cognitive Impairment (MCI). Through 10-15 minute gamified；generating structured cognitive assessment reports.；operate, and scalable.；PERFORMANCE REPORT；Shopping List!",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/31364dd25afe51.jpg"
+        }
+      ],
+      "ocrText": [
+        "intervention, personalized brain health management, and long-term follow-up. The platform is remotely deployable, easy to",
+        "neurocognitive tests, it assesses processing speed, executive function attention/impulse control, and working memory, while",
+        "Gray Matter Solutions",
+        "early detection, subtyping, and ongoing management of Mild Cognitive Impairment (MCI). Through 10-15 minute gamified",
+        "generating structured cognitive assessment reports.",
+        "operate, and scalable.",
+        "PERFORMANCE REPORT",
+        "Shopping List!"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/Gray Matter.JPG"
+      ]
+    },
+    {
+      "company": "HooRii Technology (HK) Limited",
+      "photos": [
+        "assets/photos/a4711faecae98f.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "users, and collaborating alongside them over time.；ClawStage is an Al embodiment development kit designed for developers, makers, and tech enthusiasts. Powered by Raspberry Pi；environmental perception to bring Al from the cloud into the real world. Through natural language, users can create personalized；ring your Al to real world；5, it offers native support for OpenClaw, Home Assistant, Matter, and Thread—integrating vision, voice, physical interaction, and；Our vision is that the next generation of Al products will move Beyond simply generating answers. Instead, they will become；Home Assistan；ClawStage",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/a4711faecae98f.jpg"
+        }
+      ],
+      "ocrText": [
+        "users, and collaborating alongside them over time.",
+        "ClawStage is an Al embodiment development kit designed for developers, makers, and tech enthusiasts. Powered by Raspberry Pi",
+        "environmental perception to bring Al from the cloud into the real world. Through natural language, users can create personalized",
+        "ring your Al to real world",
+        "5, it offers native support for OpenClaw, Home Assistant, Matter, and Thread—integrating vision, voice, physical interaction, and",
+        "Our vision is that the next generation of Al products will move Beyond simply generating answers. Instead, they will become",
+        "Home Assistan",
+        "ClawStage"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/HooRii Technology.JPG"
+      ]
+    },
+    {
+      "company": "IndustrialNext",
+      "photos": [
+        "assets/photos/56d536e7201cc3.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "GenesisWorks / GenesisForge",
+          "description": "面向工业柔性制造的具身智能方案，结合多模态感知、模型推理、实时轨迹生成与机器人控制，覆盖装配、拧紧、贴膜、检测、分拣和包装等任务。",
+          "evidence": "照片展板写明新产品导入周期由 90 天缩短至 3 天、人力成本降低 40% 以上、换型时间由 2880 分钟缩短至 2 分钟。",
+          "photo": "assets/photos/56d536e7201cc3.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Genesisx helps leading manufacturers enhance Production；GenesisWork；GenesisX；GenesisWorks & GenesisForge；ind strial Physical Al Solution",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/56d536e7201cc3.jpg"
+        }
+      ],
+      "ocrText": [
+        "Genesisx helps leading manufacturers enhance Production",
+        "GenesisWork",
+        "GenesisX",
+        "GenesisWorks & GenesisForge",
+        "ind strial Physical Al Solution"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/GenesisX.JPG"
+      ]
+    },
+    {
+      "company": "MeetSummer Technology Limited",
+      "photos": [
+        "assets/photos/c2f5b38558dc99.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "MemoPin",
+          "description": "面向个人的 AI 入口，用于记录工作与生活点滴、沉淀长期记忆并推进重要事项。",
+          "evidence": "照片可见 “Remember everything that matters” 与“新一代个人AI入口”。",
+          "photo": "assets/photos/c2f5b38558dc99.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "everything；that matters.；Remember；vatch demo；www. ai；MemoPin；SBM, Rid PRM",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c2f5b38558dc99.jpg"
+        }
+      ],
+      "ocrText": [
+        "everything",
+        "that matters.",
+        "Remember",
+        "vatch demo",
+        "www. ai",
+        "MemoPin",
+        "SBM, Rid PRM"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/MemoPin（H4-FT B006）.JPG"
+      ]
+    },
+    {
+      "company": "Mira",
+      "photos": [
+        "assets/photos/6fe5409dfd4807.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "touch, and infrared) to scene understanding, memory recall, and；memories you and it build together.；Mira Light；the full loop from multimodal Perception (vision, hearing,；its light into disco mode and dances along to celebrate with you. Every Mira Light has a personality all its own, shaped by t；feeling down, it turns to look at you and strikes up alittle conversation to keep you company;；and smart-home control. When you're；Strategic decision-making, all the way through to execution across motion, light, voice,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/6fe5409dfd4807.jpg"
+        }
+      ],
+      "ocrText": [
+        "touch, and infrared) to scene understanding, memory recall, and",
+        "memories you and it build together.",
+        "Mira Light",
+        "the full loop from multimodal Perception (vision, hearing,",
+        "its light into disco mode and dances along to celebrate with you. Every Mira Light has a personality all its own, shaped by t",
+        "feeling down, it turns to look at you and strikes up alittle conversation to keep you company;",
+        "and smart-home control. When you're",
+        "Strategic decision-making, all the way through to execution across motion, light, voice,"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/Mira.JPG"
+      ]
+    },
+    {
+      "company": "TideFlow 睡眠健康 / TideFlow Sleep",
+      "photos": [
+        "assets/photos/944c1167bf349a.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "TideFlow Sleep",
+          "description": "根据用户持续变化的睡眠状态识别主要睡眠问题，提供个性化引导与睡后洞察，把一次性建议转为持续改善流程。",
+          "evidence": "照片展板为 WAIC FUTURE TECH OPC 展项，标注 TideFlow Sleep 产品价值。",
+          "photo": "assets/photos/944c1167bf349a.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "alized；TURE TECH；guidance；turns sleep；ation；learning over time, TideFlow；conte；mmending sl",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/944c1167bf349a.jpg"
+        }
+      ],
+      "ocrText": [
+        "alized",
+        "TURE TECH",
+        "guidance",
+        "turns sleep",
+        "ation",
+        "learning over time, TideFlow",
+        "conte",
+        "mmending sl"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/TideFlow睡眠健康.JPG"
+      ]
+    },
+    {
+      "company": "Zinc Technologies Pte Ltd",
+      "photos": [
+        "assets/photos/6d0b148095cb0f.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Informed decision；With Zinc, gain the strategic insights to stay ahead；Don't let budget constraint stop you from oe；iE Zine READE；ARERR?",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/6d0b148095cb0f.jpg"
+        }
+      ],
+      "ocrText": [
+        "Informed decision",
+        "With Zinc, gain the strategic insights to stay ahead",
+        "Don't let budget constraint stop you from oe",
+        "iE Zine READE",
+        "ARERR?"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/zinc.JPG"
+      ]
+    },
+    {
+      "company": "一目科技有限公司 / Yimu Intelligence Co., Ltd.",
+      "photos": [
+        "assets/photos/60aa9e1080c6f7.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/一目YIMU.JPG"
+      ]
+    },
+    {
+      "company": "万达信息股份有限公司 / Wonders Information Co., Ltd.",
+      "photos": [
+        "assets/photos/380d374edc9e32.jpg",
+        "assets/photos/fd897cc68ce74d.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "WONDERS；= 6 Wonbers:；Sane Ps；OS OU Oe",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/380d374edc9e32.jpg"
+        }
+      ],
+      "ocrText": [
+        "WONDERS",
+        "= 6 Wonbers:",
+        "Sane Ps",
+        "OS OU Oe"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/万达信息-1.JPG",
+        "materials/现场原始照片/万达信息-总.JPG"
+      ]
+    },
+    {
+      "company": "上海东方算芯科技有限公司 / Shanghai Eastern Computing Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/dbfb7ee13abaeb.jpg",
+        "assets/photos/a9b6d8025503e6.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "DF1000 BAST",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/dbfb7ee13abaeb.jpg"
+        }
+      ],
+      "ocrText": [
+        "DF1000 BAST"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/东方算芯/东方算芯-1.JPG",
+        "materials/现场原始照片/东方算芯/东方算芯-总.JPG"
+      ]
+    },
+    {
+      "company": "上海傲意信息科技有限公司 / OYMotion Technologies Co., Ltd.",
+      "photos": [
+        "assets/photos/ec66cb916d802c.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Oual-Arm Robot；= fagle",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ec66cb916d802c.jpg"
+        }
+      ],
+      "ocrText": [
+        "Oual-Arm Robot",
+        "= fagle"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/傲意科技.JPG"
+      ]
+    },
+    {
+      "company": "上海六联智能科技有限公司 / Shanghai Sixunited Intelligent Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/021dbbd5610298.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ASDAQ: wrp",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/021dbbd5610298.jpg"
+        }
+      ],
+      "ocrText": [
+        "ASDAQ: wrp"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/六联智能-总.JPG"
+      ]
+    },
+    {
+      "company": "上海合合信息科技股份有限公司 / INTSIG INFORMATION Co., LTD.",
+      "photos": [
+        "assets/photos/1c8754c807bb46.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/扫描全能王-总.JPG"
+      ]
+    },
+    {
+      "company": "上海寻汇信息科技有限公司 / SUNRATE",
+      "photos": [
+        "assets/photos/6e6d8dd5fc0670.jpg",
+        "assets/photos/85a679687ef5a3.jpg",
+        "assets/photos/0af3f270fc3dc4.jpg",
+        "assets/photos/dadaa3f5d7acab.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "KBank；rate =F!；GE) CD CED；Hn RAR；CED CHD CED",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/6e6d8dd5fc0670.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Agent；The Leadin；Agentic Orchestration；Sunrat；a Agent Teams；nrate；bal Paymen；@ A\\ Infrastructure",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/85a679687ef5a3.jpg"
+        }
+      ],
+      "ocrText": [
+        "KBank",
+        "rate =F!",
+        "GE) CD CED",
+        "Hn RAR",
+        "CED CHD CED",
+        "Agent",
+        "The Leadin",
+        "Agentic Orchestration",
+        "Sunrat",
+        "a Agent Teams",
+        "nrate",
+        "bal Paymen",
+        "@ A\\ Infrastructure"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/IMG_9530.JPG",
+        "materials/现场原始照片/寻汇-1.JPG",
+        "materials/现场原始照片/寻汇-2.JPG",
+        "materials/现场原始照片/寻汇-总.JPG"
+      ]
+    },
+    {
+      "company": "上海市静安区人工智能创新应用示范区 / Jing'an AI Innovation Application Demonstration Zone",
+      "photos": [
+        "assets/photos/e6d578820c7afe.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "{ < WAIC CONNEC,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/e6d578820c7afe.jpg"
+        }
+      ],
+      "ocrText": [
+        "{ < WAIC CONNEC,"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/静安区示范-总.JPG"
+      ]
+    },
+    {
+      "company": "上海幻辰新域信息科技有限公司 / Novix Tech",
+      "photos": [
+        "assets/photos/4b70b99854628c.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "optimal skill kits, models and technical parameters, and codifies proven collaboration workflows for R&D, new media, finance and；NeoField targets solopreneurs (OPC) and SMEs. Centered around workspace orchestration, it coordinates multiple specialized Al；agents, isolated sandboxes, corporate knowledge assets and role-specific skills & SOPs. Its Master Agent automatically assembles；other functions into iterable, evolvable workspace assets.；Skill/SOP. Master Agent 62. MUARREM, HMR Bie",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/4b70b99854628c.jpg"
+        }
+      ],
+      "ocrText": [
+        "optimal skill kits, models and technical parameters, and codifies proven collaboration workflows for R&D, new media, finance and",
+        "NeoField targets solopreneurs (OPC) and SMEs. Centered around workspace orchestration, it coordinates multiple specialized Al",
+        "agents, isolated sandboxes, corporate knowledge assets and role-specific skills & SOPs. Its Master Agent automatically assembles",
+        "other functions into iterable, evolvable workspace assets.",
+        "Skill/SOP. Master Agent 62. MUARREM, HMR Bie"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/Novix tech.JPG"
+      ]
+    },
+    {
+      "company": "上海库帕思科技有限公司 / Shanghai Kupas Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/6e7f22e744f68d.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/库帕思-总.JPG"
+      ]
+    },
+    {
+      "company": "上海开普勒机器人有限公司 / KEPLER ROBOTICS CO LTD",
+      "photos": [
+        "assets/photos/eb7aa282a45c39.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "WY ANS",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/eb7aa282a45c39.jpg"
+        }
+      ],
+      "ocrText": [
+        "WY ANS"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/开普勒.JPG"
+      ]
+    },
+    {
+      "company": "上海思朗科技股份有限公司 / Shanghai SmartLogic Technology Ltd.",
+      "photos": [
+        "assets/photos/e557e0d64b60fb.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/思朗科技-总.JPG"
+      ]
+    },
+    {
+      "company": "上海燧原科技股份有限公司 / Shanghai Enflame Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/a566c726ce5e53.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/燧原科技-总.JPG"
+      ]
+    },
+    {
+      "company": "上海拓璞数控科技股份有限公司 / Shanghai Tuopu Numerical Control Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/f8c4d644b3327a.jpg",
+        "assets/photos/fcc40422cf0d78.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "TOPrAB",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/f8c4d644b3327a.jpg"
+        }
+      ],
+      "ocrText": [
+        "TOPrAB"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/拓璞-1.JPG",
+        "materials/现场原始照片/拓璞-2.JPG"
+      ]
+    },
+    {
+      "company": "上海无问芯穹智能科技股份有限公司 / Shanghai Infrigence AI Technology Joint Stock Company Limited",
+      "photos": [
+        "assets/photos/b7347d69ad0681.jpg",
+        "assets/photos/e62d7c440cae41.jpg",
+        "assets/photos/cc29b8013df353.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Token；Agentic Infra；Agentic MaaS；AIEFA；x x AIS FAY HR",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b7347d69ad0681.jpg"
+        }
+      ],
+      "ocrText": [
+        "Token",
+        "Agentic Infra",
+        "Agentic MaaS",
+        "AIEFA",
+        "x x AIS FAY HR"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/无问芯穹-1.JPG",
+        "materials/现场原始照片/无问芯穹-2.JPG",
+        "materials/现场原始照片/无问芯穹-总.JPG"
+      ]
+    },
+    {
+      "company": "上海日行迹智能科技有限公司 / Shanghai Analemma Intelligence Co., Ltd.",
+      "photos": [
+        "assets/photos/521180b1834145.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Lemma — Vibe res；earch with Al |；Si€X, Lemma；Lemma BAAS MERE,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/521180b1834145.jpg"
+        }
+      ],
+      "ocrText": [
+        "Lemma — Vibe res",
+        "earch with Al |",
+        "Si€X, Lemma",
+        "Lemma BAAS MERE,"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/行迹智能.JPG"
+      ]
+    },
+    {
+      "company": "上海智向智能科技有限公司 / Shanghai Noematrix Intelligence Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/f141a7989941db.jpg",
+        "assets/photos/2adb6c13ae8bb8.jpg",
+        "assets/photos/9383cff95c7804.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Agent；RoboPocket；NTINA；RoboPocket - DM3 - Data Agent；se, Cy A",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/f141a7989941db.jpg"
+        }
+      ],
+      "ocrText": [
+        "Agent",
+        "RoboPocket",
+        "NTINA",
+        "RoboPocket - DM3 - Data Agent",
+        "se, Cy A"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/noematrx-1.JPG",
+        "materials/现场原始照片/noematrx-2.JPG",
+        "materials/现场原始照片/noematrx.JPG"
+      ]
+    },
+    {
+      "company": "上海月之暗面科技有限公司 / Moonshot AI",
+      "photos": [
+        "assets/photos/5a67113c5e8a3b.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "TUNES?；WANNA",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/5a67113c5e8a3b.jpg"
+        }
+      ],
+      "ocrText": [
+        "TUNES?",
+        "WANNA"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/kimi.JPG"
+      ]
+    },
+    {
+      "company": "杨浦滨江（SHOWBUND） / Yangpu Waterfront",
+      "photos": [
+        "assets/photos/6a8944b48707bc.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/杨浦滨汇-总.JPG"
+      ]
+    },
+    {
+      "company": "上海模月智能科技有限公司 / Shanghai Suiyue Intelligent Technology Co., Ltd",
+      "photos": [
+        "assets/photos/5ece7ac6733395.jpg",
+        "assets/photos/14bfa5b96655b0.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "starts from real everyday moments: when your thoughts feel scattered, when something you want to do has not yet begun, or；when you feel stuck in a choice or action. It helps you make sense of the mess, see what matters now, and turn vague ideas into；productivity, it helps you build clearer self-understanding, develop a steadier rhythm of action, and gradually become more；one small step you can actually take. Over time, Daykee learns your goals, preferences, values, and patterns of action. Beyond；Shanghai Suiyue Intelligent Technology Co., Ltd. is an Al company building Daykee, an Al companion for personal growth. Daykee；Daykee；self-aligned and action-ready.；Daykee: Al $824",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/5ece7ac6733395.jpg"
+        }
+      ],
+      "ocrText": [
+        "starts from real everyday moments: when your thoughts feel scattered, when something you want to do has not yet begun, or",
+        "when you feel stuck in a choice or action. It helps you make sense of the mess, see what matters now, and turn vague ideas into",
+        "productivity, it helps you build clearer self-understanding, develop a steadier rhythm of action, and gradually become more",
+        "one small step you can actually take. Over time, Daykee learns your goals, preferences, values, and patterns of action. Beyond",
+        "Shanghai Suiyue Intelligent Technology Co., Ltd. is an Al company building Daykee, an Al companion for personal growth. Daykee",
+        "Daykee",
+        "self-aligned and action-ready.",
+        "Daykee: Al $824"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/模月智能-2.JPG",
+        "materials/现场原始照片/模月智能.JPG"
+      ]
+    },
+    {
+      "company": "上海步科自动化股份有限公司 / Kinco Automation (Shanghai) Co., Ltd.",
+      "photos": [
+        "assets/photos/0ff306fd8e986b.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "BRERA: 688160",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/0ff306fd8e986b.jpg"
+        }
+      ],
+      "ocrText": [
+        "BRERA: 688160"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/布科.JPG"
+      ]
+    },
+    {
+      "company": "上海永轴智造科技有限公司 / Shanghai Yongzhou Intelligent Manufacturing Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/d541361a8101eb.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "S Mik bk",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/d541361a8101eb.jpg"
+        }
+      ],
+      "ocrText": [
+        "S Mik bk"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/永轴智造.JPG"
+      ]
+    },
+    {
+      "company": "上海流形工坊科技有限公司 / ManiFactory",
+      "photos": [
+        "assets/photos/29879b8e7b510b.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/流形工坊.JPG"
+      ]
+    },
+    {
+      "company": "上海灵宇宙科技发展有限公司 / Shanghai Lingverse Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/cde948f125cbe6.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Always on, Always ready；Mr. Darwin, Do Fis other；F-ELuka HeroS $2 MAX",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/cde948f125cbe6.jpg"
+        }
+      ],
+      "ocrText": [
+        "Always on, Always ready",
+        "Mr. Darwin, Do Fis other",
+        "F-ELuka HeroS $2 MAX"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/灵宇宙.JPG"
+      ]
+    },
+    {
+      "company": "上海熙香智能科技有限公司 / Shanghai Xixiang AI Kitchen Robotics Co., Ltd.",
+      "photos": [
+        "assets/photos/4ad8cb5052efaf.jpg",
+        "assets/photos/5eb4904ce5b237.jpg",
+        "assets/photos/da7480cff73d00.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "XIBNG；g Xx! XIANG",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/4ad8cb5052efaf.jpg"
+        }
+      ],
+      "ocrText": [
+        "XIBNG",
+        "g Xx! XIANG"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/熙香-1.JPG",
+        "materials/现场原始照片/熙香-2.JPG",
+        "materials/现场原始照片/熙香-总.JPG"
+      ]
+    },
+    {
+      "company": "上海现代服务业联合会 / Shanghai Services Federation",
+      "photos": [
+        "assets/photos/44308d8c216cdd.jpg",
+        "assets/photos/8d2bfe86a77039.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "E> athe",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/44308d8c216cdd.jpg"
+        }
+      ],
+      "ocrText": [
+        "E> athe"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/上海现代服务业联合会-1.JPG",
+        "materials/现场原始照片/上海现代服务业联合会-总.JPG"
+      ]
+    },
+    {
+      "company": "上海理想汽车科技有限公司 / Shanghai LiXiang Automobile Co., Ltd.",
+      "photos": [
+        "assets/photos/068257a516f082.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/理想-总.JPG"
+      ]
+    },
+    {
+      "company": "神雲科技股份有限公司 / MiTAC Computing Technology Corporation",
+      "photos": [
+        "assets/photos/79542481f90529.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "SAMSUNG；Micron.；2) Souoiem,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/79542481f90529.jpg"
+        }
+      ],
+      "ocrText": [
+        "SAMSUNG",
+        "Micron.",
+        "2) Souoiem,"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/神雲科技-总.JPG"
+      ]
+    },
+    {
+      "company": "上海移远通信技术股份有限公司 / Quectel Wireless Solutions Co., Ltd.",
+      "photos": [
+        "assets/photos/2067f313b545a6.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Build a smarter world；Build worly；ETN Wheel-arm robot；DANE ese Robotic lawn ‘Mower solution",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/2067f313b545a6.jpg"
+        }
+      ],
+      "ocrText": [
+        "Build a smarter world",
+        "Build worly",
+        "ETN Wheel-arm robot",
+        "DANE ese Robotic lawn ‘Mower solution"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/移远通信-总.JPG"
+      ]
+    },
+    {
+      "company": "上海稀宇极智科技有限公司 / MiniMax",
+      "photos": [
+        "assets/photos/6720a54822b7dc.jpg",
+        "assets/photos/70e6d831814ead.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Hermes Agent —；DeerFlow；Agent；Herme:；MiniMax Dey Meetup Bares；= Q MiniMax |；iniMax Anthropic.；GitHub 70K+",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/6720a54822b7dc.jpg"
+        }
+      ],
+      "ocrText": [
+        "Hermes Agent —",
+        "DeerFlow",
+        "Agent",
+        "Herme:",
+        "MiniMax Dey Meetup Bares",
+        "= Q MiniMax |",
+        "iniMax Anthropic.",
+        "GitHub 70K+"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/minimax-1.JPG",
+        "materials/现场原始照片/minimax-总.JPG"
+      ]
+    },
+    {
+      "company": "上海章节零一信息科技有限公司 / Shanghai Chapter 01 Information Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/508246b0a2104c.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Foresight；| | iOS IEE |；: | / GaN / ALS | SE | MIRAE | FE Sele；ILALERABM；Bm Bit；TAI 3 Al SRT",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/508246b0a2104c.jpg"
+        }
+      ],
+      "ocrText": [
+        "Foresight",
+        "| | iOS IEE |",
+        ": | / GaN / ALS | SE | MIRAE | FE Sele",
+        "ILALERABM",
+        "Bm Bit",
+        "TAI 3 Al SRT"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/章节零一.JPG"
+      ]
+    },
+    {
+      "company": "上海算丰信息有限公司 / Suanova Information (Shanghai) Co., Ltd.",
+      "photos": [
+        "assets/photos/676ee76c6de092.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "id Hat |；ZesPo",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/676ee76c6de092.jpg"
+        }
+      ],
+      "ocrText": [
+        "id Hat |",
+        "ZesPo"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/算丰-总.JPG"
+      ]
+    },
+    {
+      "company": "上海绒音科技有限公司 / Shanghai Rongyin Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/31f52c0c3260bb.jpg",
+        "assets/photos/62193f8e00b6cd.jpg",
+        "assets/photos/e61204fb43b988.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "百问兔兔星钥 AI 儿童放大镜 X1",
+          "description": "面向儿童探索与自然认知的 AI 放大镜，将实物观察、图像识别、语音问答和内容生成结合到手持硬件中。",
+          "evidence": "现场照片展板展示百问兔兔星钥 AI 儿童放大镜 X1 及其儿童探索场景。",
+          "photo": "assets/photos/31f52c0c3260bb.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "integrated into family education.；integrating character enlightenment into everyday family life.；Through its safe physical design, content boundaries, and secure data mechanisms, it gives parents total peace of mind to let go；and allow their children to independently explore the real world. During use, it randomly triggers behavioral guidance, enabling；toddlers to not only gain scientific knowledge as they explore, but also subtly learn how to treat the worldand others—truly；Knonii is an Al children's As designed for toddler aged serving as a scientific exploration tool deeply；Knonii；ng Glass-X1",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/31f52c0c3260bb.jpg"
+        }
+      ],
+      "ocrText": [
+        "integrated into family education.",
+        "integrating character enlightenment into everyday family life.",
+        "Through its safe physical design, content boundaries, and secure data mechanisms, it gives parents total peace of mind to let go",
+        "and allow their children to independently explore the real world. During use, it randomly triggers behavioral guidance, enabling",
+        "toddlers to not only gain scientific knowledge as they explore, but also subtly learn how to treat the worldand others—truly",
+        "Knonii is an Al children's As designed for toddler aged serving as a scientific exploration tool deeply",
+        "Knonii",
+        "ng Glass-X1"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/绒音科技-2.JPG",
+        "materials/现场原始照片/绒音科技-3.JPG",
+        "materials/现场原始照片/绒音科技.JPG"
+      ]
+    },
+    {
+      "company": "上海美丽猪猪科技有限公司 / Shanghai Beautiful Pig Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/996b7521328d90.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "BeauTact；ae isa leading al emotional companionship platform in China, Successfully commercialized；PP Store 1；258.6 Ax, ASK；erat Al+；THEM 43692 A,；Sill, BS be 67 RR",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/996b7521328d90.jpg"
+        }
+      ],
+      "ocrText": [
+        "BeauTact",
+        "ae isa leading al emotional companionship platform in China, Successfully commercialized",
+        "PP Store 1",
+        "258.6 Ax, ASK",
+        "erat Al+",
+        "THEM 43692 A,",
+        "Sill, BS be 67 RR"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/美丽猪猪科技.JPG"
+      ]
+    },
+    {
+      "company": "上海爱予慧科技有限责任公司 / Shanghai Aiyuhui Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/5ba4f37cbec654.jpg",
+        "assets/photos/66218b140b1917.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "growth；daily life,；users who are fond of tech products, trendy toys and emotional nurturing；content；Starting with the h；SMC, Xuhui District, Shanghai；across nurturing, entertainment and social scenarios.；real pet. Rooted in original IP and integrated with Al technology as well as",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/5ba4f37cbec654.jpg"
+        }
+      ],
+      "ocrText": [
+        "growth",
+        "daily life,",
+        "users who are fond of tech products, trendy toys and emotional nurturing",
+        "content",
+        "Starting with the h",
+        "SMC, Xuhui District, Shanghai",
+        "across nurturing, entertainment and social scenarios.",
+        "real pet. Rooted in original IP and integrated with Al technology as well as"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/爱予慧-1.JPG",
+        "materials/现场原始照片/爱予慧.JPG"
+      ]
+    },
+    {
+      "company": "上海苏波科技有限公司 / Shanghai Sudo Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/d727f7b6ae202b.jpg",
+        "assets/photos/dad6a53d082f2e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "#sudo } a",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/d727f7b6ae202b.jpg"
+        }
+      ],
+      "ocrText": [
+        "#sudo } a"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/sudo-1.JPG",
+        "materials/现场原始照片/sudo.JPG"
+      ]
+    },
+    {
+      "company": "上海蚁蚁科技有限公司 / Shanghai Ant Robby Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/b943682bd3d04e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Era of；Smart；Act Faster；harmacy；smart P；LingBot 20 Full-stack Technology；Al Prowy；LingBot-VA 2.0.",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b943682bd3d04e.jpg"
+        }
+      ],
+      "ocrText": [
+        "Era of",
+        "Smart",
+        "Act Faster",
+        "harmacy",
+        "smart P",
+        "LingBot 20 Full-stack Technology",
+        "Al Prowy",
+        "LingBot-VA 2.0."
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/IMG_9627.JPG"
+      ]
+    },
+    {
+      "company": "上海西井科技股份有限公司 / Shanghai Westwell Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/afc78db54b5ec4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/westwell-总.JPG"
+      ]
+    },
+    {
+      "company": "上海观点跃迁人工智能技术有限公司 / VIEWPOINT AI",
+      "photos": [
+        "assets/photos/766885743456ad.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "connected physical supply-chain network. The platform automates the entire；by a database of over 500 Agent hardware modules,；STACK ANYWAY；and development. The company is committed to enabling a；Text-to-Device Al；Process from requirement understanding, solution；design and BOM generation to programming and firmware flashing.；elopment support libraries, anda directly",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/766885743456ad.jpg"
+        }
+      ],
+      "ocrText": [
+        "connected physical supply-chain network. The platform automates the entire",
+        "by a database of over 500 Agent hardware modules,",
+        "STACK ANYWAY",
+        "and development. The company is committed to enabling a",
+        "Text-to-Device Al",
+        "Process from requirement understanding, solution",
+        "design and BOM generation to programming and firmware flashing.",
+        "elopment support libraries, anda directly"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/观点跃迁.JPG"
+      ]
+    },
+    {
+      "company": "上海觅深科技有限公司 / Mizzen Technologies Limited",
+      "photos": [
+        "assets/photos/d3cf56342eb3aa.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "90% Shorter Research Cycle；Trusted by leading companies across consumer, consulting,；10-30 users；make more accurate decisions across product, marketing, UX, and global expansion；Mizzen Insight；and internet sectors；Mizzen Ins sight；300+ Enterprise Clients",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/d3cf56342eb3aa.jpg"
+        }
+      ],
+      "ocrText": [
+        "90% Shorter Research Cycle",
+        "Trusted by leading companies across consumer, consulting,",
+        "10-30 users",
+        "make more accurate decisions across product, marketing, UX, and global expansion",
+        "Mizzen Insight",
+        "and internet sectors",
+        "Mizzen Ins sight",
+        "300+ Enterprise Clients"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/觅深.JPG"
+      ]
+    },
+    {
+      "company": "上海超有氛围科技有限公司 / Shanghai Super Vibe Technology Co., Ltd",
+      "photos": [
+        "assets/photos/ad973d54652bd7.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "they happen, helping you stay prese!；nt instead of reaching for your phone. While you；VIA Halo preserves the story in the bacl；Il star that travels with you.；VIA Halo quietly captures moments as；iaugh, hike, travel, and connect,；VIA Hale；Not a camera. Nota gadget. A smal",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ad973d54652bd7.jpg"
+        }
+      ],
+      "ocrText": [
+        "they happen, helping you stay prese!",
+        "nt instead of reaching for your phone. While you",
+        "VIA Halo preserves the story in the bacl",
+        "Il star that travels with you.",
+        "VIA Halo quietly captures moments as",
+        "iaugh, hike, travel, and connect,",
+        "VIA Hale",
+        "Not a camera. Nota gadget. A smal"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/上海超有氛围科技.JPG"
+      ]
+    },
+    {
+      "company": "上海造物纪元机器人有限公司 / Shanghai CreatEra Robotics Co., Ltd.",
+      "photos": [
+        "assets/photos/a2b267b3cab3ee.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "unnatural interaction,；into physical form and enabling real-world commercial；and multimodal human-robot interaction systems, the；product delivers stable autonomous walking, intelligent；scalable bipedal inte；and IP visual design.；ew generation of consumer-grade, customizable, and；racter IP Robot",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/a2b267b3cab3ee.jpg"
+        }
+      ],
+      "ocrText": [
+        "unnatural interaction,",
+        "into physical form and enabling real-world commercial",
+        "and multimodal human-robot interaction systems, the",
+        "product delivers stable autonomous walking, intelligent",
+        "scalable bipedal inte",
+        "and IP visual design.",
+        "ew generation of consumer-grade, customizable, and",
+        "racter IP Robot"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/造物纪元.JPG"
+      ]
+    },
+    {
+      "company": "上海阶跃星辰智能科技有限公司 / Shanghai StepFun Intelligent Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/53c1b4b1801096.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Natural User；Mobile Phone；Flash；Shaping the Al Device Ecosystem；Industry Leading Four；The World's First Agentic-native Operation System；StepFun: Next-Generation Operation Sys；m Powered by",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/53c1b4b1801096.jpg"
+        }
+      ],
+      "ocrText": [
+        "Natural User",
+        "Mobile Phone",
+        "Flash",
+        "Shaping the Al Device Ecosystem",
+        "Industry Leading Four",
+        "The World's First Agentic-native Operation System",
+        "StepFun: Next-Generation Operation Sys",
+        "m Powered by"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/阶跃-1.JPG"
+      ]
+    },
+    {
+      "company": "东软云科技有限公司 / Neusoft Cloud Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/2c7630baba980f.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Neusoft 5；Neusoft；Usoft ;",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/2c7630baba980f.jpg"
+        }
+      ],
+      "ocrText": [
+        "Neusoft 5",
+        "Neusoft",
+        "Usoft ;"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/东软云科技-总.JPG"
+      ]
+    },
+    {
+      "company": "中兴通讯股份有限公司 / ZTE Corporation",
+      "photos": [
+        "assets/photos/345863c5cd3f12.jpg",
+        "assets/photos/4af25a9297d7b9.jpg",
+        "assets/photos/34540ee7ce1b79.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Haier；WT AL CREATING AN FUTURE；Teh , Set.；Neste TCL B",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/345863c5cd3f12.jpg"
+        }
+      ],
+      "ocrText": [
+        "Haier",
+        "WT AL CREATING AN FUTURE",
+        "Teh , Set.",
+        "Neste TCL B"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中兴-1.JPG",
+        "materials/现场原始照片/中兴-2.JPG",
+        "materials/现场原始照片/中兴-总.JPG"
+      ]
+    },
+    {
+      "company": "中国南方电网有限责任公司 / China Southern Power Grid Co., Ltd.",
+      "photos": [
+        "assets/photos/75b1209de95a92.jpg",
+        "assets/photos/5aea751019927a.jpg",
+        "assets/photos/4f0929e39c7b31.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "achieving；ower an；sks to opti；puting cost；The syst；mal nodes based；ments；mance,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/75b1209de95a92.jpg"
+        }
+      ],
+      "ocrText": [
+        "achieving",
+        "ower an",
+        "sks to opti",
+        "puting cost",
+        "The syst",
+        "mal nodes based",
+        "ments",
+        "mance,"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中国南方电网-1.JPG",
+        "materials/现场原始照片/中国南方电网-2.JPG",
+        "materials/现场原始照片/中国南方电网-总.JPG"
+      ]
+    },
+    {
+      "company": "中国气象局 / China Meteorological Administration",
+      "photos": [
+        "assets/photos/0de468e62224aa.jpg",
+        "assets/photos/b67a331cecbd2e.jpg",
+        "assets/photos/792a937a909c69.jpg",
+        "assets/photos/418f09f586d75e.jpg",
+        "assets/photos/8d6848650ee9b5.jpg",
+        "assets/photos/0759fa00daecee.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Delta；and universal love.；Obsidian Black；serving the world with benevolence；Shared Love；Bridging the early warning gap,；7 Countries；Anambra",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/0de468e62224aa.jpg"
+        }
+      ],
+      "ocrText": [
+        "Delta",
+        "and universal love.",
+        "Obsidian Black",
+        "serving the world with benevolence",
+        "Shared Love",
+        "Bridging the early warning gap,",
+        "7 Countries",
+        "Anambra"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中国气象局-1.JPG",
+        "materials/现场原始照片/中国气象局-2.JPG",
+        "materials/现场原始照片/中国气象局-3.JPG",
+        "materials/现场原始照片/中国气象局-4.JPG",
+        "materials/现场原始照片/中国气象局-5.JPG",
+        "materials/现场原始照片/中国气象局-总.JPG"
+      ]
+    },
+    {
+      "company": "中国电子信息产业集团有限公司 / China Electronics Corporation",
+      "photos": [
+        "assets/photos/c188a4fa4d00c5.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "GEC | fy",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c188a4fa4d00c5.jpg"
+        }
+      ],
+      "ocrText": [
+        "GEC | fy"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中国电子-总.JPG"
+      ]
+    },
+    {
+      "company": "中国石油天然气集团有限公司 / China National Petroleum Corporation",
+      "photos": [
+        "assets/photos/73a1c441736084.jpg",
+        "assets/photos/d34274de681cfb.jpg",
+        "assets/photos/a2df2768492d44.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "KUNLUN LARGE MODEL；21 SHERI；— Fie] — ee；ECARD |",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/73a1c441736084.jpg"
+        }
+      ],
+      "ocrText": [
+        "KUNLUN LARGE MODEL",
+        "21 SHERI",
+        "— Fie] — ee",
+        "ECARD |"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中国石油-1.JPG",
+        "materials/现场原始照片/中国石油-2.JPG",
+        "materials/现场原始照片/中国石油-总.JPG"
+      ]
+    },
+    {
+      "company": "中国移动通信集团有限公司 / China Mobile Communications Group Co., Ltd.",
+      "photos": [
+        "assets/photos/ed2c50d53f815c.jpg",
+        "assets/photos/a041bda10a0ae9.jpg",
+        "assets/photos/7256945b91fe9b.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "China Mobile；China；Al PARTNERSHIP FOR A BRIGHTER FUTURE；Al PARTNE!；GW(Giga Watts) RD；DCi(Data Centre Interconnect) Si；anne MobileClaw；Al ESE",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ed2c50d53f815c.jpg"
+        }
+      ],
+      "ocrText": [
+        "China Mobile",
+        "China",
+        "Al PARTNERSHIP FOR A BRIGHTER FUTURE",
+        "Al PARTNE!",
+        "GW(Giga Watts) RD",
+        "DCi(Data Centre Interconnect) Si",
+        "anne MobileClaw",
+        "Al ESE"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中国移动-1.JPG",
+        "materials/现场原始照片/中国移动-2.JPG",
+        "materials/现场原始照片/中国移动-总.JPG"
+      ]
+    },
+    {
+      "company": "中国联合网络通信集团有限公司 / China United Network Communications Group Co., Ltd.",
+      "photos": [
+        "assets/photos/16d25605a3376f.jpg",
+        "assets/photos/1689f0a47f673e.jpg",
+        "assets/photos/a37eb34806f2bf.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Hilt we",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/16d25605a3376f.jpg"
+        }
+      ],
+      "ocrText": [
+        "Hilt we"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中国联通-1.JPG",
+        "materials/现场原始照片/中国联通-2.JPG",
+        "materials/现场原始照片/中国联通-总.JPG"
+      ]
+    },
+    {
+      "company": "中科创达软件股份有限公司 / ThunderSoft",
+      "photos": [
+        "assets/photos/b365bfd0e77334.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "= pee ee] iz；ZEN gn",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b365bfd0e77334.jpg"
+        }
+      ],
+      "ocrText": [
+        "= pee ee] iz",
+        "ZEN gn"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/中科创达/中科创达-总.JPG"
+      ]
+    },
+    {
+      "company": "九识（苏州）智能科技有限公司 / Zelos (Suzhou) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/2bcdaa891648d9.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ISTIC.；i Gilad",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/2bcdaa891648d9.jpg"
+        }
+      ],
+      "ocrText": [
+        "ISTIC.",
+        "i Gilad"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/九识/九识-总.JPG"
+      ]
+    },
+    {
+      "company": "云鼎科技股份有限公司 / Yunding Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/83ab2fa0590124.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "YUNDING；YUNDING: a；sow ZZ",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/83ab2fa0590124.jpg"
+        }
+      ],
+      "ocrText": [
+        "YUNDING",
+        "YUNDING: a",
+        "sow ZZ"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/云鼎科技-总.JPG"
+      ]
+    },
+    {
+      "company": "交通银行股份有限公司 / Bank of Communications Co., Ltd",
+      "photos": [
+        "assets/photos/0bd01f81c23994.jpg",
+        "assets/photos/94c6819b651db2.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "oF COMMUNICATIONS；T BANK；Punrate, A)；GLopay Sys: TEMICALLY IMP.",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/0bd01f81c23994.jpg"
+        }
+      ],
+      "ocrText": [
+        "oF COMMUNICATIONS",
+        "T BANK",
+        "Punrate, A)",
+        "GLopay Sys: TEMICALLY IMP."
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/交通银行-1.JPG",
+        "materials/现场原始照片/交通银行-总.JPG"
+      ]
+    },
+    {
+      "company": "京东集团 / JD.COM",
+      "photos": [
+        "assets/photos/d874026b03f28b.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Gooale",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/d874026b03f28b.jpg"
+        }
+      ],
+      "ocrText": [
+        "Gooale"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/京东-总.JPG"
+      ]
+    },
+    {
+      "company": "优理奇机器人科技（苏州）有限公司 / UniX AI Technology (Suzhou) Co., Ltd.",
+      "photos": [
+        "assets/photos/526e12107e7b16.jpg",
+        "assets/photos/f32d49993ae940.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Unix A}",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/526e12107e7b16.jpg"
+        }
+      ],
+      "ocrText": [
+        "Unix A}"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/优理奇科技-1.JPG",
+        "materials/现场原始照片/优理奇科技.JPG"
+      ]
+    },
+    {
+      "company": "信光（上海）科技有限公司 / Blinko Labs, Inc.",
+      "photos": [
+        "assets/photos/5222cb8d0f4512.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Social interface；Blinkko - Wearable；Blinkko i",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/5222cb8d0f4512.jpg"
+        }
+      ],
+      "ocrText": [
+        "Social interface",
+        "Blinkko - Wearable",
+        "Blinkko i"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/Blinko Labs.JPG"
+      ]
+    },
+    {
+      "company": "元衍万物（上海）人工智能科技有限公司 / Yuan Yan Wan Wu (Shanghai) AI Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/b2fa79b826a1da.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Make Human’s Voice Matter；In-Dep；Trooly.Al；ANKER；© Insta360；Alibaba.com；| | Trooly.a Al；Tencent Sil",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b2fa79b826a1da.jpg"
+        }
+      ],
+      "ocrText": [
+        "Make Human’s Voice Matter",
+        "In-Dep",
+        "Trooly.Al",
+        "ANKER",
+        "© Insta360",
+        "Alibaba.com",
+        "| | Trooly.a Al",
+        "Tencent Sil"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/元衍万物.JPG"
+      ]
+    },
+    {
+      "company": "光象（北京）科技有限公司 / SunRising AI Co., Ltd",
+      "photos": [
+        "assets/photos/5d5a3cdff73766.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "production lines of multiple global automotive brands.；tion, and continuous evolution. X1 has completed station validation for paint surface inspection and welding part feeding on；School of Artificial Intelligence. With leading embodied Al algorithms, an efficient low-cost data system, and a physical intelli-；gence development platform, Sunrising Al is building self-evolving embodied agents driven by physical emergence intelligence,；features multi-task capability, rapid deployment, and self-learning, enabling autonomous perception, decision-making, opera-；Sunrising Al is an embodied intelligence company jointly incubated by Tsinghua University’ s School of Vehicle and Mobility and；advancing the industrialization of general embodied Al.；Phi-Bot X1 is an industrial-grade, self-evolving embodied Al robot developed by Sunrising Al. Built for real production lines, it",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/5d5a3cdff73766.jpg"
+        }
+      ],
+      "ocrText": [
+        "production lines of multiple global automotive brands.",
+        "tion, and continuous evolution. X1 has completed station validation for paint surface inspection and welding part feeding on",
+        "School of Artificial Intelligence. With leading embodied Al algorithms, an efficient low-cost data system, and a physical intelli-",
+        "gence development platform, Sunrising Al is building self-evolving embodied agents driven by physical emergence intelligence,",
+        "features multi-task capability, rapid deployment, and self-learning, enabling autonomous perception, decision-making, opera-",
+        "Sunrising Al is an embodied intelligence company jointly incubated by Tsinghua University’ s School of Vehicle and Mobility and",
+        "advancing the industrialization of general embodied Al.",
+        "Phi-Bot X1 is an industrial-grade, self-evolving embodied Al robot developed by Sunrising Al. Built for real production lines, it"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/光象科技.JPG"
+      ]
+    },
+    {
+      "company": "北京与爱为舞科技有限公司 / Beijing Yuaiweiwu Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/256b23357d5bd3.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "gilts",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/256b23357d5bd3.jpg"
+        }
+      ],
+      "ocrText": [
+        "gilts"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/与爱为舞-总.JPG"
+      ]
+    },
+    {
+      "company": "北京乙态科技发展股份有限公司 / Beijing Second State Technology Development Co., Ltd",
+      "photos": [
+        "assets/photos/5279c9d962bcdf.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Code Agent；® Multiple colors available, 3D printed to order, custom text engraving；= Dedicated keys for Accept, Retry & YOLO, no shortcuts to memorize；coding agen；& Wi-Fi remote — keep coding from the couch or meeting room；VibeKey；/ Built-in mic for voice control — hands-free Al coding；© Built-in screen shows real-time coding agent status",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/5279c9d962bcdf.jpg"
+        }
+      ],
+      "ocrText": [
+        "Code Agent",
+        "® Multiple colors available, 3D printed to order, custom text engraving",
+        "= Dedicated keys for Accept, Retry & YOLO, no shortcuts to memorize",
+        "coding agen",
+        "& Wi-Fi remote — keep coding from the couch or meeting room",
+        "VibeKey",
+        "/ Built-in mic for voice control — hands-free Al coding",
+        "© Built-in screen shows real-time coding agent status"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/Second State.JPG"
+      ]
+    },
+    {
+      "company": "北京人形机器人创新中心有限公司 / Beijing Innovation Center for Humanoid Robotics (X-Humanoid)",
+      "photos": [
+        "assets/photos/0219d29a1338dd.jpg",
+        "assets/photos/12440c3a02b687.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "» ARATE；at x iS",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/0219d29a1338dd.jpg"
+        }
+      ],
+      "ocrText": [
+        "» ARATE",
+        "at x iS"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/北京人形.JPG",
+        "materials/现场原始照片/国家地方共建人形机器人创新中心.JPG"
+      ]
+    },
+    {
+      "company": "北京动码印章科技有限公司 / Beijing Dongma Seal Technology Co., Ltd",
+      "photos": [
+        "assets/photos/1026ce5feb4ff7.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/动码印章-总.JPG"
+      ]
+    },
+    {
+      "company": "北京并行科技股份有限公司 / Beijing Paratera Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/881f6563aea3cf.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/并行.JPG"
+      ]
+    },
+    {
+      "company": "北京数巅科技有限公司 / Beijing DiPEAK Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/ed52026e7d0e84.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Rm ab 2 1 42 0 0 0 1409 690 43 20 -1 3 1 42 1 0 0 1409 690 43 20 -1 4 1 42 1 1 0 1409 690 43 20 -1 5 1 42 1 1 1 1409 690 3 20 23.024029 \\ 5 1 42 1 1 2 1420 691 32 16 23.024029 ae,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ed52026e7d0e84.jpg"
+        }
+      ],
+      "ocrText": [
+        "Rm ab 2 1 42 0 0 0 1409 690 43 20 -1 3 1 42 1 0 0 1409 690 43 20 -1 4 1 42 1 1 0 1409 690 43 20 -1 5 1 42 1 1 1 1409 690 3 20 23.024029 \\ 5 1 42 1 1 2 1420 691 32 16 23.024029 ae,"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/数巅智能-总.JPG"
+      ]
+    },
+    {
+      "company": "北京新栈创新科技有限公司 / VibeKeys",
+      "photos": [
+        "assets/photos/ec762b17ec5d18.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "VibeKeys AI 编程键盘",
+          "description": "为 vibe coding 设计的实体快捷键盘，提供 Accept、Retry、YOLO 独立按键、Agent 状态屏、Wi-Fi 远程模式、语音控制和热插拔可重映射轴体。",
+          "evidence": "照片展板列出内置麦克风、3D 打印定制、开源固件以及 fully remappable 等功能。",
+          "photo": "assets/photos/ec762b17ec5d18.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Accept；screen shows real-time coding agent status；® Multiple colors available, 3D printed to order, custom text engraving；= Dedicated keys for Accept, Retry & YOLO, no shortcuts to memorize；VibeKeys - Al；coding agent KA；\\ Wi-Fi remote — keep Coding from the couch or meeting room；Hot-swappable switches Open-source firmware, fully remappable",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ec762b17ec5d18.jpg"
+        }
+      ],
+      "ocrText": [
+        "Accept",
+        "screen shows real-time coding agent status",
+        "® Multiple colors available, 3D printed to order, custom text engraving",
+        "= Dedicated keys for Accept, Retry & YOLO, no shortcuts to memorize",
+        "VibeKeys - Al",
+        "coding agent KA",
+        "\\ Wi-Fi remote — keep Coding from the couch or meeting room",
+        "Hot-swappable switches Open-source firmware, fully remappable"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/IMG_9684.JPG"
+      ]
+    },
+    {
+      "company": "北京星动纪元科技股份有限公司 / Beijing Xingdongjiyuan Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/44a70e4f0981cd.jpg",
+        "assets/photos/fa07620497718f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/星动纪元-1.JPG",
+        "materials/现场原始照片/星动纪元.JPG"
+      ]
+    },
+    {
+      "company": "北京极佳视界科技有限公司 / Beijing GigaAI Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/42bf22a38a5b0a.jpg",
+        "assets/photos/8b093cf176f7fb.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "极佳视界世界模型展区",
+          "description": "现场展示世界生成模型、具身智能与 GigaBrain 世界行动模型。",
+          "evidence": "小红书现场分享正文明确标注上海世博展览馆 H3-D105。",
+          "photo": "assets/photos/42bf22a38a5b0a.jpg"
+        }
+      ],
+      "photoSources": [
+        {
+          "sourceType": "xiaohongshu",
+          "title": "极佳视界在WAIC",
+          "url": "https://www.xiaohongshu.com/explore/6a5c786c000000000503a24c",
+          "publisher": "朱政",
+          "accessedAt": "2026-07-22",
+          "photos": [
+            "assets/photos/42bf22a38a5b0a.jpg",
+            "assets/photos/8b093cf176f7fb.jpg"
+          ]
+        }
+      ],
+      "ocrText": [],
+      "match_basis": "verified public WAIC 2026 coverage",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/外部补图/极佳视界/waic-2026-booth.webp",
+        "materials/外部补图/极佳视界/waic-2026-screen.webp"
+      ],
+      "venues": [
+        "世博展览馆"
+      ]
+    },
+    {
+      "company": "北京涛思数据科技有限公司 / TDengine",
+      "photos": [
+        "assets/photos/49206038db1233.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "a TDen；eng ne；industrial Dax",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/49206038db1233.jpg"
+        }
+      ],
+      "ocrText": [
+        "a TDen",
+        "eng ne",
+        "industrial Dax"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/TDengine-总.JPG"
+      ]
+    },
+    {
+      "company": "北京润激太初智能科技有限公司 / OriginFlow",
+      "photos": [
+        "assets/photos/17565313b63619.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "next-generation human-machine interaction.；ata Kit |；data foundation for robotic dexterous manipulation and；and other sensing modalities to；multimodal data through surface electromyography (sEMG), IMUs, head-mounted cameras, voice,；delity, efficient, low-cost, and highly generalizable.；reconstruct real human operational information. It enables precise Capture of continuous gesture trajectories,；NeuroMotor Interface",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/17565313b63619.jpg"
+        }
+      ],
+      "ocrText": [
+        "next-generation human-machine interaction.",
+        "ata Kit |",
+        "data foundation for robotic dexterous manipulation and",
+        "and other sensing modalities to",
+        "multimodal data through surface electromyography (sEMG), IMUs, head-mounted cameras, voice,",
+        "delity, efficient, low-cost, and highly generalizable.",
+        "reconstruct real human operational information. It enables precise Capture of continuous gesture trajectories,",
+        "NeuroMotor Interface"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/origin.JPG"
+      ]
+    },
+    {
+      "company": "北京电子数智科技有限责任公司 / Beijing Electronic Digital&Intelligence Co., Ltd",
+      "photos": [
+        "assets/photos/14a07b2cb3101f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/北电数智.JPG"
+      ]
+    },
+    {
+      "company": "北京睿法智行科技有限公司 / Beijing LegalGo Intelligence Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/4288416f85108a.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "婚姻宝 AI 助手",
+          "description": "婚姻家事法律智能工具，可进行引导式案情梳理、生成法律结论与行动建议，并一键生成起诉状、离婚协议等法律文书。",
+          "evidence": "照片展板写明 Agent 自治架构、MCP 多智能体协同与 Context Engineering。",
+          "photo": "assets/photos/4288416f85108a.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "it provides；advice, generates compliant documents like complaints and divorce agreements in one click, and matches professional lawyers；complicated processes and high barriers in family law.；a full-process, personalized one-stop service. The platform conducts guided case analysis, delivers legal opinions and tailored；for complex cases.；Hunyinbao Al, China's first Al-driven marital legal tool, aims to make professional legal services accessible and resolve high costs,；Leveraging our proprietary Agent Autonomous Architecture, MCP Multi-Agent Collaboration and Context Engineering,；R44 + MCP tal + Context Engineering , Hes",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/4288416f85108a.jpg"
+        }
+      ],
+      "ocrText": [
+        "it provides",
+        "advice, generates compliant documents like complaints and divorce agreements in one click, and matches professional lawyers",
+        "complicated processes and high barriers in family law.",
+        "a full-process, personalized one-stop service. The platform conducts guided case analysis, delivers legal opinions and tailored",
+        "for complex cases.",
+        "Hunyinbao Al, China's first Al-driven marital legal tool, aims to make professional legal services accessible and resolve high costs,",
+        "Leveraging our proprietary Agent Autonomous Architecture, MCP Multi-Agent Collaboration and Context Engineering,",
+        "R44 + MCP tal + Context Engineering , Hes"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/婚姻宝AI助手.JPG"
+      ]
+    },
+    {
+      "company": "北京科杰科技有限公司 / KeenData",
+      "photos": [
+        "assets/photos/1878b9755337a4.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/科杰科技-总.JPG"
+      ]
+    },
+    {
+      "company": "北京零一万物科技有限公司 / 01.AI",
+      "photos": [
+        "assets/photos/e70e55276cce82.jpg",
+        "assets/photos/8dece060790d40.jpg",
+        "assets/photos/5c548a19a9f14a.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Ontology；Ontology 2.0；are Oz；CikAl",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/e70e55276cce82.jpg"
+        }
+      ],
+      "ocrText": [
+        "Ontology",
+        "Ontology 2.0",
+        "are Oz",
+        "CikAl"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/零一万物-1.JPG",
+        "materials/现场原始照片/零一万物-2.JPG",
+        "materials/现场原始照片/零一万物-总.JPG"
+      ]
+    },
+    {
+      "company": "北京面壁智能科技有限责任公司 / ModelBest Inc.",
+      "photos": [
+        "assets/photos/61870c3264b761.jpg",
+        "assets/photos/c689e711ef5053.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "PilotDeck；StaffDeck；Always-on；AgentOS；- ClawXMemory - ClawXRouter；StaffDeck F}；Hi AgentOS；(4) : 44 Agentos",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/61870c3264b761.jpg"
+        }
+      ],
+      "ocrText": [
+        "PilotDeck",
+        "StaffDeck",
+        "Always-on",
+        "AgentOS",
+        "- ClawXMemory - ClawXRouter",
+        "StaffDeck F}",
+        "Hi AgentOS",
+        "(4) : 44 Agentos"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/面壁智能-1.JPG",
+        "materials/现场原始照片/面壁智能.JPG"
+      ]
+    },
+    {
+      "company": "北京麦麦趣耕科技有限公司 / Beijing Maimai Agriculture Joy Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/034edf34254c7a.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/麦麦科技集团-总.JPG"
+      ]
+    },
+    {
+      "company": "华为技术有限公司 / Huawei Technologies Co., Ltd",
+      "photos": [
+        "assets/photos/a10ee6de7c6132.jpg",
+        "assets/photos/71051bcf243896.jpg",
+        "assets/photos/944aaa3731323f.jpg",
+        "assets/photos/68c3c17c59e6e3.jpg",
+        "assets/photos/2dd1c96168ecf8.jpg",
+        "assets/photos/88c3335976531d.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Rules；Code Review；Public Sector；A Ascend；Load & Store；ral Innovation；CoStrict；DeepSeek",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/a10ee6de7c6132.jpg"
+        }
+      ],
+      "ocrText": [
+        "Rules",
+        "Code Review",
+        "Public Sector",
+        "A Ascend",
+        "Load & Store",
+        "ral Innovation",
+        "CoStrict",
+        "DeepSeek"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/华为/华为-总.JPG",
+        "materials/现场原始照片/华为/华为2.JPG",
+        "materials/现场原始照片/华为/华为3.JPG",
+        "materials/现场原始照片/华为/华为4.JPG",
+        "materials/现场原始照片/华为/华为5.JPG",
+        "materials/现场原始照片/华为/华为6.JPG"
+      ]
+    },
+    {
+      "company": "南京因克斯智能科技有限公司 / Nanjing Encos Intelligent Technology Co., Ltd",
+      "photos": [
+        "assets/photos/c30b4266467e00.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Nanjing Encos",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c30b4266467e00.jpg"
+        }
+      ],
+      "ocrText": [
+        "Nanjing Encos"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/因克斯.JPG"
+      ]
+    },
+    {
+      "company": "友学伴（北京）教育科技有限公司 / UniGrow (Beijing) Education Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/9edd5d190dd8f6.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "As the first Al-native education app,；Your K12 Al Gr；UniGrow (Beijing) Education Co., Ltd. wes founded in Haidian District, Beijing, in February 2026.；UniGrow；UniGrow Al App,；RF UniGrow；REP (JGR) 2026 2 eee",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/9edd5d190dd8f6.jpg"
+        }
+      ],
+      "ocrText": [
+        "As the first Al-native education app,",
+        "Your K12 Al Gr",
+        "UniGrow (Beijing) Education Co., Ltd. wes founded in Haidian District, Beijing, in February 2026.",
+        "UniGrow",
+        "UniGrow Al App,",
+        "RF UniGrow",
+        "REP (JGR) 2026 2 eee"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/友学伴.JPG"
+      ]
+    },
+    {
+      "company": "叽里咕噜创意（杭州）科技有限公司 / Jiligulu Creative (Hangzhou) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/b6f15587173d3b.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "desktop device as a；Print wants Al to create not only answers,；cards,；“what to eat today” picks, mood receipts, message cards, meeting idea；As content generation becomes cheaper,；but tangible paper pieces that can enter real life.；what becomes scarce is not more content,；generates the content, formats it automatically, and prints it through a",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b6f15587173d3b.jpg"
+        }
+      ],
+      "ocrText": [
+        "desktop device as a",
+        "Print wants Al to create not only answers,",
+        "cards,",
+        "“what to eat today” picks, mood receipts, message cards, meeting idea",
+        "As content generation becomes cheaper,",
+        "but tangible paper pieces that can enter real life.",
+        "what becomes scarce is not more content,",
+        "generates the content, formats it automatically, and prints it through a"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/叽里咕噜.JPG"
+      ]
+    },
+    {
+      "company": "启界互动（北京）科技有限公司 / OpenWorld (Beijing) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/ea75712fb25caf.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "interacting with them through you 4.；x SRARA；Al ina；SIR, HED y；Minecraft x；TR Mod. bein, gq",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ea75712fb25caf.jpg"
+        }
+      ],
+      "ocrText": [
+        "interacting with them through you 4.",
+        "x SRARA",
+        "Al ina",
+        "SIR, HED y",
+        "Minecraft x",
+        "TR Mod. bein, gq"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/启界互动.JPG"
+      ]
+    },
+    {
+      "company": "商汤科技 / SenseTime",
+      "photos": [
+        "assets/photos/9aabb85e84a3b2.jpg",
+        "assets/photos/40e6794e6e1d5c.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Automotive Al Cockpit Brain",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/9aabb85e84a3b2.jpg"
+        }
+      ],
+      "ocrText": [
+        "Automotive Al Cockpit Brain"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/商汤-1.JPG",
+        "materials/现场原始照片/商汤-总.JPG"
+      ]
+    },
+    {
+      "company": "国家电网有限公司 / State Grid Corporation of China",
+      "photos": [
+        "assets/photos/5a452ac834c8c6.jpg",
+        "assets/photos/94e2faef6bdb01.jpg",
+        "assets/photos/6f2266a3c6e037.jpg",
+        "assets/photos/ad510883b6692a.jpg",
+        "assets/photos/69d90681e72d55.jpg",
+        "assets/photos/0b2040014f59cf.jpg",
+        "assets/photos/492b0cbf42c429.jpg",
+        "assets/photos/b1483ab2223327.jpg",
+        "assets/photos/2c4805580c8386.jpg",
+        "assets/photos/8fe9f95b176974.jpg",
+        "assets/photos/eed8e00b777830.jpg",
+        "assets/photos/9fe64fc7ed4857.jpg",
+        "assets/photos/4eed4f9aec2587.jpg",
+        "assets/photos/d9de4ef73f57d7.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "STATE GRID；A RED fy,；4, BIKER,；Sas _ STATE GRID",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/5a452ac834c8c6.jpg"
+        }
+      ],
+      "ocrText": [
+        "STATE GRID",
+        "A RED fy,",
+        "4, BIKER,",
+        "Sas _ STATE GRID"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/国家电网-1.JPG",
+        "materials/现场原始照片/国家电网-10.JPG",
+        "materials/现场原始照片/国家电网-11.JPG",
+        "materials/现场原始照片/国家电网-12.JPG",
+        "materials/现场原始照片/国家电网-13.JPG",
+        "materials/现场原始照片/国家电网-2.JPG",
+        "materials/现场原始照片/国家电网-3.JPG",
+        "materials/现场原始照片/国家电网-4.JPG",
+        "materials/现场原始照片/国家电网-5.JPG",
+        "materials/现场原始照片/国家电网-6.JPG",
+        "materials/现场原始照片/国家电网-7.JPG",
+        "materials/现场原始照片/国家电网-8.JPG",
+        "materials/现场原始照片/国家电网-9.JPG",
+        "materials/现场原始照片/国家电网-总.JPG"
+      ]
+    },
+    {
+      "company": "国泰海通证券股份有限公司 / Guotai Haitong Securities Co., Ltd.",
+      "photos": [
+        "assets/photos/6cd3714e5dd780.jpg",
+        "assets/photos/e148105bf78bca.jpg",
+        "assets/photos/00f311e9dac555.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "AITONS；ANTGROUP；PH, RE. RE mM；seep it；= amaned.",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/6cd3714e5dd780.jpg"
+        }
+      ],
+      "ocrText": [
+        "AITONS",
+        "ANTGROUP",
+        "PH, RE. RE mM",
+        "seep it",
+        "= amaned."
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/国泰海通-1.JPG",
+        "materials/现场原始照片/国泰海通-2.JPG",
+        "materials/现场原始照片/国泰海通-总.JPG"
+      ]
+    },
+    {
+      "company": "声扬科技（香港）有限公司 / VoiceAI Technologies Hong Kong Limited",
+      "photos": [
+        "assets/photos/b5deb3b59fde43.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ng Kong Limited；Limited；ith what we see, but also with what we hear.；cyber, ort；Booth no. E101-2；logies Ho；POWER VO；VoiceAl Techno",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b5deb3b59fde43.jpg"
+        }
+      ],
+      "ocrText": [
+        "ng Kong Limited",
+        "Limited",
+        "ith what we see, but also with what we hear.",
+        "cyber, ort",
+        "Booth no. E101-2",
+        "logies Ho",
+        "POWER VO",
+        "VoiceAl Techno"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/声扬科技-总.JPG"
+      ]
+    },
+    {
+      "company": "大连博涛文化科技集团股份有限公司 / Dalian Betop Culture and Technology Group Stock Co., Ltd.",
+      "photos": [
+        "assets/photos/e1f30886a52e52.jpg",
+        "assets/photos/364fac601c2a88.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Security Boundary；Edge Power；Six Major Breakthrough；Multi；Facial Microexpression；Capabitity；Multi-Dimensional；-Scene Deployment",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/e1f30886a52e52.jpg"
+        }
+      ],
+      "ocrText": [
+        "Security Boundary",
+        "Edge Power",
+        "Six Major Breakthrough",
+        "Multi",
+        "Facial Microexpression",
+        "Capabitity",
+        "Multi-Dimensional",
+        "-Scene Deployment"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/波涛科技-1.JPG",
+        "materials/现场原始照片/波涛科技-总.JPG"
+      ]
+    },
+    {
+      "company": "宇树科技股份有限公司 / YuShu Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/8b4fe713867af3.jpg",
+        "assets/photos/5c451df5fc9379.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Vly | Be",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/8b4fe713867af3.jpg"
+        }
+      ],
+      "ocrText": [
+        "Vly | Be"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/宇树-1.JPG",
+        "materials/现场原始照片/宇树.JPG"
+      ]
+    },
+    {
+      "company": "安徽交泰智能技术有限公司 / Anhui Linkedti Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/fb0cea90e1f3c0.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Physical Al Tags for Indu；sources into industrial agents that can sense, express and continuously improve.；Centered on Physical Al Tags, LinkedTi transforms equipment attributes, process context, operating signals, failure mechanisms, maintenance；‘as on-site condition recognition, anomaly warning, trend analysis and preliminary diagnosis, creating a；twins and engineer agents.；LinkedTi focuses on intelligent industrial equipment maintenance and Physical Al applications, enabling critical assets to evolve from silent data；experience and on-site knowledge into Al-readable equipment profiles. By integrating multimodal sensing, on-device small models, health diagnostics；LinkedTi serves",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/fb0cea90e1f3c0.jpg"
+        }
+      ],
+      "ocrText": [
+        "Physical Al Tags for Indu",
+        "sources into industrial agents that can sense, express and continuously improve.",
+        "Centered on Physical Al Tags, LinkedTi transforms equipment attributes, process context, operating signals, failure mechanisms, maintenance",
+        "‘as on-site condition recognition, anomaly warning, trend analysis and preliminary diagnosis, creating a",
+        "twins and engineer agents.",
+        "LinkedTi focuses on intelligent industrial equipment maintenance and Physical Al applications, enabling critical assets to evolve from silent data",
+        "experience and on-site knowledge into Al-readable equipment profiles. By integrating multimodal sensing, on-device small models, health diagnostics",
+        "LinkedTi serves"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/交泰智能.JPG"
+      ]
+    },
+    {
+      "company": "安擎计算机信息股份有限公司 / Enginetech Computer Co., LTD",
+      "photos": [
+        "assets/photos/784ce22ebfdcfe.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/安擎-总.JPG"
+      ]
+    },
+    {
+      "company": "广州文远知行科技有限公司 / WeRide",
+      "photos": [
+        "assets/photos/d3c6c9ee756ef0.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/文远知行-总.JPG"
+      ]
+    },
+    {
+      "company": "得瑞领新（重庆）科技有限责任公司 / DERA Co., Ltd",
+      "photos": [
+        "assets/photos/9d8fb5a0b4a4ae.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "leading Multimodal Robotic；integration. It is ready to power a wide range of applications, including home robots, smart home data centers, and commercial；between multiple duties with absolute ease.；- Long-Term Recall, Instant Response: It enables robots to recognize and remember every person and interaction, achieving；long-term memory retrieval with second-level response times.；- Complex Multitasking, Seamless Agility: It ensures stable information processing during complex tasks, allowing robots to switch；Furthermore, our plug-and-play, deployment-free Bionic Hippocampal Memory Module is built for rapid, high-efficiency client；We deliver end-to-end memory solutions, empowering robots to seamlessly integrate int",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/9d8fb5a0b4a4ae.jpg"
+        }
+      ],
+      "ocrText": [
+        "leading Multimodal Robotic",
+        "integration. It is ready to power a wide range of applications, including home robots, smart home data centers, and commercial",
+        "between multiple duties with absolute ease.",
+        "- Long-Term Recall, Instant Response: It enables robots to recognize and remember every person and interaction, achieving",
+        "long-term memory retrieval with second-level response times.",
+        "- Complex Multitasking, Seamless Agility: It ensures stable information processing during complex tasks, allowing robots to switch",
+        "Furthermore, our plug-and-play, deployment-free Bionic Hippocampal Memory Module is built for rapid, high-efficiency client",
+        "We deliver end-to-end memory solutions, empowering robots to seamlessly integrate int"
+      ],
+      "match_basis": "company name visible in OCR text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/IMG_9683.JPG"
+      ]
+    },
+    {
+      "company": "思科科技（北京）有限公司 / Cisco Technologies (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/6dadde3138cda2.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "nt Manufacturing；Lean Intellige；Al Moves；Cisco Secure aj Factory",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/6dadde3138cda2.jpg"
+        }
+      ],
+      "ocrText": [
+        "nt Manufacturing",
+        "Lean Intellige",
+        "Al Moves",
+        "Cisco Secure aj Factory"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/CISCO/CISCO-总.JPG"
+      ]
+    },
+    {
+      "company": "或宇连接（深圳）科技有限责任公司 / ORULINK (Shenzhen) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/761bd2d836aaf3.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "nto a companion, productivity assistant,；Watcher connects with a mobile app, PC client, robot hardware,；the future of embodied Al together.；Watcher is an open:；and open-source extensions, enabling developers to build personalized skills,；Watcher Robot；tions.；Our vision is to bring Al beyond the Screen, turning it into a perceptive,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/761bd2d836aaf3.jpg"
+        }
+      ],
+      "ocrText": [
+        "nto a companion, productivity assistant,",
+        "Watcher connects with a mobile app, PC client, robot hardware,",
+        "the future of embodied Al together.",
+        "Watcher is an open:",
+        "and open-source extensions, enabling developers to build personalized skills,",
+        "Watcher Robot",
+        "tions.",
+        "Our vision is to bring Al beyond the Screen, turning it into a perceptive,"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/或宇连接.JPG"
+      ]
+    },
+    {
+      "company": "摩尔线程智能科技（北京）股份有限公司 / Moore Threads Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/39456b2f8bb15c.jpg",
+        "assets/photos/0b1a4f875f6f58.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "摩尔线程 WAIC 2026 展台",
+          "description": "H2-C109 展台集中展示全功能 GPU 与三类 AI 工厂场景。",
+          "evidence": "摩尔线程官方 WAIC 2026 收官报道及展台照片。",
+          "photo": "assets/photos/39456b2f8bb15c.jpg"
+        },
+        {
+          "title": "模型训练工厂",
+          "description": "现场展示模型训练、推理与高效管理能力。",
+          "evidence": "摩尔线程官方 WAIC 2026 收官报道配图。",
+          "photo": "assets/photos/0b1a4f875f6f58.jpg"
+        }
+      ],
+      "photoSources": [
+        {
+          "sourceType": "official_news",
+          "title": "WAIC 2026 精彩收官｜从真训到真用，摩尔线程三大“AI 工厂”筑基全场景智算",
+          "url": "https://mthreads.com/news/331",
+          "publisher": "摩尔线程",
+          "accessedAt": "2026-07-22",
+          "photos": [
+            "assets/photos/39456b2f8bb15c.jpg",
+            "assets/photos/0b1a4f875f6f58.jpg"
+          ],
+          "publishedAt": "2026-07-20"
+        }
+      ],
+      "ocrText": [],
+      "match_basis": "verified public WAIC 2026 coverage",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/外部补图/摩尔线程/waic-2026-booth.jpeg",
+        "materials/外部补图/摩尔线程/ai-factory.jpeg"
+      ],
+      "venues": [
+        "世博展览馆"
+      ]
+    },
+    {
+      "company": "数字华夏（深圳）科技有限公司 / DIGIT (SHEN ZHEN) TECHNOLOGY Co., LTD.",
+      "photos": [
+        "assets/photos/ac249202b3a6bb.jpg",
+        "assets/photos/8e1c1cab977f92.jpg",
+        "assets/photos/265a0713e5ab2f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/数字华夏-1.JPG",
+        "materials/现场原始照片/数字华夏-2.JPG",
+        "materials/现场原始照片/数字华夏.JPG"
+      ]
+    },
+    {
+      "company": "新华三技术有限公司 / New H3C Technologies Co., Ltd.",
+      "photos": [
+        "assets/photos/8960099601a2ab.jpg",
+        "assets/photos/cf818a3e4ec7bb.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "H3C UniStor Polaris；12500R-64EP H3C CR19000-X；‘Agentic SOC；FS MSH",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/8960099601a2ab.jpg"
+        }
+      ],
+      "ocrText": [
+        "H3C UniStor Polaris",
+        "12500R-64EP H3C CR19000-X",
+        "‘Agentic SOC",
+        "FS MSH"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/新华三-1.JPG",
+        "materials/现场原始照片/新华三-总.JPG"
+      ]
+    },
+    {
+      "company": "施耐德电气（中国）有限公司 / Schneider Electric (China) Co., Ltd.",
+      "photos": [
+        "assets/photos/c14c519d8cd67a.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Advancing",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c14c519d8cd67a.jpg"
+        }
+      ],
+      "ocrText": [
+        "Advancing"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/施耐德电气.JPG"
+      ]
+    },
+    {
+      "company": "昆仑芯（北京）科技股份有限公司 / Kunlunxin Technology (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/b1bb71bb60300a.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "sugon",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b1bb71bb60300a.jpg"
+        }
+      ],
+      "ocrText": [
+        "sugon"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/昆仑芯/昆仑芯-总.JPG"
+      ]
+    },
+    {
+      "company": "智元创新（上海）科技股份有限公司 / AIGIBOT Innovation (Shanghai) Technology Co., Ltd",
+      "photos": [
+        "assets/photos/6b3913a9dcad1a.jpg",
+        "assets/photos/44dc9b71bfe0ac.jpg",
+        "assets/photos/db4ab1fb2a2ccf.jpg",
+        "assets/photos/cdd8027729e20c.jpg",
+        "assets/photos/4a57bdc2b5286e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "World's First Livestream of Humanoid Robots Across a Full Tablet Production Inspection Line；AGILINK；7G LONGCHEER；y IC WR TT SOS",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/6b3913a9dcad1a.jpg"
+        }
+      ],
+      "ocrText": [
+        "World's First Livestream of Humanoid Robots Across a Full Tablet Production Inspection Line",
+        "AGILINK",
+        "7G LONGCHEER",
+        "y IC WR TT SOS"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/智元-1.JPG",
+        "materials/现场原始照片/智元-2.JPG",
+        "materials/现场原始照片/智元-3.JPG",
+        "materials/现场原始照片/智元-4.JPG",
+        "materials/现场原始照片/智元.JPG"
+      ]
+    },
+    {
+      "company": "智身新创（苏州）智能科技有限公司 / Zhishen XinChuang (Suzhou) Intelligent Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/251e32b51febc5.jpg",
+        "assets/photos/1dbb32d7ff3381.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ig the World with Embo«；Q SENs；Cente —~ |",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/251e32b51febc5.jpg"
+        }
+      ],
+      "ocrText": [
+        "ig the World with Embo«",
+        "Q SENs",
+        "Cente —~ |"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/智身科技-1.JPG",
+        "materials/现场原始照片/智身科技.JPG"
+      ]
+    },
+    {
+      "company": "杭州哇嘟塔科技有限公司 / Hangzhou VAST Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/827053b6f9e30d.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ejin Elect；hanical；w.stt-bearing.com；s [wo fm | [8 | = |",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/827053b6f9e30d.jpg"
+        }
+      ],
+      "ocrText": [
+        "ejin Elect",
+        "hanical",
+        "w.stt-bearing.com",
+        "s [wo fm | [8 | = |"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/STT.JPG"
+      ]
+    },
+    {
+      "company": "杭州时之轨迹信息技术有限责任公司 / Software Object Pte. Ltd.",
+      "photos": [
+        "assets/photos/c9e8356c26d848.jpg",
+        "assets/photos/1424f5df23e0a9.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "Disbrief",
+          "description": "随身 4G 语音小设备；用户说出意图后，可调度个人电脑上的 Agent 团队执行任务，仅在需要决策时向手机发消息。",
+          "evidence": "照片展板标语为 “Talk to Dispatch your Agents, Anywhere, Anytime.”",
+          "photo": "assets/photos/c9e8356c26d848.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Talk to Dispatch your；Agents, Anywhere,；the moment inspiration hits,；Anytime.；phone when it needs you to decide. You think, you talk — it does the rest.；er. It handles most of it on its own, and only texts your；cket-sized 4G voice device — ona walk, on your commute,；Disbrief",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c9e8356c26d848.jpg"
+        }
+      ],
+      "ocrText": [
+        "Talk to Dispatch your",
+        "Agents, Anywhere,",
+        "the moment inspiration hits,",
+        "Anytime.",
+        "phone when it needs you to decide. You think, you talk — it does the rest.",
+        "er. It handles most of it on its own, and only texts your",
+        "cket-sized 4G voice device — ona walk, on your commute,",
+        "Disbrief"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/时之轨迹-2.JPG",
+        "materials/现场原始照片/时之轨迹.JPG"
+      ]
+    },
+    {
+      "company": "杭州海康威视数字技术股份有限公司 / Hangzhou Hikvision Digital Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/7811da2cb3d964.jpg",
+        "assets/photos/4d9e8c8114da8b.jpg",
+        "assets/photos/1ed8b7c0bd70ea.jpg",
+        "assets/photos/e350c431f8f9bb.jpg",
+        "assets/photos/80ffcbbd5b4bc7.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Al Models；Analytics Al Agent；Video O&M Large Al Model；SURFACE INSPECTION | FLEXIBLE TESTING USER-FRIENDLY；Software f；ra Flexible Detection System；This solution integrates an intelligent camera with a robotic a；For every industry-",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/7811da2cb3d964.jpg"
+        }
+      ],
+      "ocrText": [
+        "Al Models",
+        "Analytics Al Agent",
+        "Video O&M Large Al Model",
+        "SURFACE INSPECTION | FLEXIBLE TESTING USER-FRIENDLY",
+        "Software f",
+        "ra Flexible Detection System",
+        "This solution integrates an intelligent camera with a robotic a",
+        "For every industry-"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/海康威视-1.JPG",
+        "materials/现场原始照片/海康威视-2.JPG",
+        "materials/现场原始照片/海康威视-3.JPG",
+        "materials/现场原始照片/海康威视-4.JPG",
+        "materials/现场原始照片/海康威视-总.JPG"
+      ]
+    },
+    {
+      "company": "梅卡曼德（雄安）机器人科技股份有限公司 / Mech-Mind Robotics Technologies Co., Ltd.",
+      "photos": [
+        "assets/photos/8f1ba6d1760719.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Dexterous Hand；Mech-Hand；Mech-Hand 225%",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/8f1ba6d1760719.jpg"
+        }
+      ],
+      "ocrText": [
+        "Dexterous Hand",
+        "Mech-Hand",
+        "Mech-Hand 225%"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/梅卡曼德.JPG"
+      ]
+    },
+    {
+      "company": "此芯科技集团有限公司 / CIX Technology Group Co., Ltd",
+      "photos": [
+        "assets/photos/049514e6f5061e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Agentic Infra；Robot",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/049514e6f5061e.jpg"
+        }
+      ],
+      "ocrText": [
+        "Agentic Infra",
+        "Robot"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/此芯科技-总.JPG"
+      ]
+    },
+    {
+      "company": "比亚迪电子（国际）有限公司 / BYD Electronics (International) Company Limited",
+      "photos": [
+        "assets/photos/49d2ec7ea176a1.jpg",
+        "assets/photos/20ea4e96aed6bd.jpg",
+        "assets/photos/58fcb271ab2b85.jpg",
+        "assets/photos/74d73b565d57c2.jpg",
+        "assets/photos/b25a5237cae546.jpg",
+        "assets/photos/8454dc193d48c1.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "BYD Smart Ecosystem；Ultra；BYD: First to Pledge Fu；Vehicle-centric, connecting all；DiSus Intellic；TianShen-ByYD Drivi；Il Damage it talk for Both Urban NOA and \\ntelligent Parking；ng—assistance System",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/49d2ec7ea176a1.jpg"
+        }
+      ],
+      "ocrText": [
+        "BYD Smart Ecosystem",
+        "Ultra",
+        "BYD: First to Pledge Fu",
+        "Vehicle-centric, connecting all",
+        "DiSus Intellic",
+        "TianShen-ByYD Drivi",
+        "Il Damage it talk for Both Urban NOA and \\ntelligent Parking",
+        "ng—assistance System"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/比亚迪/比亚迪-总.JPG",
+        "materials/现场原始照片/比亚迪/比亚迪1.JPG",
+        "materials/现场原始照片/比亚迪/比亚迪2.JPG",
+        "materials/现场原始照片/比亚迪/比亚迪3.JPG",
+        "materials/现场原始照片/比亚迪/比亚迪4.JPG",
+        "materials/现场原始照片/比亚迪电子-总.JPG"
+      ]
+    },
+    {
+      "company": "江苏云幕智造科技有限公司 / Jiangsu Yunmu Intelligent Manufacturing Technology Co., Ltd",
+      "photos": [
+        "assets/photos/a957a6d018f8cd.jpg",
+        "assets/photos/02a14c7719fb71.jpg",
+        "assets/photos/86cd27301e335e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Uli Uh @ +",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/a957a6d018f8cd.jpg"
+        }
+      ],
+      "ocrText": [
+        "Uli Uh @ +"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/云幕智造-1.JPG",
+        "materials/现场原始照片/云幕智造-2.JPG",
+        "materials/现场原始照片/云幕智造.JPG"
+      ]
+    },
+    {
+      "company": "沐曦集成电路（上海）股份有限公司 / MetaX Integrated Circuits (Shanghai) Co., Ltd.",
+      "photos": [
+        "assets/photos/877eec0eb9badd.jpg",
+        "assets/photos/7fae6a91adeccc.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "沐曦开源工坊",
+          "description": "现场集中展示模型社区、PyTorch、CNCF、Red Hat 等开源生态合作。",
+          "evidence": "小红书现场分享正文两次标注 H2-B401，图片可见沐曦 WAIC 2026 展区。",
+          "photo": "assets/photos/877eec0eb9badd.jpg"
+        }
+      ],
+      "photoSources": [
+        {
+          "sourceType": "xiaohongshu",
+          "title": "WAIC｜沐曦超大展台集齐十大开源社区",
+          "url": "https://www.xiaohongshu.com/explore/6a5adcd9000000001003e52b",
+          "publisher": "大厂爆料君",
+          "accessedAt": "2026-07-22",
+          "photos": [
+            "assets/photos/877eec0eb9badd.jpg",
+            "assets/photos/7fae6a91adeccc.jpg"
+          ]
+        }
+      ],
+      "ocrText": [],
+      "match_basis": "verified public WAIC 2026 coverage",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/外部补图/沐曦/waic-2026-booth.webp",
+        "materials/外部补图/沐曦/open-source-area.webp"
+      ],
+      "venues": [
+        "世博展览馆"
+      ]
+    },
+    {
+      "company": "浙江强脑科技有限公司 / Zhejiang Qiangnao Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/e2ca50468937f3.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "BrainCo；ONTROLS",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/e2ca50468937f3.jpg"
+        }
+      ],
+      "ocrText": [
+        "BrainCo",
+        "ONTROLS"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/强脑科技.JPG"
+      ]
+    },
+    {
+      "company": "浙江海亮科技有限公司 / Hailiang Technology Group",
+      "photos": [
+        "assets/photos/e03e4e28879e1f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/海亮科技-总.JPG"
+      ]
+    },
+    {
+      "company": "浙江淘奇人工智能科技有限公司 / ZHEJIANG TAOKEN ARTIFICIAL INTELLIGENCE TECHNOLOGY Co., LTD.",
+      "photos": [
+        "assets/photos/f39253b983ef34.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "55 Token；Token A)；‘5 Token Al",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/f39253b983ef34.jpg"
+        }
+      ],
+      "ocrText": [
+        "55 Token",
+        "Token A)",
+        "‘5 Token Al"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/淘肯AI-总.JPG"
+      ]
+    },
+    {
+      "company": "浙江湃启科技有限公司 / Zhejiang Paiqi Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/3027b37d954775.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "AI 情感计算与具身智能硬件",
+          "description": "聚焦前沿 AI 交互、情绪识别、具身智能、潮玩设计及元宇宙社交硬件，为儿童、年轻人和独居者提供情感陪伴。",
+          "evidence": "照片为浙江湃启科技有限公司展项介绍板，展位 H4-FT B003。",
+          "photo": "assets/photos/3027b37d954775.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Social Hardware, Delivering Deeply Emotional Companionship And Interaction Experiences For Children, Young；puting And Embodied Intelligence.；The Company Focuses On Advanced Ai Interaction, Emotion Recognition, Embodied Intelligence, Designer Toy Design And M；Living Alone. Its Goal Is To Become A Global Leader In Ai Emotional Interaction Technologies And Hardware Carriers,；Zhejiang Paigi Technology Co., Ltd；Zhejiang Paiqi Technology Co., Ltd. PATCH) ls Committed To The Deep Integration And Innovative Application Of Al Affective Com-；PATCHX) SO,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/3027b37d954775.jpg"
+        }
+      ],
+      "ocrText": [
+        "Social Hardware, Delivering Deeply Emotional Companionship And Interaction Experiences For Children, Young",
+        "puting And Embodied Intelligence.",
+        "The Company Focuses On Advanced Ai Interaction, Emotion Recognition, Embodied Intelligence, Designer Toy Design And M",
+        "Living Alone. Its Goal Is To Become A Global Leader In Ai Emotional Interaction Technologies And Hardware Carriers,",
+        "Zhejiang Paigi Technology Co., Ltd",
+        "Zhejiang Paiqi Technology Co., Ltd. PATCH) ls Committed To The Deep Integration And Innovative Application Of Al Affective Com-",
+        "PATCHX) SO,"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/湃启科技.JPG"
+      ]
+    },
+    {
+      "company": "浪潮集团有限公司 / Inspur Group Co., Ltd.",
+      "photos": [
+        "assets/photos/f49d3bc8db306f.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/浪潮-总.JPG"
+      ]
+    },
+    {
+      "company": "深信服科技股份有限公司 / Sangfor Technologies Inc",
+      "photos": [
+        "assets/photos/c31b739f07bf1e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "VERTIV.",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c31b739f07bf1e.jpg"
+        }
+      ],
+      "ocrText": [
+        "VERTIV."
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/深信服科技.JPG"
+      ]
+    },
+    {
+      "company": "深圳市光速进化智能科技有限公司 / Shenzhen LIKO Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/ac8aa888f73c23.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "financing rounds within three months of launch.；Our founding team is made up of Tsinghua University alumni. Core team members previously worked at Meta, ByteDance, Meituan,；multimodal Al perception, edge computing and privacy-centric design to deliver a natural and secure smart home experience.；Models (VLM) and local Al computing, it recognizes family members, strangers, pets, vehicles and unusual activities, supporting fall；detection, home security and real-time anomaly alerts. Featuring an 8-inch detachable display and multi-angle gimbal, it combines；SenseTime and TP-Link, with over 15 years of experience working together.；Our flagship Liko Home Intelligence System is a complete on-device Al Agent home vision solution. Leveraging on-device Vision Language；Founded in November 2025, liko.ai is an innovative tech company focused on Al smart hardware for global markets. We completed two",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ac8aa888f73c23.jpg"
+        }
+      ],
+      "ocrText": [
+        "financing rounds within three months of launch.",
+        "Our founding team is made up of Tsinghua University alumni. Core team members previously worked at Meta, ByteDance, Meituan,",
+        "multimodal Al perception, edge computing and privacy-centric design to deliver a natural and secure smart home experience.",
+        "Models (VLM) and local Al computing, it recognizes family members, strangers, pets, vehicles and unusual activities, supporting fall",
+        "detection, home security and real-time anomaly alerts. Featuring an 8-inch detachable display and multi-angle gimbal, it combines",
+        "SenseTime and TP-Link, with over 15 years of experience working together.",
+        "Our flagship Liko Home Intelligence System is a complete on-device Al Agent home vision solution. Leveraging on-device Vision Language",
+        "Founded in November 2025, liko.ai is an innovative tech company focused on Al smart hardware for global markets. We completed two"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/光速进化.JPG"
+      ]
+    },
+    {
+      "company": "深圳市广和通无线股份有限公司 / Fibocom Wireless Inc.",
+      "photos": [
+        "assets/photos/1a7cf3efcd1df5.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "of Fibocom Modules；AiForX 2:",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/1a7cf3efcd1df5.jpg"
+        }
+      ],
+      "ocrText": [
+        "of Fibocom Modules",
+        "AiForX 2:"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/广和通.JPG"
+      ]
+    },
+    {
+      "company": "深圳市拾音教育咨询有限公司 / Shenzhen Shiyin Education Consultant Co. Ltd",
+      "photos": [
+        "assets/photos/f41bb9e23bb234.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "AI School OS",
+          "description": "OneOneTalk 与 BytePlus 联合打造的 AI 原生教学平台，覆盖备课、授课、练习、评估、学习分析与校园管理。",
+          "evidence": "照片展板写明覆盖 10+ 国家和地区、300+ 学校与学习场景，并服务 50+ 香港本地学校。",
+          "photo": "assets/photos/f41bb9e23bb234.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Kong Top 16, and has received media attention including interviews by CCTV News,；management. Deployed across 10+ countries and regions, 300+ school scenarios, and 50+ Hong Kong schools, it connects；School OS；students, teachers and campuses into an end-to-end teaching system. It has received honors including Education Track；special coverage by CCTV, Ta Kung Pao；Champion at the Asia Al Startup Competition and National Champion in the iFLYTEK Agent Competition, was named WAIC Ho；Google；other media outlets.",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/f41bb9e23bb234.jpg"
+        }
+      ],
+      "ocrText": [
+        "Kong Top 16, and has received media attention including interviews by CCTV News,",
+        "management. Deployed across 10+ countries and regions, 300+ school scenarios, and 50+ Hong Kong schools, it connects",
+        "School OS",
+        "students, teachers and campuses into an end-to-end teaching system. It has received honors including Education Track",
+        "special coverage by CCTV, Ta Kung Pao",
+        "Champion at the Asia Al Startup Competition and National Champion in the iFLYTEK Agent Competition, was named WAIC Ho",
+        "Google",
+        "other media outlets."
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/AI School.JPG"
+      ]
+    },
+    {
+      "company": "深圳市普渡科技有限公司 / SHENZHEN PIDU TECHNOLOGY Co., LTD.",
+      "photos": [
+        "assets/photos/3e0f9523fb3d02.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/普渡机器人.JPG"
+      ]
+    },
+    {
+      "company": "深圳市科盟创新机器人科技有限公司 / Shenzhen Komo Innovation Robotics Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/579c01beec0631.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ROBOT JOINT SERIES；SZKOMO R；NSMIs",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/579c01beec0631.jpg"
+        }
+      ],
+      "ocrText": [
+        "ROBOT JOINT SERIES",
+        "SZKOMO R",
+        "NSMIs"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/科盟创新.JPG"
+      ]
+    },
+    {
+      "company": "深圳市道通智能航空技术股份有限公司 / Autel Robotics Co., Ltd.",
+      "photos": [
+        "assets/photos/a9acd07b3680d9.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Autelrobotics.en；EVO | Ay,",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/a9acd07b3680d9.jpg"
+        }
+      ],
+      "ocrText": [
+        "Autelrobotics.en",
+        "EVO | Ay,"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/道通智能-总.JPG"
+      ]
+    },
+    {
+      "company": "深圳诺因智能有限公司 / Shenzhen Knowin AI Co., Ltd.",
+      "photos": [
+        "assets/photos/2d8b102a4522fc.jpg",
+        "assets/photos/053bec26051c5d.jpg",
+        "assets/photos/c874f0a7eaf329.jpg",
+        "assets/photos/7348c7d58ab91d.jpg",
+        "assets/photos/a16d170fb1d6ec.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "2 KNowin；01 knowin",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/2d8b102a4522fc.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Robot Execution；KnowinBrain；action token generation.；Post-trained for Action CoT；23D World Data Engine；Interactive World Dynamics Sandbox；Traces；KNOWIN-X1",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c874f0a7eaf329.jpg"
+        }
+      ],
+      "ocrText": [
+        "2 KNowin",
+        "01 knowin",
+        "Robot Execution",
+        "KnowinBrain",
+        "action token generation.",
+        "Post-trained for Action CoT",
+        "23D World Data Engine",
+        "Interactive World Dynamics Sandbox",
+        "Traces",
+        "KNOWIN-X1"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/knowin-1.JPG",
+        "materials/现场原始照片/knowin.JPG",
+        "materials/现场原始照片/诺因-1.JPG",
+        "materials/现场原始照片/诺因-2.JPG",
+        "materials/现场原始照片/诺因.JPG"
+      ]
+    },
+    {
+      "company": "滴普科技股份有限公司 / Deepexi Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/c495c4b1f8d8da.jpg",
+        "assets/photos/62af04018c2919.jpg",
+        "assets/photos/39d592463d289b.jpg",
+        "assets/photos/43385402269b77.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Context；DeepWorks Harness；DeepSophon；AgentOps；Observability；Tools；Extensions.；Guardrails",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c495c4b1f8d8da.jpg"
+        }
+      ],
+      "ocrText": [
+        "Context",
+        "DeepWorks Harness",
+        "DeepSophon",
+        "AgentOps",
+        "Observability",
+        "Tools",
+        "Extensions.",
+        "Guardrails"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/滴普科技/滴普科技-1.JPG",
+        "materials/现场原始照片/滴普科技/滴普科技-2.JPG",
+        "materials/现场原始照片/滴普科技/滴普科技-3.JPG",
+        "materials/现场原始照片/滴普科技/滴普科技-总.JPG"
+      ]
+    },
+    {
+      "company": "焕智 Ai-innopower / Spark-Innopower",
+      "photos": [
+        "assets/photos/2293230092f3bf.jpg",
+        "assets/photos/23583ad6c96b65.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "about.；We are committed to translating cutting-edge Al technologies into core engines that drive business growth, injecting transforma-；adoption, making intelligent transformation an accessible choice, a strategic imperative, anda competitive advantage for every；OPC Enterprise Al Fundraising Advisor- skill；tive momentum into enterprise intelligentization through the power of innovation.Dedicated to lowering the barriers to Al；core engines；(Before the Token, The Latent Soul)；at exists in the space before the token falls, b",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/2293230092f3bf.jpg"
+        }
+      ],
+      "ocrText": [
+        "about.",
+        "We are committed to translating cutting-edge Al technologies into core engines that drive business growth, injecting transforma-",
+        "adoption, making intelligent transformation an accessible choice, a strategic imperative, anda competitive advantage for every",
+        "OPC Enterprise Al Fundraising Advisor- skill",
+        "tive momentum into enterprise intelligentization through the power of innovation.Dedicated to lowering the barriers to Al",
+        "core engines",
+        "(Before the Token, The Latent Soul)",
+        "at exists in the space before the token falls, b"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/焕智-2.JPG",
+        "materials/现场原始照片/焕智.JPG"
+      ]
+    },
+    {
+      "company": "瑞芯微电子股份有限公司 / Rockchip Electronics Co., Ltd.",
+      "photos": [
+        "assets/photos/c43fdbe5f1330b.jpg",
+        "assets/photos/d930ae5e643e09.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "AGENT |；tei VLM 4B A",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/c43fdbe5f1330b.jpg"
+        }
+      ],
+      "ocrText": [
+        "AGENT |",
+        "tei VLM 4B A"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/瑞芯微电子/瑞芯微电子-总.JPG",
+        "materials/现场原始照片/瑞芯微电子/瑞芯微电子x智元.JPG"
+      ]
+    },
+    {
+      "company": "甄觉科技（上海）有限公司 / Zhenjue Technology",
+      "photos": [
+        "assets/photos/b2ce91cd525a2e.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "optical generalization and algorithm；Embodied Quality Inspector；of industrial perception systems across three core dimensions: demand comprehension,；costs by 50% and shortens delivery cycles by；Compared with conventional AO! solutions, our technology cuts algorithm delivery；70%, drastically boosting the efficiency of evaluation, verification, R&D and delivery for customized industrial perception equip/；Pioneering the 3rd-Generation AO! Technology Powered by Vi；reusability.",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b2ce91cd525a2e.jpg"
+        }
+      ],
+      "ocrText": [
+        "optical generalization and algorithm",
+        "Embodied Quality Inspector",
+        "of industrial perception systems across three core dimensions: demand comprehension,",
+        "costs by 50% and shortens delivery cycles by",
+        "Compared with conventional AO! solutions, our technology cuts algorithm delivery",
+        "70%, drastically boosting the efficiency of evaluation, verification, R&D and delivery for customized industrial perception equip/",
+        "Pioneering the 3rd-Generation AO! Technology Powered by Vi",
+        "reusability."
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/甄觉科技.JPG"
+      ]
+    },
+    {
+      "company": "百川智能科技有限公司 / Baichuan AI",
+      "photos": [
+        "assets/photos/aa1c7b5b7ebc58.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Be, “the.",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/aa1c7b5b7ebc58.jpg"
+        }
+      ],
+      "ocrText": [
+        "Be, “the."
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/百川智能-总.JPG"
+      ]
+    },
+    {
+      "company": "百度在线网络技术（北京）有限公司 / Baidu Online Network Technology (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/30b82d2ece858d.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/百度-总.JPG"
+      ]
+    },
+    {
+      "company": "百融云创科技股份有限公司 / Bairong Inc.",
+      "photos": [
+        "assets/photos/35ff02bfefb663.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/百融智能-总.JPG"
+      ]
+    },
+    {
+      "company": "睿尔曼智能科技（北京）股份有限公司 / RealMan Intelligent Technology (Beijing) Co., Ltd.",
+      "photos": [
+        "assets/photos/fd6338604c3066.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "realman s—==",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/fd6338604c3066.jpg"
+        }
+      ],
+      "ocrText": [
+        "realman s—=="
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/睿尔曼智能.JPG"
+      ]
+    },
+    {
+      "company": "神思电子技术股份有限公司 / Synthesis Electronic Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/4d8d07943de9cc.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/神思.JPG"
+      ]
+    },
+    {
+      "company": "科大讯飞股份有限公司 / iFLYTEK Co., Ltd.",
+      "photos": [
+        "assets/photos/fd5cc442e77ba6.jpg",
+        "assets/photos/872e6a7230a9a2.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "— AGENTI；& Reflect",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/fd5cc442e77ba6.jpg"
+        }
+      ],
+      "ocrText": [
+        "— AGENTI",
+        "& Reflect"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/科大讯飞-1.JPG",
+        "materials/现场原始照片/科大讯飞-总.JPG"
+      ]
+    },
+    {
+      "company": "美格智能技术股份有限公司 / MeiG Smart Technology Co., Ltd",
+      "photos": [
+        "assets/photos/06f67e25921a66.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/美格/美格-总.JPG"
+      ]
+    },
+    {
+      "company": "联想集团 / Lenovo Group",
+      "photos": [
+        "assets/photos/49de8f7bc5d9c9.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "| Lenovo",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/49de8f7bc5d9c9.jpg"
+        }
+      ],
+      "ocrText": [
+        "| Lenovo"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/联想-总.JPG"
+      ]
+    },
+    {
+      "company": "自然映射（深圳）科技有限公司 / Natural Mapping (Shenzhen) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/deec9b8f11e485.jpg",
+        "assets/photos/e35392250fd9b9.jpg",
+        "assets/photos/b5fcc1fa9de383.jpg",
+        "assets/photos/cc2b8fd067ea74.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "SlashVibe AI 控制终端",
+          "description": "面向多 Agent 工作流的桌面 AI 交互台，通过独立界面显示任务进度，并支持语音输入与项目上下文复用。",
+          "evidence": "现场展板将 SlashVibe 描述为桌面 AI 交互台，并列出任务状态、低延迟语音与项目上下文能力。",
+          "photo": "assets/photos/cc2b8fd067ea74.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "built our own way out:；everyone.；Brain-Control System — control wheelchairs, appliances, lights, and care,；One open ecosystem — compatible with other brands’ BCls.；Paralyzed — my body couldn’ tmove, but my mind still Pa；Freedom shouldn’ t have to wait for a miracle.；‘Two BCls — a headset for users with disabilities + an in-ear earbud for；I'm Fei Niu. After two spinal cord injuries left me",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/b5fcc1fa9de383.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "Alis more powerful than ever, but working with it often means switching；/ Clear visibility into Al tas!；/ Reliable, low-latency voic；/ Persistent project context；Slashvibe is a physical desktop inters¢*；making human-Al collaboration /”；ILAS Al OEE. BR. A.；LUBY Al FESR",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/cc2b8fd067ea74.jpg"
+        }
+      ],
+      "ocrText": [
+        "built our own way out:",
+        "everyone.",
+        "Brain-Control System — control wheelchairs, appliances, lights, and care,",
+        "One open ecosystem — compatible with other brands’ BCls.",
+        "Paralyzed — my body couldn’ tmove, but my mind still Pa",
+        "Freedom shouldn’ t have to wait for a miracle.",
+        "‘Two BCls — a headset for users with disabilities + an in-ear earbud for",
+        "I'm Fei Niu. After two spinal cord injuries left me",
+        "Alis more powerful than ever, but working with it often means switching",
+        "/ Clear visibility into Al tas!",
+        "/ Reliable, low-latency voic",
+        "/ Persistent project context",
+        "Slashvibe is a physical desktop inters¢*",
+        "making human-Al collaboration /”",
+        "ILAS Al OEE. BR. A.",
+        "LUBY Al FESR"
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/脑控空间.JPG",
+        "materials/现场原始照片/自然映射-2.JPG",
+        "materials/现场原始照片/自然映射.JPG",
+        "materials/现场原始照片/SlashVibe.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ]
+    },
+    {
+      "company": "腾讯 / Tencent",
+      "photos": [
+        "assets/photos/3597ffca8ae0ff.jpg",
+        "assets/photos/09028741e029f2.jpg",
+        "assets/photos/37e6cc23b98c7f.jpg",
+        "assets/photos/aeab949048e72c.jpg",
+        "assets/photos/d9818dcdb6ff18.jpg",
+        "assets/photos/943d9d6ae4e70e.jpg",
+        "assets/photos/904f39c48e9753.jpg",
+        "assets/photos/1112999edd36a4.jpg",
+        "assets/photos/6354d40836e719.jpg",
+        "assets/photos/ae08a12fdda0a2.jpg",
+        "assets/photos/62c654fe2027dd.jpg",
+        "assets/photos/7c2a96916a0ca9.jpg",
+        "assets/photos/594d7cd4b4e3a4.jpg",
+        "assets/photos/33ac36d74533e0.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Deploy；LLM Agent；SandBox 2；chunk；Porcelain Pengreen；Agent；Your Agents；Agent Agent",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/3597ffca8ae0ff.jpg"
+        }
+      ],
+      "ocrText": [
+        "Deploy",
+        "LLM Agent",
+        "SandBox 2",
+        "chunk",
+        "Porcelain Pengreen",
+        "Agent",
+        "Your Agents",
+        "Agent Agent"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/腾讯-1.JPG",
+        "materials/现场原始照片/腾讯-10.JPG",
+        "materials/现场原始照片/腾讯-11.JPG",
+        "materials/现场原始照片/腾讯-12.JPG",
+        "materials/现场原始照片/腾讯-13.JPG",
+        "materials/现场原始照片/腾讯-2.JPG",
+        "materials/现场原始照片/腾讯-3.JPG",
+        "materials/现场原始照片/腾讯-4.JPG",
+        "materials/现场原始照片/腾讯-5.JPG",
+        "materials/现场原始照片/腾讯-6.JPG",
+        "materials/现场原始照片/腾讯-7.JPG",
+        "materials/现场原始照片/腾讯-8.JPG",
+        "materials/现场原始照片/腾讯-9.JPG",
+        "materials/现场原始照片/腾讯-总.JPG"
+      ]
+    },
+    {
+      "company": "艾欧智能（深圳）有限公司 / IO-AI TECH",
+      "photos": [
+        "assets/photos/16be72f9cbd5fb.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "leverage high-quality real-world data. To date,；data collection, a；100 worldwide and supported more than 60；lon, SenseXperience for real-world human data；teleoperation data collecti；institutions to efficiently acquire, manage, and；training, feedback, and optimization. Through o；and EmbodiFlow for embodied data",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/16be72f9cbd5fb.jpg"
+        }
+      ],
+      "ocrText": [
+        "leverage high-quality real-world data. To date,",
+        "data collection, a",
+        "100 worldwide and supported more than 60",
+        "lon, SenseXperience for real-world human data",
+        "teleoperation data collecti",
+        "institutions to efficiently acquire, manage, and",
+        "training, feedback, and optimization. Through o",
+        "and EmbodiFlow for embodied data"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/艾欧智能.JPG"
+      ]
+    },
+    {
+      "company": "节卡机器人股份有限公司 / JAKA Robotics",
+      "photos": [
+        "assets/photos/a18be72b2537c9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/jaka.JPG"
+      ]
+    },
+    {
+      "company": "英达达集团 / Inventec Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/457e6c1e29f7b9.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/英业达-1.JPG"
+      ]
+    },
+    {
+      "company": "蚂蚁科技集团股份有限公司 / ANT GROUP",
+      "photos": [
+        "assets/photos/e1d755ece60a5e.jpg",
+        "assets/photos/6d9ac9a96644fa.jpg",
+        "assets/photos/2c4618283e4a09.jpg",
+        "assets/photos/50451431308ffe.jpg",
+        "assets/photos/5356801bee3da4.jpg",
+        "assets/photos/192b19a7391606.jpg",
+        "assets/photos/099fc91a8393a9.jpg",
+        "assets/photos/3fe7195ed60de2.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "\\ for Everyone；Benefits for Ever；World 20；The National:；ineetligence in Action；Hello；BRUBRES；a Lim ia]",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/e1d755ece60a5e.jpg"
+        }
+      ],
+      "ocrText": [
+        "\\ for Everyone",
+        "Benefits for Ever",
+        "World 20",
+        "The National:",
+        "ineetligence in Action",
+        "Hello",
+        "BRUBRES",
+        "a Lim ia]"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/蚂蚁集团-1.JPG",
+        "materials/现场原始照片/蚂蚁集团-2.JPG",
+        "materials/现场原始照片/蚂蚁集团-3.JPG",
+        "materials/现场原始照片/蚂蚁集团-4.JPG",
+        "materials/现场原始照片/蚂蚁集团-5.JPG",
+        "materials/现场原始照片/蚂蚁集团-6.JPG",
+        "materials/现场原始照片/蚂蚁集团-总.JPG",
+        "materials/现场原始照片/蚂蚁集团.JPG"
+      ]
+    },
+    {
+      "company": "记忆张量（上海）科技有限公司 / MemTensor (Shanghai) Technology Co., Ltd",
+      "photos": [
+        "assets/photos/dc9781d07ee6d3.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Agent；MEMORY.；RRERER |；aces | fo, MemOS；[Agen Al #2) BEAR；Pn Memos",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/dc9781d07ee6d3.jpg"
+        }
+      ],
+      "ocrText": [
+        "Agent",
+        "MEMORY.",
+        "RRERER |",
+        "aces | fo, MemOS",
+        "[Agen Al #2) BEAR",
+        "Pn Memos"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/记忆张量.JPG"
+      ]
+    },
+    {
+      "company": "设集赛宇（上海）科技有限公司 / D.Universe (Shanghai) Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/8356acd36b4c27.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ships with NVIDIA Inception, Kickstarter, and Aptar, access to corporate R&D resources, an；portfolio companies have a combined valuation of over $3 billion,；by leading Chinese VCs and operating alongside Design Innovation It；building the innovation infrastructure for the Al economy.；\\d a vibrant innovation community. Its；D.Transformer is a Shanghai-based global incubator focused on Al-native technologies, climate tech, and wellness tech. Backed；53185 NVIDIA Inception, Kickstarter, Aptar 20+；Shanghai, it supports 80+ startups through partner-",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/8356acd36b4c27.jpg"
+        }
+      ],
+      "ocrText": [
+        "ships with NVIDIA Inception, Kickstarter, and Aptar, access to corporate R&D resources, an",
+        "portfolio companies have a combined valuation of over $3 billion,",
+        "by leading Chinese VCs and operating alongside Design Innovation It",
+        "building the innovation infrastructure for the Al economy.",
+        "\\d a vibrant innovation community. Its",
+        "D.Transformer is a Shanghai-based global incubator focused on Al-native technologies, climate tech, and wellness tech. Backed",
+        "53185 NVIDIA Inception, Kickstarter, Aptar 20+",
+        "Shanghai, it supports 80+ startups through partner-"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/设集赛宇.JPG"
+      ]
+    },
+    {
+      "company": "语核（上海）科技有限公司 / LangCore (Shanghai) Technology Co., Ltd",
+      "photos": [
+        "assets/photos/042748b0bfbf55.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "data analysis, content marketing, HR and more.；Intelligence:Workflows auto-convert to Skills, gets smarter with every use；LangHub: Enterprise Al Digital Employee Platform. Build and evolve Al digital employees across pre-sales, project management,；-Amplify Team Value:Expert knowledge shareable and reusable across your whole team；Output Delivery:Results as Office docs, integrated with |；Ready to Work from Day One:Learns your standards once — outputs: directly, no re-explaining；Trusted by leading enterprises10 Xx Faster Quoting | +300% Response Efficiency [95.7% Document Accuracyo；ju, | WeCom & DingTalk",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/042748b0bfbf55.jpg"
+        }
+      ],
+      "ocrText": [
+        "data analysis, content marketing, HR and more.",
+        "Intelligence:Workflows auto-convert to Skills, gets smarter with every use",
+        "LangHub: Enterprise Al Digital Employee Platform. Build and evolve Al digital employees across pre-sales, project management,",
+        "-Amplify Team Value:Expert knowledge shareable and reusable across your whole team",
+        "Output Delivery:Results as Office docs, integrated with |",
+        "Ready to Work from Day One:Learns your standards once — outputs: directly, no re-explaining",
+        "Trusted by leading enterprises10 Xx Faster Quoting | +300% Response Efficiency [95.7% Document Accuracyo",
+        "ju, | WeCom & DingTalk"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/LangCore.JPG"
+      ]
+    },
+    {
+      "company": "谷歌广告（上海）有限公司 / Google Information Technology (China) Company Limited",
+      "photos": [
+        "assets/photos/61f6e2370fbecd.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "AI 社会公益 · 情绪云",
+          "description": "摄像头捕捉观众微表情，由开放模型实时驱动，把内在情绪转化为可视化的动态“情绪云”。",
+          "evidence": "照片文字写明基于心理学“镜像”原理，并使用 Gemma 4 实时驱动。",
+          "photo": "assets/photos/61f6e2370fbecd.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "WA Gemma 4；EN “ERA” , Ra；AF aA. BHUES) MESS；“HR” GUE,；Hib, SER, HES)",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/61f6e2370fbecd.jpg"
+        }
+      ],
+      "ocrText": [
+        "WA Gemma 4",
+        "EN “ERA” , Ra",
+        "AF aA. BHUES) MESS",
+        "“HR” GUE,",
+        "Hib, SER, HES)"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/google-情绪云.JPG"
+      ]
+    },
+    {
+      "company": "软通动力信息技术（集团）股份有限公司 / iSoftStone Information Technology (Group) Company Limited",
+      "photos": [
+        "assets/photos/362a17c1455fbf.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/软通动力-总.JPG"
+      ]
+    },
+    {
+      "company": "长三角赵巷新兴产业经济发展（上海）有限公司 / Yangtze River Delta Hi-Tech Park",
+      "photos": [
+        "assets/photos/04992c8cc13d74.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Yangtze River；Delta Hi-Tech Park；Looking int Yl；CEC es",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/04992c8cc13d74.jpg"
+        }
+      ],
+      "ocrText": [
+        "Yangtze River",
+        "Delta Hi-Tech Park",
+        "Looking int Yl",
+        "CEC es"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/长三角绿洲智谷-总.JPG"
+      ]
+    },
+    {
+      "company": "长飞光纤光缆股份有限公司 / Yangtze Optical Fibre and Cable Joint Stock Limited Company",
+      "photos": [
+        "assets/photos/99eeb29989001d.jpg"
+      ],
+      "photoBusinessInfo": [],
+      "ocrText": [],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/YOFC-总.JPG"
+      ]
+    },
+    {
+      "company": "问问智能信息科技有限公司 / Mobvoi",
+      "photos": [
+        "assets/photos/ec709ef4482fc1.jpg",
+        "assets/photos/c5ba1520f07a73.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "ote with TicNote；TicNote；Take Note With Tichy",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/ec709ef4482fc1.jpg"
+        }
+      ],
+      "ocrText": [
+        "ote with TicNote",
+        "TicNote",
+        "Take Note With Tichy"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/出门问问-1.JPG",
+        "materials/现场原始照片/出门问问-总.JPG"
+      ]
+    },
+    {
+      "company": "阿里巴巴集团控股有限公司 / Alibaba Group Holding Limited",
+      "photos": [
+        "assets/photos/8c2fa5f3f146a4.jpg",
+        "assets/photos/f7da7b4d1ccf94.jpg",
+        "assets/photos/51b2659ff09a71.jpg",
+        "assets/photos/7feb7ca993b537.jpg",
+        "assets/photos/0becc2da2b3028.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "Know-how；HappyHorse 1.1；Qoder；Unleash Yo；ve Potent；inthe stories；aH wit；It Say",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/8c2fa5f3f146a4.jpg"
+        }
+      ],
+      "ocrText": [
+        "Know-how",
+        "HappyHorse 1.1",
+        "Qoder",
+        "Unleash Yo",
+        "ve Potent",
+        "inthe stories",
+        "aH wit",
+        "It Say"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/阿里巴巴-1.JPG",
+        "materials/现场原始照片/阿里巴巴-2.JPG",
+        "materials/现场原始照片/阿里巴巴-3.JPG",
+        "materials/现场原始照片/阿里巴巴-4.JPG",
+        "materials/现场原始照片/阿里巴巴-总.JPG"
+      ]
+    },
+    {
+      "company": "零零后（北京）科技有限公司 / AfterZero",
+      "photos": [
+        "assets/photos/f9315968000994.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "TRI.ME 吹了么",
+          "description": "把工业级七轴机械臂与具身智能视觉结合，自动跟踪头部姿态、规划路径并执行吹发及理容动作。",
+          "evidence": "照片展板写明设备可自动调整风口距离与角度，实现桌面级全自动吹发护理。",
+          "photo": "assets/photos/f9315968000994.jpg"
+        },
+        {
+          "title": "现场文字识别",
+          "description": "technology, creating a desktop robotic system capable of automatically tracking head post；hair drying and grooming tasks. Users do not ne；angle of the air outlet according to settings, achieving fully automated hair drying and care.；are that heavily rely on manual operation. The project；integrates the flexible configuration of an industrial-grade seven-axis robotic arm with cutting-e；lly adjust the distance and；lanning paths, and performing；ed to hold any device, as the robot can automatica",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/f9315968000994.jpg"
+        }
+      ],
+      "ocrText": [
+        "technology, creating a desktop robotic system capable of automatically tracking head post",
+        "hair drying and grooming tasks. Users do not ne",
+        "angle of the air outlet according to settings, achieving fully automated hair drying and care.",
+        "are that heavily rely on manual operation. The project",
+        "integrates the flexible configuration of an industrial-grade seven-axis robotic arm with cutting-e",
+        "lly adjust the distance and",
+        "lanning paths, and performing",
+        "ed to hold any device, as the robot can automatica"
+      ],
+      "match_basis": "filename alias or visible booth/company text",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/IMG_9728.JPG"
+      ]
+    },
+    {
+      "company": "魔法原子机器人科技（无锡）有限公司 / MagicLab Robotics Technology (Wuxi) Co., Ltd",
+      "photos": [
+        "assets/photos/41b6a4120354b4.jpg",
+        "assets/photos/b087daff41e148.jpg",
+        "assets/photos/682b8c328b0077.jpg",
+        "assets/photos/bff589662eaeda.jpg",
+        "assets/photos/13b66901e83054.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "TARR se Smart Logistics；maciclab",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/41b6a4120354b4.jpg"
+        }
+      ],
+      "ocrText": [
+        "TARR se Smart Logistics",
+        "maciclab"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/魔法原子-1.JPG",
+        "materials/现场原始照片/魔法原子-2.JPG",
+        "materials/现场原始照片/魔法原子-3.JPG",
+        "materials/现场原始照片/魔法原子-4.JPG",
+        "materials/现场原始照片/魔法原子.JPG"
+      ]
+    },
+    {
+      "company": "黑芝麻智能 / Black Sesame Technologies",
+      "photos": [
+        "assets/photos/2dd4e70fd60d58.jpg"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场文字识别",
+          "description": "SaMe.com；fay 7 Aik；seit SF",
+          "evidence": "现场照片 OCR 自动识别结果，建议结合原图核对。",
+          "photo": "assets/photos/2dd4e70fd60d58.jpg"
+        }
+      ],
+      "ocrText": [
+        "SaMe.com",
+        "fay 7 Aik",
+        "seit SF"
+      ],
+      "match_basis": "photo filename or directory name",
+      "confidence": "high",
+      "originalPhotos": [
+        "materials/现场原始照片/黑芝麻智能/黑芝麻智能-总.JPG"
+      ]
+    },
+    {
+      "company": "俄罗斯人工智能联盟 / AI Alliance Russia",
+      "photos": [
+        "assets/photos/018b1331f0a22c.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/AI devices.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "AI Devices与Physical AI俄罗斯生态展台",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/018b1331f0a22c.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "埃夫特智能机器人股份有限公司 / EFORT Intelligent Robot Co., Ltd.",
+      "photos": [
+        "assets/photos/101d07abb90e11.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/EFORT.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "EFORT工业机器人与工业具身智能展台",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/101d07abb90e11.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "香港科技展团 / Hong Kong Tech Pavilion",
+      "photos": [
+        "assets/photos/9bb50482aae50c.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/hongkong tech.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "香港科技展团联合展台",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/9bb50482aae50c.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "北京萌友智能科技有限公司 / Beijing Mengyou Intelligent Technology Co., Ltd.",
+      "photos": [
+        "assets/photos/836e31f600bd75.jpg",
+        "assets/photos/0f91716171891a.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/ropet｜肉派派-1.JPG",
+        "materials/现场原始照片/ropet｜肉派派-2.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "ROPET AI情感陪伴宠物机器人",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/836e31f600bd75.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "沈阳二一三电子科技有限公司 / ELYSAN TECHNOLOGY",
+      "photos": [
+        "assets/photos/fab721e4fc23db.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/二一三科技.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "ELYSAN轨交智能安防与行为分析方案",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/fab721e4fc23db.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "上海云生未来技术集团有限公司 / YUANSHENG Group",
+      "photos": [
+        "assets/photos/35c66e1e38e11d.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/云生集团.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "WorkBP企业级AI Agent平台",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/35c66e1e38e11d.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "深圳市优必选科技股份有限公司 / UBTECH Robotics Corp Ltd.",
+      "photos": [
+        "assets/photos/7d4abb82b1d0c6.jpg",
+        "assets/photos/f8a5e2eaa47f98.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/优必选-1.JPG",
+        "materials/现场原始照片/优必选-2.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "AI悟空与萌UU AI潮玩陪伴机器人",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/7d4abb82b1d0c6.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "华光宏（杭钢集团自主算力装备品牌） / HGH",
+      "photos": [
+        "assets/photos/bbb992ec321309.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/华光宏-总.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "华光宏国产算力装备展台",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/bbb992ec321309.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "苏州卓誉电气技术有限公司 / JOY-MOTION",
+      "photos": [
+        "assets/photos/f8b07bb7db84da.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/卓誉科技.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "具身人形机器人核心零部件与关节模组",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/f8b07bb7db84da.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "上海得像科技有限公司 / SHANGHAI DEXIANG TECHNOLOGY Co., LTD.",
+      "photos": [
+        "assets/photos/edd628468b5502.jpg",
+        "assets/photos/5bf110a0537e4f.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/智师益友-1.JPG",
+        "materials/现场原始照片/智师益友-总.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "智师益友AI教练与人才赋能方案",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/edd628468b5502.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "枭兔科技（深圳）有限公司 / Xiaotu Technology (Shenzhen) Co., Ltd.",
+      "photos": [
+        "assets/photos/8aa694ef239034.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/枭兔科技.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "NYX游戏化数字健康分身",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/8aa694ef239034.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "深圳市福田区人工智能产业展团 / Futian AI Industry Cluster",
+      "photos": [
+        "assets/photos/4def839c9df562.jpg",
+        "assets/photos/7a79bae9a06c5a.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/深圳福田-1.JPG",
+        "materials/现场原始照片/深圳福田-总.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "深圳福田AI产业集群与Flyelep AI现场方案",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/4def839c9df562.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "开势潜脑（上海）智能科技有限公司 / QMindTech",
+      "photos": [
+        "assets/photos/26bcdfbfe188a5.jpg",
+        "assets/photos/9cc7d4c4be356e.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/潜脑科技-1.JPG",
+        "materials/现场原始照片/潜脑科技-2.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "临床脑电智能监护与非侵入式脑机接口",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/26bcdfbfe188a5.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "上海相加信息科技有限公司 / LinksAI",
+      "photos": [
+        "assets/photos/ca72cfdb8393bb.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/相加智能.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "仿生机器人头部与主动式多模态交互",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/ca72cfdb8393bb.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "北京飞驰星辰科技有限公司 / SpeedAI",
+      "photos": [
+        "assets/photos/baf9c0160dda25.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/科搭codar.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "Codar 24小时AI科研搭子",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/baf9c0160dda25.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "无锡蔚瀚智能科技有限公司 / WE HARMONY",
+      "photos": [
+        "assets/photos/c58141a6677d9f.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/蔚瀚.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "精密谐波减速器与机器人关节执行器",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/c58141a6677d9f.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "西岑科创园区 / Xicen Science and Innovation Park",
+      "photos": [
+        "assets/photos/9383279253b1a4.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/西岑科创小镇-总.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "西岑科创园区联合展示",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/9383279253b1a4.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "金蝶软件（中国）有限公司 / Kingdee Software (China) Co., Ltd.",
+      "photos": [
+        "assets/photos/9a028652cad2ab.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/金蝶-总.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "金蝶企业级AI管理方案",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/9a028652cad2ab.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    },
+    {
+      "company": "首形科技（上海）有限公司 / AheadForm",
+      "photos": [
+        "assets/photos/55c54781f34209.jpg"
+      ],
+      "originalPhotos": [
+        "materials/现场原始照片/首形.JPG"
+      ],
+      "venues": [
+        "世博展览馆"
+      ],
+      "photoBusinessInfo": [
+        {
+          "title": "现场展示",
+          "description": "Origin F1超仿生情感交互机器人",
+          "evidence": "用户拍摄的WAIC 2026现场照片。",
+          "photo": "assets/photos/55c54781f34209.jpg"
+        }
+      ],
+      "match_basis": "reviewed filename and visible booth/company text",
+      "confidence": "high"
+    }
+  ],
+  "unmatched": [
+    {
+      "group": "展会-总",
+      "photos": [
+        "materials/现场原始照片/展会-总/展会-总-2.JPG",
+        "materials/现场原始照片/展会-总/展会-总.JPG"
+      ],
+      "reason": "no company-name match",
+      "ocrText": [
+        "Membership Access Lane",
+        "Badge Access Lane",
+        "2026 WORLD Al CONFERENCE & HIGH-LEVEL MEETING ON GLOBAL Al GOVERNANCE",
+        "Ticket Lane",
+        "Al GOVERNANC",
+        "Al A ail FOR A BRIGHTER ae"
+      ]
+    }
+  ],
+  "summary": {
+    "sourcePhotoCount": 319,
+    "matchedPhotoCount": 322,
+    "matchedCompanyCount": 185,
+    "businessInfoCompanyCount": 156,
+    "ocrTextCompanyCount": 134,
+    "unmatchedPhotoCount": 2,
+    "externalPhotoCount": 6,
+    "externalPhotoCompanyCount": 3
+  }
+}

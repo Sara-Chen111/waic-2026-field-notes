@@ -1,0 +1,491 @@
+{
+  "eyebrow": "SARA / WAIC 2026 FIELD NOTES",
+  "title": "WAIC 2026 参展心得",
+  "dek": "从具身智能的微操作与仿生化，到国家队、陪伴硬件、Agent 辅助工具与直接竞品：这是一份基于 WAIC 2026 现场观察的产品笔记。",
+  "date": "2026.07",
+  "hero": {
+    "src": "/media/insights/images/01-agibot-tea.webp",
+    "alt": "WAIC 2026 现场，智元机器人进行沏茶演示"
+  },
+  "chapters": [
+    {
+      "title": "个人视角：相比 2025 WAIC 的变化",
+      "intro": "今年最明显的变化，不只是展品更多，而是具身智能的精细度、行业力量的构成，以及 AI 工具进入现实工作的方式都在发生变化。",
+      "sections": [
+        {
+          "kicker": "具身智能 / 微操作",
+          "heading": "精细操作开始进入日常场景",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "具身智能在两个方向上明显提升：微操作与仿真。"
+            },
+            {
+              "type": "paragraph",
+              "text": "微操作层面，机器人操作的精细度变高，例如宇树灵巧手、智元机器人；同时出现了更多日常生活场景应用。现场最直观的三个演示，是智元机器人沏茶、智元机器人拧气球，以及优理奇机器人制作糖画。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/01-agibot-tea.webp",
+              "alt": "智元机器人在 WAIC 现场沏茶",
+              "caption": "智元机器人｜沏茶",
+              "aspect": "landscape"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/02-agibot-balloon.webp",
+              "alt": "智元机器人在 WAIC 现场拧气球",
+              "caption": "智元机器人｜拧气球",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/03-unixai-sugar-painting.webp",
+              "alt": "优理奇机器人在 WAIC 现场制作糖画",
+              "caption": "优理奇｜糖画",
+              "aspect": "portrait"
+            },
+            {
+              "type": "video",
+              "src": "/media/insights/video/agibot-balloon.mp4",
+              "poster": "/media/insights/video/agibot-balloon-poster.jpg",
+              "alt": "智元机器人拧气球演示视频",
+              "caption": "现场视频｜智元机器人拧气球",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0456", "exhibitor-0520"]
+        },
+        {
+          "kicker": "具身智能 / 仿生",
+          "heading": "仿生机器人的精细度明显提高",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "今年展出的仿生机器人精细度非常高。首形、云幕智造和数字华夏从不同形态展示了外观、表情与交互精度的提升。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/04-aheadform-origin-f1.webp",
+              "alt": "首形科技 Origin F1 超仿生机器人",
+              "caption": "首形｜Origin F1",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/05-yunmu-bionic-robot.webp",
+              "alt": "云幕智造仿生机器人现场展示",
+              "caption": "云幕智造｜仿生机器人",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/06-digit-bionic-robot.webp",
+              "alt": "数字华夏戏曲仿生机器人现场展示",
+              "caption": "数字华夏｜戏曲仿生机器人",
+              "aspect": "portrait"
+            },
+            {
+              "type": "video",
+              "src": "/media/insights/video/aheadform-origin-f1.mp4",
+              "poster": "/media/insights/video/aheadform-origin-f1-poster.jpg",
+              "alt": "首形科技 Origin F1 超仿生机器人演示视频",
+              "caption": "现场视频｜首形 Origin F1",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0979", "exhibitor-0637", "exhibitor-0473"]
+        },
+        {
+          "kicker": "展商结构",
+          "heading": "今年有很多“国家队”加入",
+          "blocks": [
+            {
+              "type": "list",
+              "items": [
+                "中国气象局：正式发布“妈祖”风云卫星 AI 工具箱，将风云气象卫星综合观测能力与 AI 技术深度融合，为国际用户提供一体化卫星应用解决方案。",
+                "国家电网：设计序章、国之大者、能源变革、绿色担当、人民至上、生态及未来展望六大板块，展示人工智能与能源电力的深度融合。",
+                "中国南方电网：围绕“让每一度电都有 AI”的主题进行展示。"
+              ]
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0922", "exhibitor-0787", "exhibitor-0788"]
+        },
+        {
+          "kicker": "陪伴硬件",
+          "heading": "陪伴类毛绒玩偶展商大幅下降",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "去年这一类可谓百花齐放，有不少公司使用大展台；今年只在一些集合类型的展台里看到相关内容。现场较有代表性的产品包括萌 UU、Luka 和肉派派。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/07-ubtech-menguu.webp",
+              "alt": "优必选萌 UU AI 潮玩陪伴机器人",
+              "caption": "优必选｜萌 UU",
+              "aspect": "landscape"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/08-lingverse-luka.webp",
+              "alt": "灵宇宙 Luka 陪伴机器人",
+              "caption": "灵宇宙｜Luka",
+              "aspect": "landscape"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/09-ropet-companion.webp",
+              "alt": "ROPET 肉派派 AI 宠物机器人",
+              "caption": "ROPET｜肉派派",
+              "aspect": "landscape"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0968", "exhibitor-0634", "exhibitor-0965"]
+        },
+        {
+          "kicker": "Agent 工具",
+          "heading": "围绕 Claude Code、Codex 衍生的辅助工具",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "这三个产品切入的是不同需求："
+            },
+            {
+              "type": "list",
+              "items": [
+                "SlashVibe：多 Agent 工作时，用独立页面显示进度，需要配合电脑使用。",
+                "Disbrief：随身、即时地快速调动 Agent，无需配合电脑使用。",
+                "VibeKeys：通过快捷按键操作编码 Agent，需要配合电脑使用。"
+              ]
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/10-slashvibe-control-surface.webp",
+              "alt": "自然映射展台的 SlashVibe AI 控制终端",
+              "caption": "SlashVibe｜多 Agent 进度与控制界面",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/11-disbrief-device.webp",
+              "alt": "Disbrief 随身 Agent 调度设备介绍",
+              "caption": "Disbrief｜随身调动 Agent",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/12-vibekeys-keyboard.webp",
+              "alt": "VibeKeys AI 编程键盘",
+              "caption": "VibeKeys｜AI 编程快捷键盘",
+              "fit": "contain",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0645", "exhibitor-0854", "exhibitor-0222"],
+          "featuredPhotoIndexes": { "exhibitor-0645": 1 }
+        }
+      ]
+    },
+    {
+      "title": "精灵魔法棒直接竞品",
+      "intro": "学习机类、陪伴类产品，例如灵宇宙、卢卡博士等，我们内部已经购买并体验过，这里不再展开，重点记录三款更值得继续跟踪的产品。",
+      "sections": [
+        {
+          "kicker": "AI 宠物机器人",
+          "heading": "肉派派：把陪伴、感知与成长性装进毛绒外壳",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "实际售价 $339。截至本次整理，官网有 170 条评价、4.79 星；Amazon 有 34 条评价、4.5 星。"
+            },
+            {
+              "type": "paragraph",
+              "text": "产品卖点："
+            },
+            {
+              "type": "list",
+              "items": [
+                "视觉识别：能“看见”用户，识别手势与表情。",
+                "多模态交互：通过语音、触摸和手势唤起反应。",
+                "情感 AI 引擎：推断情绪并给予回应。",
+                "性格随陪伴成长，形成独一无二的互动体验。",
+                "本地离线 AI，默认保护隐私。",
+                "毛绒可拥抱，并带有温度。",
+                "可更换毛皮、面罩、眼睛和衣服。",
+                "没有宠物的脏乱、噪音与过敏问题。"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "时间节奏：2024 年 12 月 12 日至 2025 年 1 月 21 日完成众筹，金额 $2,435,311；众筹页显示 2025 年 3 月发货，官网显示 2025 年 6 月 19 日正式上架。"
+            }
+          ],
+          "links": [
+            {
+              "label": "肉派派独立站",
+              "url": "https://ropetai.com/products/ropet%E2%84%A2-ai-comfort-companion-plush-robot"
+            },
+            {
+              "label": "Kickstarter 众筹页面",
+              "url": "https://www.kickstarter.com/projects/1067657324/ropet-your-next-generation-ai-robot-pet?ref=backertracker&utm_medium=web&utm_source=backerkit"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/13-ropet-brochure.webp",
+              "alt": "肉派派 AI 宠物机器人产品宣传册封面与参数",
+              "caption": "肉派派｜产品定位与参数",
+              "fit": "contain",
+              "aspect": "landscape"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/14-ropet-product.webp",
+              "alt": "肉派派 AI 宠物机器人产品能力宣传册",
+              "caption": "肉派派｜感知、记忆与换装能力",
+              "fit": "contain",
+              "aspect": "landscape"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/15-ropet-kickstarter.webp",
+              "alt": "肉派派 Kickstarter 众筹页面截图",
+              "caption": "Kickstarter｜累计筹款 $2,435,311",
+              "fit": "contain",
+              "aspect": "landscape"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0965"]
+        },
+        {
+          "kicker": "亲子共用成长伙伴",
+          "heading": "Starfy 星仔：孩子和家长都能用",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "今年 7 月在小红书正式发售，定价 ¥399，目前已售 130。产品强调家庭级专属记忆、知识与表达训练、习惯养成、情绪陪伴和成长守护。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/16-starfy-positioning.webp",
+              "alt": "Starfy 星仔亲子共用成长伙伴定位介绍",
+              "caption": "Starfy 星仔｜亲子共用的成长伙伴",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/17-starfy-product.webp",
+              "alt": "Starfy 星仔与其他 AI 玩偶的功能对比",
+              "caption": "Starfy 星仔｜家庭记忆、成长助力与守护公约",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/18-starfy-launch.webp",
+              "alt": "Starfy 星仔孩子端四类成长场景介绍",
+              "caption": "Starfy 星仔｜孩子端四类成长场景",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/19-starfy-sales.webp",
+              "alt": "Starfy 星仔家长端四个亲子陪伴场景介绍",
+              "caption": "Starfy 星仔｜家长端四个真实场景",
+              "fit": "contain",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0136"]
+        },
+        {
+          "kicker": "AI 放大镜",
+          "heading": "百问兔兔：在探索中养成好品格",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "目前还没有正式上架。产品通过 AI 放大镜给小朋友讲解真实世界，例如从水果由来延伸到感谢果农，把知识讲解与品格引导结合起来。"
+            },
+            {
+              "type": "paragraph",
+              "text": "营销参考：今年 6 月 29 日在商场举办昆虫展联合活动，让孩子在真实场景里体验产品。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/20-knonii-booth.webp",
+              "alt": "上海绒音科技百问兔兔 WAIC 展台合影",
+              "caption": "百问兔兔｜WAIC 展台",
+              "aspect": "landscape"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/21-knonii-product.webp",
+              "alt": "百问兔兔星钥 AI 儿童放大镜实机",
+              "caption": "百问兔兔｜星钥 AI 儿童放大镜 X1",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/22-knonii-demo.webp",
+              "alt": "百问兔兔 AI 放大镜与世界昆虫展联合活动海报",
+              "caption": "百问兔兔｜世界昆虫展联合活动",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/23-knonii-insect-event.webp",
+              "alt": "百问兔兔昆虫展产品共创邀请",
+              "caption": "百问兔兔｜昆虫展共创活动",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/24-knonii-event-detail.webp",
+              "alt": "百问兔兔昆虫展联合活动信息",
+              "caption": "百问兔兔｜商场联合活动",
+              "fit": "contain",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0164"]
+        }
+      ]
+    },
+    {
+      "title": "其他值得关注的产品",
+      "intro": "除了直接竞品，现场还有几类方案对产品落地、银发健康与医疗监护具有参考价值。",
+      "sections": [
+        {
+          "kicker": "整合方案解决商",
+          "heading": "广和通：从模组到 AI 产品商业落地",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "在整合方案商的宣传材料里，这套方案与我们的需求最适配。除了 AI 陪伴，广和通也有割草机器人业务，整体分为无线通信、AI + 机器人、智能汽车三大业务板块。其他方案可继续通过宣传册或网站浏览。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/25-fibocom-solution.webp",
+              "alt": "广和通 AI 陪伴解决方案封面",
+              "caption": "广和通｜AI 陪伴解决方案",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/26-fibocom-wireless.webp",
+              "alt": "广和通 AI 陪伴方案架构",
+              "caption": "广和通｜方案架构",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/27-fibocom-robotics.webp",
+              "alt": "广和通软硬件端云一体化方案",
+              "caption": "广和通｜端云一体化",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/28-fibocom-smart-auto.webp",
+              "alt": "广和通 AI Cloud 管理编排平台",
+              "caption": "广和通｜AI Cloud 管理编排",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/29-fibocom-product-stack.webp",
+              "alt": "广和通 AI 方案差异化核心竞争力",
+              "caption": "广和通｜核心竞争力",
+              "fit": "contain",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/30-fibocom-brochure.webp",
+              "alt": "广和通全场景 AI 陪伴案例",
+              "caption": "广和通｜全场景案例",
+              "fit": "contain",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0431"]
+        },
+        {
+          "kicker": "银发经济",
+          "heading": "ReCOgnAIze：AI 认知健康评估平台",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "让认知健康筛查更容易融入日常医疗和预防管理。银发经济是个好市场，而整个展会上这一方向的产品相对较少。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/31-recognize-platform.webp",
+              "alt": "Gray Matter Solutions 的 ReCOgnAIze AI 认知健康评估平台展板",
+              "caption": "ReCOgnAIze｜AI 认知健康评估平台",
+              "fit": "contain",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0709"]
+        },
+        {
+          "kicker": "临床监护",
+          "heading": "潜脑科技：临床脑电智能监护",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "通过脑电波实时监测病人的各项数据指标。传统场景主要依赖护士定时巡查，连续脑电监护为异常识别和及时干预提供了新的路径。"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "/media/insights/images/32-qmindtech-booth.webp",
+              "alt": "潜脑科技临床脑电智能监护展台",
+              "caption": "潜脑科技｜临床脑电监护现场",
+              "aspect": "portrait"
+            },
+            {
+              "type": "image",
+              "src": "/media/insights/images/33-qmindtech-monitor.webp",
+              "alt": "潜脑科技脑电监护系统界面与设备",
+              "caption": "潜脑科技｜监护设备与数据界面",
+              "aspect": "portrait"
+            }
+          ],
+          "featuredExhibitorIds": ["exhibitor-0973"]
+        }
+      ]
+    }
+  ]
+}

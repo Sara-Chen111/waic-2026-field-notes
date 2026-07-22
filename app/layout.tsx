@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  title: "WAIC 2026 · 展会浏览档案",
-  description: "2026 WAIC 参展商、展馆、行业分类与现场影像在线浏览档案。",
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
+  title: { default: "WAIC 2026", template: "%s | WAIC 2026" },
+  description: "WAIC 2026 展商档案、现场观察与展商速查。",
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({
@@ -17,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
