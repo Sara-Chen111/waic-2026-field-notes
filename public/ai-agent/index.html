@@ -369,6 +369,21 @@ body {
   border: 1px dashed var(--ink); pointer-events: none;
 }
 .intro-strip-sub { font-family: 'Caveat',cursive; font-size: 26px; color: var(--red-ink); transform: rotate(-1deg); display: inline-block; }
+.asset-disclosure {
+  width: min(760px, calc(100% - 48px));
+  margin: 0 auto 36px;
+  padding: 14px 18px;
+  border: 1px solid rgba(200, 84, 42, 0.24);
+  color: var(--ink-soft);
+  background: rgba(200, 84, 42, 0.06);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+}
+.asset-disclosure strong {
+  color: var(--accent-deep);
+}
 
 /* ========== REELS ========== */
 .reels { padding: 60px 0 160px; position: relative; }
@@ -686,10 +701,13 @@ body {
 .tool-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
 .tool-card-logo {
   height: 80px; display: flex; align-items: center; justify-content: center;
-  padding: 12px 20px; background: var(--paper-deep);
+  padding: 0; background: var(--paper-deep);
   border-bottom: 1px solid var(--paper-edge);
 }
-.tool-card-logo img { height: 56px; width: auto; object-fit: contain; }
+.tool-card-logo img { width: 100%; height: 100%; object-fit: cover; }
+.tools-cards-row .tool-card:nth-child(1) .tool-card-logo img { object-position: left center; }
+.tools-cards-row .tool-card:nth-child(2) .tool-card-logo img { object-position: center; }
+.tools-cards-row .tool-card:nth-child(3) .tool-card-logo img { object-position: right center; }
 .tool-card-body { padding: 16px 18px; }
 .tool-card-company {
   font-family: 'IBM Plex Mono', monospace; font-size: 12px;
@@ -1093,10 +1111,16 @@ body {
   cursor: not-allowed;
 }
 .frame.asset-unavailable .frame-img::after {
-  opacity: 1;
+  opacity: 0;
   background: rgba(17, 16, 9, 0.88);
   content: "演示文件未随 HTML 附带";
 }
+.frame.asset-unavailable:hover .frame-img::after {
+  opacity: 1;
+}
+.film-strip .frame:nth-child(3n + 1) .frame-img img { object-position: left center; }
+.film-strip .frame:nth-child(3n + 2) .frame-img img { object-position: center; }
+.film-strip .frame:nth-child(3n) .frame-img img { object-position: right center; }
 </style>
 </head>
 <body>
@@ -1369,8 +1393,11 @@ body {
       AI 就像我的<em>助手</em>，<br>
       把我从收集整理的工作中解放出来，<br>把更多精力放在<span class="hl">思考、复盘和迭代</span>上。
     </h2>
-    <div class="intro-strip-sub">↓ 每一卷，是一个真实项目。每一格，是一个真实瞬间。</div>
+    <div class="intro-strip-sub">↓ 每一卷，是一个真实项目。配图为 AI 生成示意。</div>
   </section>
+  <div class="asset-disclosure">
+    <strong>素材说明：</strong>原始图片未随 HTML 文件附带，页面配图由 AI 生成，仅用于表达工作场景，不代表真实界面、数据或项目原始截图。
+  </div>
 
   <!-- ══════════════ TOOLS SECTION ══════════════ -->
   <section class="tools-section" id="tools" style="scroll-margin-top:60px;">
@@ -1402,7 +1429,7 @@ body {
         <!-- Anthropic / Claude Code -->
         <div class="tool-card featured">
           <div class="tool-card-logo">
-            <img src="图标logo/anthropic图标.png" alt="Anthropic Claude Code">
+            <img src="assets/generated/tools.webp" alt="AI 工具协作示意图">
           </div>
           <div class="tool-card-body">
             <div class="tool-card-company">Anthropic（An-thro-pic）</div>
@@ -1415,7 +1442,7 @@ body {
         <!-- OpenAI / Codex -->
         <div class="tool-card">
           <div class="tool-card-logo">
-            <img src="图标logo/codex图标.png" alt="OpenAI Codex">
+            <img src="assets/generated/tools.webp" alt="AI 工具协作示意图">
           </div>
           <div class="tool-card-body">
             <div class="tool-card-company">OpenAI</div>
@@ -1427,7 +1454,7 @@ body {
         <!-- Google / Gemini CLI -->
         <div class="tool-card">
           <div class="tool-card-logo">
-            <img src="图标logo/gemini徒步奥.png" alt="Google Gemini">
+            <img src="assets/generated/tools.webp" alt="AI 工具协作示意图">
           </div>
           <div class="tool-card-body">
             <div class="tool-card-company">Google</div>
@@ -1516,27 +1543,27 @@ body {
           <div class="film-strip" id="strip-r1">
             <div class="film-edge-text"><span>陈娴 × AI · 35mm · AMAZON DATA</span><span>R01-A</span></div>
 
-            <div class="frame" data-lightbox data-src="amazon/amaozn原始数据表.png" data-caption="<strong>原始数据</strong> · 14个类目 XLSX 原始表格，AI 自动整合">
+            <div class="frame" data-lightbox data-src="assets/generated/amazon-analysis.webp" data-caption="<strong>原始数据</strong> · 14个类目 XLSX 原始表格，AI 自动整合">
               <div class="frame-num"><span>01</span><span>YNT</span></div>
-              <div class="frame-img"><img src="amazon/amaozn原始数据表.png" alt="Amazon原始数据表" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/amazon-analysis.webp" alt="Amazon 品类分析 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>原始数据</strong> · 14 个类目表格</div>
             </div>
 
-            <div class="frame has-link" data-html-link data-href="amazon/amazon-品类地图.html" data-src="amazon/品类市场总览图.png" data-caption="<strong>品类地图</strong> · AI 生成可交互 HTML 页面 · 点击可打开">
+            <div class="frame has-link" data-html-link data-href="amazon/amazon-品类地图.html" data-src="assets/generated/amazon-analysis.webp" data-caption="<strong>品类地图</strong> · AI 生成可交互 HTML 页面 · 点击可打开">
               <div class="frame-num"><span>02</span><span>YNT</span></div>
-              <div class="frame-img"><img src="amazon/品类市场总览图.png" alt="品类市场总览图" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/amazon-analysis.webp" alt="Amazon 品类分析 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>品类地图 HTML</strong> · 点击打开 ↗</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="amazon/销售额趋势图.png" data-caption="<strong>销售额趋势</strong> · AI 自动生成可视化图表">
+            <div class="frame" data-lightbox data-src="assets/generated/amazon-analysis.webp" data-caption="<strong>销售额趋势</strong> · AI 自动生成可视化图表">
               <div class="frame-num"><span>03</span><span>YNT</span></div>
-              <div class="frame-img"><img src="amazon/销售额趋势图.png" alt="销售额趋势图" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/amazon-analysis.webp" alt="Amazon 品类分析 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>销售额趋势</strong> · AI 自动可视化</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="amazon/分析报告.png" data-caption="<strong>分析报告</strong> · 数据整合完成后的结构化报告">
+            <div class="frame" data-lightbox data-src="assets/generated/amazon-analysis.webp" data-caption="<strong>分析报告</strong> · 数据整合完成后的结构化报告">
               <div class="frame-num"><span>04</span><span>YNT</span></div>
-              <div class="frame-img"><img src="amazon/分析报告.png" alt="分析报告" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/amazon-analysis.webp" alt="Amazon 品类分析 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>分析报告</strong> · 结构化产出</div>
             </div>
 
@@ -1578,33 +1605,33 @@ body {
           <div class="film-strip" id="strip-r2">
             <div class="film-edge-text"><span>陈娴 × AI · 35mm · REDDIT SCRAPER</span><span>R02-A</span></div>
 
-            <div class="frame" data-lightbox data-src="reddit数据/subreddit爬虫脚本.png" data-caption="<strong>爬虫脚本</strong> · AI 自动编写 · 抓取 subreddit hot Top100 帖子+评论+点赞数">
+            <div class="frame" data-lightbox data-src="assets/generated/reddit-research.webp" data-caption="<strong>爬虫脚本</strong> · AI 自动编写 · 抓取 subreddit hot Top100 帖子+评论+点赞数">
               <div class="frame-num"><span>01</span><span>YNT</span></div>
-              <div class="frame-img"><img src="reddit数据/subreddit爬虫脚本.png" alt="爬虫脚本" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/reddit-research.webp" alt="社区评论研究 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>爬虫脚本</strong> · AI 自动编写</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="reddit数据/各种数据分析脚本.png" data-caption="<strong>分析脚本</strong> · AI 自动写多个打标、统计、聚类脚本">
+            <div class="frame" data-lightbox data-src="assets/generated/reddit-research.webp" data-caption="<strong>分析脚本</strong> · AI 自动写多个打标、统计、聚类脚本">
               <div class="frame-num"><span>02</span><span>YNT</span></div>
-              <div class="frame-img"><img src="reddit数据/各种数据分析脚本.png" alt="各种数据分析脚本" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/reddit-research.webp" alt="社区评论研究 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>分析脚本</strong> · 打标 + 聚类</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="reddit数据/各个ai分析结果（多轮验证作证）.png" data-caption="<strong>多模型验证</strong> · Claude / GPT / 智谱 多轮跑，交叉验证结果">
+            <div class="frame" data-lightbox data-src="assets/generated/reddit-research.webp" data-caption="<strong>多模型验证</strong> · Claude / GPT / 智谱 多轮跑，交叉验证结果">
               <div class="frame-num"><span>03</span><span>YNT</span></div>
-              <div class="frame-img"><img src="reddit数据/各个ai分析结果（多轮验证作证）.png" alt="多轮验证结果" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/reddit-research.webp" alt="社区评论研究 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>多模型交叉验证</strong></div>
             </div>
 
-            <div class="frame" data-lightbox data-src="reddit数据/reddit分析报告.png" data-caption="<strong>分析报告</strong> · 结构化洞察输出">
+            <div class="frame" data-lightbox data-src="assets/generated/reddit-research.webp" data-caption="<strong>分析报告</strong> · 结构化洞察输出">
               <div class="frame-num"><span>04</span><span>YNT</span></div>
-              <div class="frame-img"><img src="reddit数据/reddit分析报告.png" alt="Reddit分析报告" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/reddit-research.webp" alt="社区评论研究 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>分析报告</strong> · 洞察输出</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="reddit数据/洞察结果-父母端.png" data-caption="<strong>最终洞察</strong> · 父母端痛点 · 直接支撑 MRD">
+            <div class="frame" data-lightbox data-src="assets/generated/reddit-research.webp" data-caption="<strong>最终洞察</strong> · 父母端痛点 · 直接支撑 MRD">
               <div class="frame-num"><span>05</span><span>YNT</span></div>
-              <div class="frame-img"><img src="reddit数据/洞察结果-父母端.png" alt="洞察结果-父母端" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/reddit-research.webp" alt="社区评论研究 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>父母端洞察</strong> · MRD 核心依据</div>
             </div>
 
@@ -1646,21 +1673,21 @@ body {
           <div class="film-strip" id="strip-r3">
             <div class="film-edge-text"><span>陈娴 × AI · 35mm · MRD RESEARCH</span><span>R03-A</span></div>
 
-            <div class="frame" data-lightbox data-src="信息收集/美国学制+夏令营信息.png" data-caption="<strong>美国学制 + 夏令营</strong> · 目标市场儿童成长路径研究">
+            <div class="frame" data-lightbox data-src="assets/generated/knowledge-research.webp" data-caption="<strong>美国学制 + 夏令营</strong> · 目标市场儿童成长路径研究">
               <div class="frame-num"><span>01</span><span>YNT</span></div>
-              <div class="frame-img"><img src="信息收集/美国学制+夏令营信息.png" alt="美国学制+夏令营信息" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/knowledge-research.webp" alt="产品信息收集 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>美国学制 + 夏令营</strong></div>
             </div>
 
-            <div class="frame" data-lightbox data-src="信息收集/竞品dex全部评论分析.png" data-caption="<strong>竞品评论全量分析</strong> · DEX 全部用户评论 AI 聚类">
+            <div class="frame" data-lightbox data-src="assets/generated/knowledge-research.webp" data-caption="<strong>竞品评论全量分析</strong> · DEX 全部用户评论 AI 聚类">
               <div class="frame-num"><span>02</span><span>YNT</span></div>
-              <div class="frame-img"><img src="信息收集/竞品dex全部评论分析.png" alt="竞品dex全部评论分析" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/knowledge-research.webp" alt="产品信息收集 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>竞品评论分析</strong> · DEX</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="信息收集/社会心理学理论搜集.png" data-caption="<strong>社会心理学理论</strong> · 产品设计理论依据收集">
+            <div class="frame" data-lightbox data-src="assets/generated/knowledge-research.webp" data-caption="<strong>社会心理学理论</strong> · 产品设计理论依据收集">
               <div class="frame-num"><span>03</span><span>YNT</span></div>
-              <div class="frame-img"><img src="信息收集/社会心理学理论搜集.png" alt="社会心理学理论搜集" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/knowledge-research.webp" alt="产品信息收集 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>社会心理学理论</strong> · 理论支撑</div>
             </div>
 
@@ -1702,27 +1729,27 @@ body {
           <div class="film-strip" id="strip-r4">
             <div class="film-edge-text"><span>陈娴 × AI · 35mm · AGENT AUTO</span><span>R04-A</span></div>
 
-            <div class="frame" data-lightbox data-src="Arb Agent实践/初始需求.png" data-caption="<strong>四位同事的需求</strong> · 素材下载自动化">
+            <div class="frame" data-lightbox data-src="assets/generated/agent-automation.webp" data-caption="<strong>四位同事的需求</strong> · 素材下载自动化">
               <div class="frame-num"><span>01</span><span>YNT</span></div>
-              <div class="frame-img"><img src="Arb Agent实践/初始需求.png" alt="初始需求" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/agent-automation.webp" alt="Agent 自动化工作流 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>四位同事的需求</strong></div>
             </div>
 
-            <div class="frame" data-lightbox data-src="Arb Agent实践/初始指令-claude.png" data-caption="<strong>给 AI 一次指令</strong> · 之后去做别的事，全程 AI 自主完成">
+            <div class="frame" data-lightbox data-src="assets/generated/agent-automation.webp" data-caption="<strong>给 AI 一次指令</strong> · 之后去做别的事，全程 AI 自主完成">
               <div class="frame-num"><span>02</span><span>YNT</span></div>
-              <div class="frame-img"><img src="Arb Agent实践/初始指令-claude.png" alt="初始指令" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/agent-automation.webp" alt="Agent 自动化工作流 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>一次指令</strong> · 然后离开</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="Arb Agent实践/结果：agent脚本设置.png" data-caption="<strong>Agent 脚本</strong> · AI 自主编写、测试、执行">
+            <div class="frame" data-lightbox data-src="assets/generated/agent-automation.webp" data-caption="<strong>Agent 脚本</strong> · AI 自主编写、测试、执行">
               <div class="frame-num"><span>03</span><span>YNT</span></div>
-              <div class="frame-img"><img src="Arb Agent实践/结果：agent脚本设置.png" alt="agent脚本设置" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/agent-automation.webp" alt="Agent 自动化工作流 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>Agent 脚本</strong> · 自主编写执行</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="Arb Agent实践/结果案例-图片素材下载.png" data-caption="<strong>执行结果</strong> · 图片素材批量下载完成">
+            <div class="frame" data-lightbox data-src="assets/generated/agent-automation.webp" data-caption="<strong>执行结果</strong> · 图片素材批量下载完成">
               <div class="frame-num"><span>04</span><span>YNT</span></div>
-              <div class="frame-img"><img src="Arb Agent实践/结果案例-图片素材下载.png" alt="结果案例" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/agent-automation.webp" alt="Agent 自动化工作流 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>执行结果</strong> · 素材批量下载</div>
             </div>
 
@@ -1740,7 +1767,7 @@ body {
             <strong>分享内容和 agent 实践，同步运行。</strong>这边在做这次分享页面的同时，那边 ARB Agent 也在按指令自主执行素材下载任务，互不干扰。
           </div>
           <div style="background:#fff;border:1px solid var(--paper-edge);overflow:hidden;border-radius:2px;">
-            <img src="工作展示.jpg" alt="分享内容和 agent 实践，同步运行" style="width:100%;display:block;max-height:560px;object-fit:contain;background:#fff;" loading="lazy">
+            <img src="assets/generated/working-session.webp" alt="AI 协作工作场景生成示意图" style="width:100%;display:block;max-height:560px;object-fit:contain;background:#fff;" loading="lazy">
           </div>
         </div>
       </div>
@@ -1777,64 +1804,64 @@ body {
           <div class="film-strip" id="strip-r5">
             <div class="film-edge-text"><span>陈娴 × AI · 35mm · META · THIS PAGE</span><span>R05-A</span></div>
 
-            <div class="frame" data-lightbox data-src="html分享页/agent应用项目整理.png" data-caption="<strong>项目整理</strong> · 把做过的项目整理成说明，截图相关图片">
+            <div class="frame" data-lightbox data-src="assets/generated/web-design-iterations.webp" data-caption="<strong>项目整理</strong> · 把做过的项目整理成说明，截图相关图片">
               <div class="frame-num"><span>01</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html分享页/agent应用项目整理.png" alt="项目整理" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>项目整理</strong> · 内容素材准备</div>
             </div>
 
-            <div class="frame" data-lightbox data-src="html分享页/执行指令.png" data-caption="<strong>执行指令</strong> · 给 Claude Code 的完整 Prompt">
+            <div class="frame" data-lightbox data-src="assets/generated/web-design-iterations.webp" data-caption="<strong>执行指令</strong> · 给 Claude Code 的完整 Prompt">
               <div class="frame-num"><span>02</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html分享页/执行指令.png" alt="执行指令" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>Prompt</strong> · 给 Claude 的指令</div>
             </div>
 
             <!-- 历史版本 v1–v8，每个可单独打开 -->
             <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo.html">
               <div class="frame-num"><span>03</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/v1.png" alt="V1 Editorial" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V1 · Editorial</strong> · 点击打开 ↗</div>
             </div>
 
             <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo_v2.html">
               <div class="frame-num"><span>04</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/V2.png" alt="V2 Refined" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V2 · Refined</strong> · 点击打开 ↗</div>
             </div>
 
             <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo_v3_editorial.html">
               <div class="frame-num"><span>05</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/v3.png" alt="V3 Editorial+" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V3 · Editorial+</strong> · 点击打开 ↗</div>
             </div>
 
             <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo_v4_brutalist.html">
               <div class="frame-num"><span>06</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/v4.png" alt="V4 Brutalist" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V4 · Brutalist</strong> · 点击打开 ↗</div>
             </div>
 
             <div class="frame has-link" data-html-link data-href="历史html风格/v5_manifesto.html">
               <div class="frame-num"><span>07</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/v5.png" alt="V5 Manifesto" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V5 · Manifesto</strong> · 点击打开 ↗</div>
             </div>
 
             <div class="frame has-link" data-html-link data-href="历史html风格/v6_constellation.html">
               <div class="frame-num"><span>08</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/v6.png" alt="V6 Constellation" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V6 · Constellation</strong> · 点击打开 ↗</div>
             </div>
 
             <div class="frame has-link" data-html-link data-href="历史html风格/v7_letterpress.html">
               <div class="frame-num"><span>09</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/v7.png" alt="V7 Letterpress" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V7 · Letterpress</strong> · 点击打开 ↗</div>
             </div>
 
             <div class="frame has-link" data-html-link data-href="历史html风格/v8_cinema.html">
               <div class="frame-num"><span>10</span><span>YNT</span></div>
-              <div class="frame-img"><img src="html页面-预览图/v8.png" alt="V8 Cinema" loading="lazy"></div>
+              <div class="frame-img"><img src="assets/generated/web-design-iterations.webp" alt="网页设计迭代 AI 生成示意图" loading="lazy"></div>
               <div class="frame-caption"><strong>V8 · Cinema</strong> · 点击打开 ↗</div>
             </div>
 

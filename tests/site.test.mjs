@@ -15,10 +15,26 @@ const read = (path) => readFile(new URL(path, root), "utf8");
 
 test("publishes the AI Agent share as a standalone page", async () => {
   const page = await read("public/ai-agent/index.html");
+  const generatedAssets = [
+    "tools.webp",
+    "amazon-analysis.webp",
+    "reddit-research.webp",
+    "knowledge-research.webp",
+    "agent-automation.webp",
+    "working-session.webp",
+    "web-design-iterations.webp",
+  ];
 
   assert.match(page, /<title>AI Agent 实践分享 · 陈娴 × YINTA<\/title>/);
+  assert.match(page, /页面配图由 AI 生成，仅用于表达工作场景/);
   assert.match(page, /图片素材未随 HTML 文件附带/);
   assert.doesNotMatch(page, /window\.open\(frame\.dataset\.href/);
+  assert.doesNotMatch(page, /src="(?:图标logo|amazon|reddit数据|信息收集|Arb Agent实践|html分享页|html页面-预览图)\//);
+  await Promise.all(
+    generatedAssets.map((filename) =>
+      access(new URL(`public/ai-agent/assets/generated/${filename}`, root)),
+    ),
+  );
   await access(new URL("out/ai-agent/index.html", root));
 });
 
