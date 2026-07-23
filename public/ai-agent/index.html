@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="陈娴的 AI Agent 实践分享：从产品研究、信息收集到自动化执行与网页表达。">
+<title>AI Agent 实践分享 · 陈娴 × YINTA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500;700&family=Caveat:wght@400;500;700&family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f5ecdc;
+  --paper-deep: #ebe2cf;
+  --paper-edge: #e0d5bf;
+  --ink: #1a1612;
+  --ink-soft: #4a3f33;
+  --faded: #8a7d6a;
+  --accent: #c8542a;
+  --accent-deep: #8b3a1c;
+  --red-ink: #a83232;
+  --blue-ink: #2c5d8f;
+  --highlight: #f4d169;
+  --film-dark: #1c1814;
+  --film-darker: #111009;
+  --film-perf: #f5ecdc;
+  --nav-w: 288px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+  overflow-x: hidden;
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4'/%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0 0.2 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)'/%3E%3C/svg%3E");
+}
+
+/* ========== CURTAIN INTRO ========== */
+#curtain {
+  position: fixed; inset: 0; z-index: 99999;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.curtain-left, .curtain-right {
+  position: absolute; top: 0; bottom: 0; width: 50%;
+  background: var(--film-darker);
+  transition: transform 1.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.curtain-left  { left: 0; }
+.curtain-right { right: 0; }
+/* velvet texture lines */
+.curtain-left::before, .curtain-right::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0px, transparent 3px,
+    rgba(255,255,255,0.015) 3px, rgba(255,255,255,0.015) 4px
+  );
+  pointer-events: none;
+}
+/* accent fringe at the inner edge */
+.curtain-left::after {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; width: 6px;
+  background: linear-gradient(90deg, transparent, rgba(200,84,42,0.5));
+}
+.curtain-right::after {
+  content: '';
+  position: absolute; top: 0; left: 0; bottom: 0; width: 6px;
+  background: linear-gradient(270deg, transparent, rgba(200,84,42,0.5));
+}
+.curtain-label {
+  position: relative; z-index: 2;
+  text-align: center; pointer-events: none;
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+}
+.curtain-title {
+  font-family: 'Fraunces', serif; font-style: italic; font-weight: 300;
+  font-size: clamp(32px, 5vw, 64px);
+  color: var(--paper); letter-spacing: -0.02em; line-height: 1.1;
+}
+.curtain-title em { color: var(--accent); font-style: italic; }
+.curtain-sub {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.4em; color: rgba(245,236,220,0.4); text-transform: uppercase;
+}
+.curtain-cta {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.35em; color: var(--accent); text-transform: uppercase;
+  border: 1px solid rgba(200,84,42,0.4); padding: 12px 28px;
+  animation: curtain-pulse 2s ease-in-out infinite;
+  margin-top: 8px;
+}
+@keyframes curtain-pulse {
+  0%,100% { opacity: 1; border-color: rgba(200,84,42,0.4); }
+  50%      { opacity: 0.6; border-color: rgba(200,84,42,0.15); }
+}
+/* sprocket holes on curtain top/bottom */
+.curtain-perf-top, .curtain-perf-bottom {
+  position: absolute; left: 0; right: 0; height: 28px;
+  background-image: radial-gradient(circle at 24px 14px, rgba(245,236,220,0.12) 0, rgba(245,236,220,0.12) 6px, transparent 6px);
+  background-size: 48px 28px; background-repeat: repeat-x;
+  pointer-events: none; z-index: 3;
+}
+.curtain-perf-top  { top: 0; }
+.curtain-perf-bottom { bottom: 0; }
+
+/* open state */
+#curtain.open .curtain-left  { transform: translateX(-100%); }
+#curtain.open .curtain-right { transform: translateX(100%); }
+#curtain.hidden { display: none; }
+
+.grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.35;
+  background:
+    repeating-linear-gradient(105deg, transparent 0 60px, rgba(0,0,0,0.012) 60px 61px),
+    radial-gradient(circle at 20% 80%, rgba(80,50,20,0.06), transparent 50%);
+}
+
+/* ========== TOP BAR ========== */
+.bar {
+  position: fixed; top: 0; left: var(--nav-w); right: 0;
+  display: flex; justify-content: space-between;
+  padding: 18px 36px;
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.2em; z-index: 100;
+  mix-blend-mode: multiply; color: var(--ink);
+}
+.bar-dot {
+  width: 6px; height: 6px; background: var(--accent);
+  border-radius: 50%; display: inline-block; margin-right: 8px;
+  animation: pulse 2.4s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* ========== LEFT NAV ========== */
+.nav {
+  position: fixed; top: 0; left: 0; bottom: 0;
+  width: var(--nav-w);
+  background: var(--film-dark);
+  border-right: 3px solid rgba(200,84,42,0.3);
+  z-index: 200; padding: 0;
+  overflow-y: auto;
+  display: flex; flex-direction: column;
+}
+
+/* Film sprocket holes down the sides */
+.nav::before {
+  content: '';
+  position: absolute; top: 0; left: 0; bottom: 0;
+  width: 20px;
+  background-image: radial-gradient(circle at 10px 20px, var(--paper-deep) 0, var(--paper-deep) 5px, transparent 5px);
+  background-size: 20px 36px;
+  background-repeat: repeat-y;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.nav::after {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0;
+  width: 20px;
+  background-image: radial-gradient(circle at 10px 20px, var(--paper-deep) 0, var(--paper-deep) 5px, transparent 5px);
+  background-size: 20px 36px;
+  background-repeat: repeat-y;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Film edge markings - top/bottom */
+.nav-film-top, .nav-film-bottom {
+  flex-shrink: 0;
+  height: 28px;
+  background: var(--film-darker);
+  border-bottom: 1px solid rgba(200,84,42,0.2);
+  display: flex; align-items: center; padding: 0 26px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px; letter-spacing: 0.2em;
+  color: rgba(245,236,220,0.25);
+  flex-shrink: 0;
+  position: relative; overflow: hidden;
+}
+.nav-film-bottom { border-top: 1px solid rgba(200,84,42,0.2); border-bottom: none; margin-top: auto; }
+.nav-film-top::before, .nav-film-bottom::before {
+  content: '▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪ ▪';
+  position: absolute; left: 0; right: 0;
+  font-size: 5px; letter-spacing: 0.4em;
+  color: rgba(245,236,220,0.12);
+}
+
+.nav-header {
+  padding: 20px 28px 20px 28px;
+  border-bottom: 1px solid rgba(245,236,220,0.08);
+  margin-bottom: 0;
+}
+.nav-header-filmcode {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px; letter-spacing: 0.3em;
+  color: rgba(200,84,42,0.7);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.nav-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 400; font-style: italic;
+  font-size: 20px; line-height: 1.2;
+  margin-bottom: 4px;
+  color: var(--paper);
+}
+.nav-subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px; letter-spacing: 0.2em;
+  color: rgba(245,236,220,0.35); text-transform: uppercase;
+}
+
+.nav-list { list-style: none; padding: 8px 16px; display: flex; flex-direction: column; gap: 4px; }
+
+.nav-item {
+  position: relative; cursor: pointer;
+  padding: 12px 10px; border-radius: 2px;
+  transition: background 0.25s;
+  display: grid; grid-template-columns: 52px 1fr;
+  gap: 12px; align-items: center;
+  border: 1px solid transparent;
+}
+.nav-item:hover { background: rgba(245,236,220,0.05); border-color: rgba(200,84,42,0.15); }
+.nav-item.active { background: rgba(200,84,42,0.12); border-color: rgba(200,84,42,0.35); }
+
+/* FILM REEL ICON — more realistic */
+.nav-reel { width: 52px; height: 52px; position: relative; flex-shrink: 0; }
+.nav-reel svg { width: 100%; height: 100%; transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+.nav-item:hover .nav-reel svg,
+.nav-item.active .nav-reel svg { transform: rotate(72deg); }
+
+/* SVG element styles via classes */
+.r-outer { fill: none; stroke: rgba(245,236,220,0.3); stroke-width: 1.5; }
+.r-rim   { fill: none; stroke: rgba(245,236,220,0.12); stroke-width: 3; }
+.r-hub   { fill: rgba(245,236,220,0.15); }
+.r-center{ fill: var(--film-darker); stroke: rgba(245,236,220,0.2); stroke-width: 1; }
+.r-hole  { fill: var(--film-darker); }
+.r-spoke { stroke: rgba(245,236,220,0.25); stroke-width: 1.2; fill: none; }
+.r-tooth { fill: rgba(245,236,220,0.18); }
+
+.nav-item.active .r-outer { stroke: var(--accent); }
+.nav-item.active .r-hub   { fill: rgba(200,84,42,0.3); }
+.nav-item.active .r-hole  { fill: var(--film-darker); }
+.nav-item.active .r-spoke { stroke: rgba(200,84,42,0.6); }
+.nav-item.active .r-tooth { fill: rgba(200,84,42,0.4); }
+
+.nav-item.future .r-outer { stroke: rgba(245,236,220,0.12); stroke-dasharray: 3 3; }
+.nav-item.future .r-hub   { fill: rgba(245,236,220,0.05); }
+
+.nav-info-num {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  color: rgba(245,236,220,0.3); letter-spacing: 0.18em; margin-bottom: 3px;
+}
+.nav-item.active .nav-info-num { color: var(--accent); }
+.nav-info-name {
+  font-family: 'Noto Sans SC', sans-serif; font-weight: 500; font-size: 13px;
+  color: rgba(245,236,220,0.8); line-height: 1.3;
+}
+.nav-item.future .nav-info-name { color: rgba(245,236,220,0.3); font-style: italic; }
+.nav-info-meta {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  color: rgba(245,236,220,0.25); letter-spacing: 0.08em; margin-top: 2px;
+}
+
+.nav-divider {
+  height: 1px; background: rgba(245,236,220,0.08);
+  margin: 6px 0;
+}
+
+.nav-footer {
+  padding: 16px 28px 20px;
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  color: rgba(245,236,220,0.25); letter-spacing: 0.12em; line-height: 1.6;
+}
+.nav-footer strong {
+  color: rgba(245,236,220,0.5); font-weight: 700;
+  display: block; margin-bottom: 3px; letter-spacing: 0.2em;
+}
+
+/* ========== MAIN ========== */
+.main { margin-left: var(--nav-w); position: relative; }
+
+/* ========== HERO ========== */
+.hero {
+  min-height: 100vh; position: relative;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 120px 80px 80px; overflow: hidden;
+}
+#hero-canvas { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.hero-content { position: relative; z-index: 2; max-width: 1300px; margin: 0 auto; width: 100%; }
+
+.hero-eyebrow {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.4em; color: var(--accent); text-transform: uppercase;
+  margin-bottom: 56px; display: inline-flex; align-items: center; gap: 16px;
+  opacity: 0; animation: fadeUp 1s 0.3s forwards;
+}
+.hero-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--accent); }
+
+.hero-title {
+  font-family: 'Fraunces','Noto Serif SC',serif;
+  font-weight: 300; font-size: clamp(36px,5vw,80px);
+  line-height: 1.05; letter-spacing: -0.02em;
+  margin-bottom: 60px; color: var(--ink);
+  opacity: 0; animation: fadeUp 1.2s 0.5s forwards;
+}
+.hero-title em { font-style: italic; color: var(--accent); font-weight: 400; }
+.hero-title .num {
+  font-family: 'DM Serif Display', serif; font-style: italic;
+  font-weight: 400; color: var(--accent); font-size: 1.05em;
+  position: relative; display: inline-block;
+}
+.hero-title .num::after {
+  content: ''; position: absolute; left: -3%; right: -3%; bottom: 0.18em;
+  height: 0.32em; background: var(--highlight); z-index: -1;
+  transform: skewX(-6deg); opacity: 0.7;
+}
+.hero-title .small {
+  display: block; font-size: 0.3em; font-weight: 300;
+  color: var(--ink-soft); margin-top: 28px; letter-spacing: 0;
+  line-height: 1.6; font-family: 'Noto Serif SC',serif; font-style: normal;
+}
+
+.hero-bottom {
+  display: flex; justify-content: space-between; align-items: end;
+  margin-top: 80px; padding-top: 32px;
+  border-top: 1px solid rgba(26,22,18,0.15);
+  opacity: 0; animation: fadeUp 1s 1.2s forwards;
+}
+.hero-by { font-family: 'Caveat',cursive; font-size: 26px; color: var(--blue-ink); line-height: 1.3; transform: rotate(-1deg); }
+.hero-by-meta { font-family: 'IBM Plex Mono',monospace; font-size: 12px; color: var(--faded); letter-spacing: 0.15em; margin-top: 8px; display: block; }
+.hero-scroll {
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px;
+  letter-spacing: 0.4em; color: var(--accent); text-transform: uppercase;
+  display: flex; align-items: center; gap: 12px;
+  animation: float 2.5s ease-in-out infinite;
+}
+.hero-scroll::after { content: '↓'; font-size: 14px; }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+/* ========== INTRO STRIP ========== */
+.intro-strip { padding: 120px 80px 60px; text-align: center; }
+.intro-strip-eyebrow {
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px; letter-spacing: 0.35em;
+  color: var(--accent); text-transform: uppercase; margin-bottom: 32px;
+  display: inline-flex; align-items: center; gap: 20px;
+}
+.intro-strip-eyebrow::before,.intro-strip-eyebrow::after { content:''; width:40px; height:1px; background:var(--accent); }
+.intro-strip-h {
+  font-family: 'Fraunces',serif; font-weight: 300;
+  font-size: clamp(34px,4.5vw,60px); line-height: 1.18;
+  letter-spacing: -0.02em; margin-bottom: 28px;
+  max-width: 1000px; margin-left: auto; margin-right: auto;
+}
+.intro-strip-h em { font-style: italic; color: var(--accent); }
+.intro-strip-h .hl {
+  background: var(--highlight); padding: 0 0.15em; position: relative;
+}
+.intro-strip-h .hl::before {
+  content: ''; position: absolute; inset: -3px -6px;
+  border: 1px dashed var(--ink); pointer-events: none;
+}
+.intro-strip-sub { font-family: 'Caveat',cursive; font-size: 26px; color: var(--red-ink); transform: rotate(-1deg); display: inline-block; }
+
+/* ========== REELS ========== */
+.reels { padding: 60px 0 160px; position: relative; }
+.reel { position: relative; margin-bottom: 200px; padding: 0 80px; scroll-margin-top: 60px; }
+
+.reel-header {
+  max-width: 1500px; margin: 0 auto 60px;
+  display: grid; grid-template-columns: auto 1fr auto;
+  gap: 40px; align-items: end;
+  border-bottom: 1px solid rgba(26,22,18,0.2); padding-bottom: 28px;
+}
+.reel-num {
+  font-family: 'DM Serif Display',serif; font-style: italic; font-weight: 400;
+  font-size: 96px; color: var(--accent); line-height: 0.85; letter-spacing: -0.02em;
+}
+.reel-title-wrap { display: flex; flex-direction: column; gap: 10px; }
+.reel-tag {
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px;
+  letter-spacing: 0.3em; color: var(--accent); text-transform: uppercase;
+  display: flex; align-items: center; gap: 10px;
+}
+.reel-tag::before { content: '◆'; font-size: 12px; }
+.reel-title { font-family: 'Fraunces','Noto Serif SC',serif; font-weight: 400; font-size: clamp(34px,4.2vw,58px); line-height: 1.1; letter-spacing: -0.015em; }
+.reel-title em { font-style: italic; color: var(--accent); }
+.reel-meta { font-family: 'IBM Plex Mono',monospace; font-size: 12px; color: var(--faded); letter-spacing: 0.15em; text-align: right; text-transform: uppercase; line-height: 1.7; }
+
+/* ========== FILM STRIP ========== */
+.film-strip-wrap { position: relative; width: 100%; perspective: 2000px; margin-bottom: 30px; }
+.film-strip-scroll {
+  overflow-x: auto; overflow-y: visible;
+  scroll-snap-type: x proximity;
+  padding: 40px 0; margin: 0 -20px;
+  padding-left: 20px; padding-right: 20px;
+}
+.film-strip-scroll::-webkit-scrollbar { height: 5px; }
+.film-strip-scroll::-webkit-scrollbar-track { background: var(--paper-edge); }
+.film-strip-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+.film-strip {
+  display: inline-flex; gap: 0; align-items: stretch;
+  background: var(--film-dark);
+  border-radius: 1px; position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 28px 60px rgba(26,22,18,0.28), 0 6px 16px rgba(26,22,18,0.14);
+  transition: transform 0.6s cubic-bezier(0.16,1,0.3,1);
+  min-width: max-content;
+  /* subtle film base color gradient */
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 40%, rgba(0,0,0,0.05) 100%);
+}
+
+.reel.r1 .film-strip { transform: rotateZ(-1.4deg) rotateY(-0.8deg); }
+.reel.r2 .film-strip { transform: rotateZ(1.2deg) rotateY(0.8deg); }
+.reel.r3 .film-strip { transform: rotateZ(-0.8deg) rotateY(-0.5deg); }
+.reel.r4 .film-strip { transform: rotateZ(1.4deg) rotateY(1deg); }
+.reel.r5 .film-strip { transform: rotateZ(-1deg) rotateY(-0.7deg); }
+.film-strip:hover { transform: rotateZ(-0.2deg) rotateY(0deg) scale(1.005) !important; }
+
+/* === REALISTIC PERFORATIONS === */
+/* Top & bottom film edge strips with sprocket holes */
+.film-strip::before, .film-strip::after {
+  content: '';
+  position: absolute; left: 0; right: 0; height: 38px;
+  background-color: var(--film-darker);
+  background-image:
+    /* rounded rect sprocket holes */
+    radial-gradient(6px 8px at 20px 19px, var(--paper-edge) 0%, var(--paper-edge) 70%, transparent 70%),
+    /* frame number tick marks */
+    repeating-linear-gradient(90deg, transparent 0px, transparent 318px, rgba(245,236,220,0.08) 318px, rgba(245,236,220,0.08) 320px);
+  background-size: 40px 38px, 320px 38px;
+  background-repeat: repeat-x, repeat-x;
+  z-index: 4; pointer-events: none;
+  /* small inner shadow to look like punched holes */
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.4), inset 0 -1px 0 rgba(255,255,255,0.03);
+}
+.film-strip::before { top: 0; }
+.film-strip::after  { bottom: 0; }
+
+/* Film edge text */
+.film-edge-text {
+  position: absolute; top: 10px; left: 0; right: 0;
+  display: flex; justify-content: space-between;
+  padding: 0 60px;
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px;
+  color: rgba(245,236,220,0.2); letter-spacing: 0.25em;
+  z-index: 5; pointer-events: none;
+}
+.film-edge-text.bottom { top: auto; bottom: 10px; }
+
+/* === FRAME === */
+.frame {
+  width: 320px; flex-shrink: 0;
+  background: var(--film-darker);
+  margin: 38px 0;
+  padding: 14px 10px 12px;
+  border-left: 1px solid rgba(245,236,220,0.04);
+  position: relative; cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.16,1,0.3,1);
+  display: flex; flex-direction: column;
+  scroll-snap-align: start;
+}
+.frame:first-child { border-left: none; }
+
+/* frame number strip */
+.frame-num {
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px;
+  color: rgba(245,236,220,0.25); letter-spacing: 0.15em;
+  margin-bottom: 8px;
+  display: flex; justify-content: space-between; padding: 0 4px;
+}
+/* Kodak-style frame code stripe */
+.frame-num::after {
+  content: '▸';
+  font-size: 12px;
+  color: rgba(200,84,42,0.4);
+}
+
+.frame-img {
+  width: 100%; height: 220px;
+  background: var(--paper-deep);
+  border: 1px solid rgba(245,236,220,0.06);
+  position: relative; overflow: hidden;
+  filter: saturate(0.65) brightness(0.88);
+  transition: filter 0.4s, transform 0.5s;
+  display: flex; align-items: center; justify-content: center;
+}
+.frame-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.frame-caption {
+  margin-top: 10px;
+  font-family: 'Noto Sans SC',sans-serif; font-size: 13px; font-weight: 400;
+  color: rgba(245,236,220,0.6); text-align: center;
+  line-height: 1.4; padding: 0 6px;
+  letter-spacing: 0.02em; min-height: 36px;
+}
+.frame-caption strong { color: var(--paper); font-weight: 500; }
+
+.film-strip:hover .frame { opacity: 0.5; }
+.film-strip:hover .frame:hover { opacity: 1; }
+.film-strip .frame:hover .frame-img { filter: saturate(1) brightness(1); }
+.film-strip .frame:hover { transform: scale(1.04); z-index: 3; }
+.film-strip .frame:hover .frame-caption { color: var(--paper); }
+
+/* HTML-link frame */
+.frame.has-link .frame-img::after {
+  content: '↗ OPEN';
+  position: absolute; bottom: 8px; right: 8px;
+  background: var(--accent); color: white;
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px;
+  letter-spacing: 0.12em; padding: 4px 8px;
+  opacity: 0; transition: opacity 0.3s;
+}
+.frame.has-link:hover .frame-img::after { opacity: 1; }
+
+.scroll-hint {
+  text-align: center; margin-top: 20px;
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px;
+  color: var(--faded); letter-spacing: 0.25em; text-transform: uppercase;
+}
+.scroll-hint::before { content: '⟵ '; }
+.scroll-hint::after  { content: ' ⟶'; }
+
+/* ========== NARRATIVE ========== */
+.reel-narrative {
+  max-width: 1500px; margin: 50px auto 0;
+  display: grid; grid-template-columns: 1fr 2fr;
+  gap: 80px; align-items: start;
+}
+.narrative-tag {
+  font-family: 'IBM Plex Mono',monospace; font-size: 12px;
+  letter-spacing: 0.25em; color: var(--faded); text-transform: uppercase;
+  margin-bottom: 16px; display: flex; align-items: center; gap: 10px;
+}
+.narrative-tag::before { content:''; width:24px; height:1px; background:var(--faded); }
+.narrative-h {
+  font-family: 'Fraunces','Noto Serif SC',serif; font-weight: 400; font-style: italic;
+  font-size: 30px; line-height: 1.2; letter-spacing: -0.01em; color: var(--ink);
+}
+.narrative-h em { color: var(--accent); }
+.narrative-body { font-family: 'Noto Serif SC',serif; font-size: 16px; line-height: 1.85; color: var(--ink-soft); }
+.narrative-body p { margin-bottom: 16px; }
+.narrative-body strong { font-weight: 600; color: var(--ink); background: var(--highlight); padding: 0 4px; }
+.narrative-body em { font-style: italic; color: var(--accent); }
+.narrative-handnote { font-family: 'Caveat',cursive; font-size: 22px; color: var(--red-ink); margin-top: 16px; transform: rotate(-1deg); display: inline-block; }
+.narrative-handnote::before { content: '↳ '; }
+
+/* ========== SUMMARY ========== */
+.summary-section {
+  padding: 120px 0 80px;
+  background: var(--film-dark); color: var(--paper);
+  margin-top: 80px;
+  border-top: 4px double rgba(200,84,42,0.6);
+  position: relative;
+}
+/* Film strip across the top of summary */
+.summary-section::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 20px;
+  background-image: radial-gradient(circle at 24px 10px, var(--paper-deep) 0, var(--paper-deep) 5px, transparent 5px);
+  background-size: 48px 20px; background-repeat: repeat-x;
+  opacity: 0.15;
+}
+.summary-inner { max-width: 1100px; margin: 0 auto; padding: 0 60px; }
+.summary-header { margin-bottom: 80px; text-align: center; }
+.summary-label { font-family: 'IBM Plex Mono',monospace; font-size: 12px; letter-spacing: 0.28em; color: var(--accent); margin-bottom: 24px; text-transform: uppercase; }
+.summary-title {
+  font-family: 'DM Serif Display',serif; font-style: italic;
+  font-size: clamp(38px,5.5vw,68px); font-weight: 400;
+  line-height: 1.1; letter-spacing: -0.02em; color: var(--paper); margin-bottom: 20px;
+}
+.summary-title em { color: var(--accent); }
+.summary-subtitle { font-family: 'Noto Serif SC',serif; font-size: 15px; color: rgba(245,236,220,0.55); line-height: 1.8; }
+.summary-subtitle em { color: rgba(245,236,220,0.9); font-style: normal; border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+
+.summary-grid { display: flex; flex-direction: column; gap: 60px; }
+.summary-block {
+  display: grid; grid-template-columns: 80px 1fr;
+  gap: 32px; padding-bottom: 60px;
+  border-bottom: 1px solid rgba(245,236,220,0.1);
+}
+.summary-block:last-child { border-bottom: none; padding-bottom: 0; }
+.summary-block-num { font-family: 'DM Serif Display',serif; font-style: italic; font-size: 64px; color: rgba(200,84,42,0.3); line-height: 1; margin-top: 4px; }
+.summary-block-tag { font-family: 'IBM Plex Mono',monospace; font-size: 12px; letter-spacing: 0.22em; color: var(--accent); margin-bottom: 12px; text-transform: uppercase; }
+.summary-block-title { font-family: 'Fraunces','Noto Serif SC',serif; font-weight: 300; font-style: italic; font-size: clamp(20px,2.3vw,28px); color: var(--paper); line-height: 1.25; margin-bottom: 20px; letter-spacing: -0.01em; }
+.summary-block-body p { font-size: 14px; color: rgba(245,236,220,0.72); line-height: 1.85; margin-bottom: 14px; }
+.summary-block-body strong { color: var(--paper); font-weight: 500; }
+
+.summary-quote {
+  margin-top: 24px; padding: 20px 24px;
+  border-left: 3px solid var(--accent);
+  font-family: 'Fraunces',serif; font-style: italic;
+  font-size: 17px; color: rgba(245,236,220,0.9); line-height: 1.55;
+}
+.pros-cons {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 20px; margin-top: 12px;
+}
+.pros, .cons { padding: 18px 20px; border-radius: 2px; }
+.pros { background: rgba(200,84,42,0.08); border: 1px solid rgba(200,84,42,0.2); }
+.cons { background: rgba(44,93,143,0.08); border: 1px solid rgba(44,93,143,0.2); }
+.pros-label { font-family: 'IBM Plex Mono',monospace; font-size: 12px; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 12px; }
+.cons-label { font-family: 'IBM Plex Mono',monospace; font-size: 12px; letter-spacing: 0.18em; color: var(--blue-ink); margin-bottom: 12px; }
+.pros ul, .cons ul { list-style: none; padding: 0; }
+.pros ul li, .cons ul li { font-size: 13px; color: rgba(245,236,220,0.7); line-height: 1.7; margin-bottom: 10px; padding-left: 14px; position: relative; }
+.pros ul li::before { content: '·'; position: absolute; left: 0; color: var(--accent); }
+.cons ul li::before { content: '·'; position: absolute; left: 0; color: var(--blue-ink); }
+
+.rec-list { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+.rec-item {
+  padding: 14px 18px;
+  background: rgba(245,236,220,0.04);
+  border: 1px solid rgba(245,236,220,0.08);
+  border-left: 3px solid rgba(200,84,42,0.5);
+}
+.rec-tag { display: inline-block; font-family: 'IBM Plex Mono',monospace; font-size: 12px; letter-spacing: 0.12em; color: var(--accent); text-transform: uppercase; margin-bottom: 5px; }
+.rec-item p { font-size: 13px; color: rgba(245,236,220,0.62); line-height: 1.7; margin: 0; }
+
+/* CODA */
+.coda {
+  padding: 180px 80px 100px; text-align: center;
+  border-top: 4px double var(--ink); margin-top: 80px;
+  background: linear-gradient(180deg, transparent, rgba(200,84,42,0.04));
+}
+.coda-num { font-family: 'DM Serif Display',serif; font-style: italic; font-size: clamp(72px,12vw,200px); font-weight: 400; color: var(--accent); line-height: 0.9; letter-spacing: -0.04em; margin-bottom: 24px; }
+.coda-text { font-family: 'Fraunces','Noto Serif SC',serif; font-weight: 300; font-style: italic; font-size: clamp(26px,3.2vw,42px); line-height: 1.3; max-width: 900px; margin: 0 auto 32px; letter-spacing: -0.015em; }
+.coda-text em { color: var(--accent); }
+.coda-sig { font-family: 'Caveat',cursive; font-size: 30px; color: var(--blue-ink); transform: rotate(-2deg); display: inline-block; margin-top: 32px; }
+
+.demo-note { text-align: center; padding: 28px; font-family: 'IBM Plex Mono',monospace; font-size: 12px; color: var(--faded); letter-spacing: 0.2em; background: var(--paper); border-top: 1px solid var(--paper-edge); }
+
+/* ========== TOOLS SECTION ========== */
+.tools-section {
+  padding: 100px 80px 80px;
+  background: var(--paper);
+  position: relative;
+}
+.tools-section::before {
+  content: '';
+  position: absolute; top: 0; left: 80px; right: 80px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.3;
+}
+.tools-eyebrow {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.4em; color: var(--accent); text-transform: uppercase;
+  margin-bottom: 16px; display: inline-flex; align-items: center; gap: 16px;
+}
+.tools-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--accent); }
+.tools-h {
+  font-family: 'Fraunces','Noto Serif SC', serif; font-weight: 300;
+  font-size: clamp(32px,4vw,54px); line-height: 1.1; letter-spacing: -0.02em;
+  margin-bottom: 60px; max-width: 800px;
+}
+.tools-h em { font-style: italic; color: var(--accent); }
+
+/* Landscape comparison table */
+.tools-landscape {
+  margin-bottom: 64px;
+}
+.tools-landscape-label {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.25em; color: var(--faded); text-transform: uppercase;
+  margin-bottom: 20px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--paper-edge);
+}
+.tools-cards-row {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  margin-bottom: 32px;
+}
+.tool-card {
+  background: white; border: 1px solid var(--paper-edge);
+  border-radius: 4px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.tool-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.tool-card-logo {
+  height: 80px; display: flex; align-items: center; justify-content: center;
+  padding: 12px 20px; background: var(--paper-deep);
+  border-bottom: 1px solid var(--paper-edge);
+}
+.tool-card-logo img { height: 56px; width: auto; object-fit: contain; }
+.tool-card-body { padding: 16px 18px; }
+.tool-card-company {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.2em; color: var(--faded); text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.tool-card-model {
+  font-family: 'Fraunces', serif; font-weight: 400; font-size: 18px;
+  color: var(--ink); margin-bottom: 8px; line-height: 1.2;
+}
+.tool-card-agent {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  background: var(--paper-edge); padding: 4px 8px; display: inline-block;
+  color: var(--ink-soft); letter-spacing: 0.08em; border-radius: 2px;
+}
+.tool-card.featured {
+  border-color: var(--accent); box-shadow: 0 2px 12px rgba(200,84,42,0.15);
+}
+.tool-card.featured .tool-card-logo { background: #1c1814; }
+.tool-card-badge {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  background: var(--accent); color: white; padding: 2px 8px;
+  display: inline-block; letter-spacing: 0.1em; border-radius: 2px; margin-top: 6px;
+}
+
+/* OpenClaw / notable concept card */
+.tools-notable {
+  background: var(--paper-deep); border: 1px solid var(--paper-edge);
+  border-left: 4px solid var(--accent); padding: 24px 28px;
+  margin-bottom: 64px; border-radius: 0 4px 4px 0;
+  display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start;
+}
+.tools-notable-logo {
+  width: 72px; height: 72px; flex-shrink: 0;
+}
+.tools-notable-logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 4px; }
+.tools-notable-label {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.25em; color: var(--accent); text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.tools-notable-title {
+  font-family: 'Fraunces', serif; font-weight: 400; font-size: 22px;
+  color: var(--ink); margin-bottom: 8px; line-height: 1.2;
+}
+.tools-notable-body {
+  font-family: 'Noto Sans SC', sans-serif; font-size: 14px;
+  color: var(--ink-soft); line-height: 1.7;
+}
+.tools-notable-body em { color: var(--accent); font-style: italic; }
+
+/* Why Claude Code */
+.tools-why {
+  margin-bottom: 48px;
+}
+.tools-why-label {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.25em; color: var(--faded); text-transform: uppercase;
+  margin-bottom: 20px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--paper-edge);
+}
+.tools-why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.tools-why-card {
+  background: white; border: 1px solid var(--paper-edge); padding: 24px;
+  border-radius: 4px;
+}
+.tools-why-num {
+  font-family: 'DM Serif Display', serif; font-style: italic; font-size: 42px;
+  color: var(--accent); line-height: 0.9; margin-bottom: 10px; opacity: 0.4;
+}
+.tools-why-title {
+  font-family: 'Noto Sans SC', sans-serif; font-weight: 500; font-size: 15px;
+  color: var(--ink); margin-bottom: 8px;
+}
+.tools-why-body {
+  font-family: 'Noto Sans SC', sans-serif; font-size: 13px;
+  color: var(--ink-soft); line-height: 1.7;
+}
+
+/* Model cards */
+.tools-models-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; }
+.model-card {
+  background: white; border: 1px solid var(--paper-edge); padding: 18px 20px;
+  border-radius: 4px; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start;
+}
+.model-card.primary { border-color: var(--accent); background: linear-gradient(135deg, #fff 0%, #fdf7f0 100%); }
+.model-card-logo { width: 44px; height: 44px; flex-shrink: 0; }
+.model-card-logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 4px; }
+.model-card-name {
+  font-family: 'IBM Plex Mono', monospace; font-size: 13px;
+  font-weight: 500; color: var(--ink); margin-bottom: 3px;
+}
+.model-card-tag {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  color: var(--faded); letter-spacing: 0.08em; margin-bottom: 6px;
+}
+.model-card-body {
+  font-family: 'Noto Sans SC', sans-serif; font-size: 12px;
+  color: var(--ink-soft); line-height: 1.6;
+}
+
+/* Diagram image blocks */
+.tools-diagram {
+  margin: 48px 0;
+  background: var(--paper-deep);
+  border: 1px solid var(--paper-edge);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.tools-diagram-label {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.25em; color: var(--faded); text-transform: uppercase;
+  padding: 12px 20px; border-bottom: 1px solid var(--paper-edge);
+  background: white;
+}
+.tools-diagram img {
+  width: 100%; display: block;
+  max-height: 380px; object-fit: contain;
+  padding: 20px; background: white;
+}
+
+/* ========== ROADMAP SECTION ========== */
+.roadmap-section {
+  padding: 100px 80px 100px;
+  background: var(--paper);
+  position: relative;
+}
+.roadmap-section::before {
+  content: '';
+  position: absolute; top: 0; left: 80px; right: 80px; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), var(--ink), var(--accent), transparent);
+  opacity: 0.25;
+}
+.roadmap-eyebrow {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.4em; color: var(--accent); text-transform: uppercase;
+  margin-bottom: 16px; display: inline-flex; align-items: center; gap: 16px;
+}
+.roadmap-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--accent); }
+.roadmap-h {
+  font-family: 'Fraunces','Noto Serif SC', serif; font-weight: 300;
+  font-size: clamp(32px,4vw,54px); line-height: 1.1; letter-spacing: -0.02em;
+  margin-bottom: 60px; max-width: 800px;
+}
+.roadmap-h em { font-style: italic; color: var(--accent); }
+
+.roadmap-phases {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 0; position: relative;
+}
+.roadmap-phases::before {
+  content: '';
+  position: absolute; top: 48px; left: 0; right: 0; height: 2px;
+  background: repeating-linear-gradient(90deg, var(--accent) 0px, var(--accent) 20px, transparent 20px, transparent 30px);
+  opacity: 0.3; z-index: 0;
+}
+.roadmap-phase {
+  padding: 0 32px 48px 0; position: relative; z-index: 1;
+}
+.roadmap-phase:not(:last-child) {
+  border-right: 1px solid var(--paper-edge); margin-right: 32px; padding-right: 32px;
+}
+.roadmap-phase-dot {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--paper); border: 2px solid var(--paper-edge);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Serif Display', serif; font-style: italic;
+  font-size: 20px; color: var(--faded);
+  margin-bottom: 20px; position: relative;
+}
+.roadmap-phase.current .roadmap-phase-dot {
+  background: var(--accent); border-color: var(--accent);
+  color: white; box-shadow: 0 0 0 6px rgba(200,84,42,0.15);
+}
+.roadmap-phase.next .roadmap-phase-dot {
+  background: var(--paper-deep); border-color: var(--ink);
+  color: var(--ink);
+}
+.roadmap-phase-status {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.roadmap-phase.current .roadmap-phase-status { color: var(--accent); }
+.roadmap-phase.next .roadmap-phase-status { color: var(--ink-soft); }
+.roadmap-phase.explore .roadmap-phase-status { color: var(--faded); }
+.roadmap-phase-title {
+  font-family: 'Fraunces','Noto Serif SC', serif; font-weight: 400;
+  font-size: 22px; color: var(--ink); margin-bottom: 12px; line-height: 1.2;
+}
+.roadmap-phase-body {
+  font-family: 'Noto Sans SC', sans-serif; font-size: 14px;
+  color: var(--ink-soft); line-height: 1.75;
+}
+.roadmap-phase-body em { color: var(--accent); font-style: italic; }
+.roadmap-phase-list {
+  list-style: none; margin-top: 12px;
+}
+.roadmap-phase-list li {
+  font-family: 'Noto Sans SC', sans-serif; font-size: 13px;
+  color: var(--ink-soft); line-height: 1.7; padding: 6px 0 6px 16px;
+  border-bottom: 1px dashed var(--paper-edge); position: relative;
+}
+.roadmap-phase-list li::before {
+  content: '—'; position: absolute; left: 0; color: var(--accent);
+  font-size: 12px;
+}
+
+/* ========== LIGHTBOX ========== */
+.lightbox {
+  position: fixed; inset: 0; background: rgba(18,14,10,0.94);
+  z-index: 10000; opacity: 0; pointer-events: none;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.4s; padding: 60px; flex-direction: column; gap: 20px;
+}
+.lightbox.active { opacity: 1; pointer-events: auto; }
+.lightbox-frame {
+  position: relative; background: var(--film-darker);
+  padding: 40px 32px 32px;
+  width: min(85vw, 820px); max-height: 80vh;
+  display: flex; flex-direction: column;
+  transform: scale(0.85); transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.55);
+}
+.lightbox.active .lightbox-frame { transform: scale(1); }
+.lightbox-frame::before, .lightbox-frame::after {
+  content: ''; position: absolute; left: 0; right: 0; height: 32px;
+  background-color: var(--film-dark);
+  background-image: radial-gradient(6px 8px at 20px 16px, var(--paper-edge) 0%, var(--paper-edge) 70%, transparent 70%);
+  background-size: 40px 32px; background-repeat: repeat-x;
+  pointer-events: none;
+}
+.lightbox-frame::before { top: 0; }
+.lightbox-frame::after  { bottom: 0; }
+.lightbox-meta { display: flex; justify-content: space-between; font-family: 'IBM Plex Mono',monospace; font-size: 12px; color: var(--paper-edge); letter-spacing: 0.18em; margin-bottom: 20px; opacity: 0.6; }
+.lightbox-img { width: 100%; height: min(60vh, 520px); background: var(--paper-deep); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.lightbox-img img { width: 100%; height: 100%; object-fit: contain; }
+.lightbox-caption { margin-top: 20px; font-family: 'Noto Sans SC',sans-serif; font-size: 17px; color: var(--paper); text-align: center; font-weight: 400; line-height: 1.5; }
+.lightbox-caption strong { color: var(--accent); font-weight: 700; }
+.lightbox-close { position: absolute; top: -50px; right: 0; width: 40px; height: 40px; border: 1px solid var(--paper); background: transparent; color: var(--paper); cursor: pointer; font-family: 'IBM Plex Mono',monospace; font-size: 20px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.lightbox-close:hover { background: var(--paper); color: var(--ink); }
+.lightbox-arrows { display: flex; gap: 14px; position: absolute; bottom: -52px; left: 50%; transform: translateX(-50%); }
+.lightbox-arrow { width: 44px; height: 44px; border: 1px solid var(--paper); background: transparent; color: var(--paper); cursor: pointer; font-family: 'IBM Plex Mono',monospace; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.lightbox-arrow:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }
+.lightbox-arrow:disabled { opacity: 0.3; cursor: not-allowed; }
+.lightbox-counter { font-family: 'IBM Plex Mono',monospace; font-size: 12px; color: var(--paper); letter-spacing: 0.25em; align-self: center; padding: 0 12px; }
+
+/* ========== 1.0 修订：放大小标题 / 段落字号 / 提升对比度 ========== */
+/* 核心 eyebrow / part 小标题：14→16px，颜色加深 */
+.tools-eyebrow,
+.roadmap-eyebrow,
+.hero-eyebrow,
+.intro-strip-eyebrow,
+.summary-label {
+  font-size: 16px !important;
+  letter-spacing: 0.32em !important;
+  font-weight: 500 !important;
+  color: var(--accent-deep) !important;
+}
+/* 第二部分过渡区的"第二部分 · 执行案例展示" */
+.section-eyebrow-lg {
+  font-size: 16px !important;
+  letter-spacing: 0.3em !important;
+  font-weight: 500 !important;
+  color: var(--accent-deep) !important;
+}
+/* 区块小标签：— 1. 从大模型到 Agent — / — 我实际使用的模型 — 等 */
+.tools-landscape-label,
+.tools-why-label {
+  font-size: 15px !important;
+  letter-spacing: 0.22em !important;
+  color: var(--ink) !important;
+  font-weight: 600 !important;
+}
+/* roadmap 阶段状态文字（当前阶段/下一阶段/再下一阶段） */
+.roadmap-phase-status {
+  font-size: 15px !important;
+  letter-spacing: 0.22em !important;
+  font-weight: 600 !important;
+}
+.roadmap-phase.current .roadmap-phase-status { color: var(--accent-deep) !important; }
+.roadmap-phase.next    .roadmap-phase-status { color: var(--ink) !important; }
+.roadmap-phase.explore .roadmap-phase-status { color: var(--ink-soft) !important; }
+/* 阶段标题字号放大、加重 */
+.roadmap-phase-title {
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  color: var(--ink) !important;
+}
+/* 阶段正文字号略放大 + 颜色加深 */
+.roadmap-phase-body {
+  font-size: 15px !important;
+  color: var(--ink) !important;
+}
+.roadmap-phase-list li {
+  font-size: 14px !important;
+  color: var(--ink) !important;
+}
+/* 阶段圆点放大 */
+.roadmap-phase-dot {
+  width: 64px !important;
+  height: 64px !important;
+  font-size: 26px !important;
+  font-weight: 700;
+}
+/* 让"过渡到执行案例展示"那段标题正文字号略放大 */
+.transition-eyebrow {
+  font-size: 16px !important;
+  letter-spacing: 0.3em !important;
+  font-weight: 500 !important;
+  color: var(--accent-deep) !important;
+}
+/* hero 副小标 inline 版本：把"思考、复盘和迭代"做成与正文同色的强调 */
+.hero-title .small-inline {
+  display: inline;
+  font-style: italic;
+  color: var(--accent);
+  background: var(--highlight);
+  padding: 0 0.18em;
+}
+/* 结尾 closing 文案放大显眼 */
+.summary-closing {
+  margin-top: 36px;
+  padding: 28px 32px;
+  background: rgba(200,84,42,0.08);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+.summary-closing p {
+  font-family: 'Fraunces','Noto Serif SC',serif;
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.55;
+  color: var(--paper);
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+}
+.summary-closing strong {
+  color: var(--accent);
+  font-weight: 700;
+  font-style: normal;
+  background: rgba(200,84,42,0.15);
+  padding: 2px 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  :root { --nav-w: 240px; }
+  .reel-header { grid-template-columns: 1fr; gap: 16px; }
+  .reel-meta { text-align: left; }
+  .reel-narrative { grid-template-columns: 1fr; gap: 32px; }
+  .frame { width: 280px; } .frame-img { height: 200px; }
+}
+@media (max-width: 768px) {
+  :root { --nav-w: 0; }
+  .nav { transform: translateX(-100%); transition: transform 0.3s; }
+  .nav.open { transform: translateX(0); width: 280px; }
+  .nav-toggle { position: fixed; top: 12px; left: 12px; z-index: 201; width: 44px; height: 44px; background: var(--film-dark); border: 1px solid var(--paper); font-family: 'IBM Plex Mono',monospace; font-size: 18px; cursor: pointer; color: var(--paper); display: flex; align-items: center; justify-content: center; }
+  .bar { left: 0; }
+  .hero, .intro-strip, .reel { padding-left: 24px; padding-right: 24px; }
+  .hero-bottom { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .frame { width: 240px; } .frame-img { height: 180px; }
+  .coda { padding: 80px 24px 60px; }
+  .lightbox { padding: 24px; }
+}
+
+.asset-missing-wrap {
+  position: relative;
+  min-height: 92px;
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(26, 22, 18, 0.035) 0,
+      rgba(26, 22, 18, 0.035) 12px,
+      rgba(245, 236, 220, 0.4) 12px,
+      rgba(245, 236, 220, 0.4) 24px
+    ),
+    var(--paper-deep);
+}
+.asset-missing-wrap > img.asset-missing {
+  visibility: hidden;
+}
+.asset-missing-wrap::after {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 20px;
+  color: var(--faded);
+  content: attr(data-missing-label) "\A图片素材未随 HTML 文件附带";
+  font-family: 'IBM Plex Mono', 'Noto Sans SC', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+  text-align: center;
+  white-space: pre-line;
+}
+.frame.asset-unavailable {
+  cursor: not-allowed;
+}
+.frame.asset-unavailable .frame-img::after {
+  opacity: 1;
+  background: rgba(17, 16, 9, 0.88);
+  content: "演示文件未随 HTML 附带";
+}
+</style>
+</head>
+<body>
+
+<!-- ========== CURTAIN INTRO ========== -->
+<div id="curtain">
+  <div class="curtain-perf-top"></div>
+  <div class="curtain-left"></div>
+  <div class="curtain-right"></div>
+  <div class="curtain-label">
+    <div class="curtain-sub">YINTA · 陈娴 · 2026.04</div>
+    <div class="curtain-title">AI Agent<br><em>实践分享</em></div>
+    <div class="curtain-cta">点击开幕 · CLICK TO BEGIN</div>
+  </div>
+  <div class="curtain-perf-bottom"></div>
+</div>
+
+<div class="grain"></div>
+
+<!-- ========== REEL SVG TEMPLATE (reused) ========== -->
+<!-- We inline a realistic film reel SVG per nav item -->
+
+<!-- ========== LEFT NAV ========== -->
+<nav class="nav" id="nav">
+  <div class="nav-film-top">陈娴 × YINTA · 2026 · AI AGENT PRACTICE</div>
+
+  <div class="nav-header">
+    <div class="nav-header-filmcode">YNT-2026 · 35mm · 24fps</div>
+    <div class="nav-title">AI Agent<br>实践分享</div>
+    <div class="nav-subtitle">— 陈娴 × YINTA —</div>
+  </div>
+
+  <ul class="nav-list">
+    <!-- HERO -->
+    <li class="nav-item active" data-target="hero">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" class="r-outer"/>
+          <circle cx="26" cy="26" r="21.5" class="r-rim"/>
+          <circle cx="26" cy="26" r="13" class="r-hub"/>
+          <circle cx="26" cy="26" r="4.5" class="r-center"/>
+          <line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/>
+          <line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/>
+          <line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/>
+          <line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/>
+          <line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/>
+          <line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/>
+          <circle cx="26" cy="16" r="2.2" class="r-hole"/>
+          <circle cx="26" cy="36" r="2.2" class="r-hole"/>
+          <circle cx="16.9" cy="21" r="2.2" class="r-hole"/>
+          <circle cx="35.1" cy="21" r="2.2" class="r-hole"/>
+          <circle cx="16.9" cy="31" r="2.2" class="r-hole"/>
+          <circle cx="35.1" cy="31" r="2.2" class="r-hole"/>
+          <rect x="24.5" y="1"  width="3" height="4" rx="1" class="r-tooth"/>
+          <rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/>
+          <rect x="1"  y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+          <rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">— OPENING —</div>
+        <div class="nav-info-name">开场</div>
+        <div class="nav-info-meta">HERO</div>
+      </div>
+    </li>
+
+    <div class="nav-divider"></div>
+
+    <li class="nav-item" data-target="tools">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <!-- outer ring -->
+          <circle cx="26" cy="26" r="24" class="r-outer"/>
+          <!-- rim groove -->
+          <circle cx="26" cy="26" r="21.5" class="r-rim"/>
+          <!-- hub disk -->
+          <circle cx="26" cy="26" r="13" class="r-hub"/>
+          <!-- center spindle -->
+          <circle cx="26" cy="26" r="4.5" class="r-center"/>
+          <!-- spokes x6 -->
+          <line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/>
+          <line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/>
+          <line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/>
+          <line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/>
+          <line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/>
+          <line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/>
+          <!-- hub holes x6 -->
+          <circle cx="26" cy="16" r="2.2" class="r-hole"/>
+          <circle cx="26" cy="36" r="2.2" class="r-hole"/>
+          <circle cx="16.9" cy="21" r="2.2" class="r-hole"/>
+          <circle cx="35.1" cy="21" r="2.2" class="r-hole"/>
+          <circle cx="16.9" cy="31" r="2.2" class="r-hole"/>
+          <circle cx="35.1" cy="31" r="2.2" class="r-hole"/>
+          <!-- outer teeth (sprockets) -->
+          <rect x="24.5" y="1"  width="3" height="4" rx="1" class="r-tooth"/>
+          <rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/>
+          <rect x="1"  y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+          <rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">PART 01 · 工具介绍</div>
+        <div class="nav-info-name">我使用的工具</div>
+        <div class="nav-info-meta">CLAUDE CODE · AGENT</div>
+      </div>
+    </li>
+
+    <li class="nav-item" data-target="r1">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" class="r-outer"/><circle cx="26" cy="26" r="21.5" class="r-rim"/><circle cx="26" cy="26" r="13" class="r-hub"/><circle cx="26" cy="26" r="4.5" class="r-center"/><line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/><line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/><line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/><line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/><line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/><line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/><circle cx="26" cy="16" r="2.2" class="r-hole"/><circle cx="26" cy="36" r="2.2" class="r-hole"/><circle cx="16.9" cy="21" r="2.2" class="r-hole"/><circle cx="35.1" cy="21" r="2.2" class="r-hole"/><circle cx="16.9" cy="31" r="2.2" class="r-hole"/><circle cx="35.1" cy="31" r="2.2" class="r-hole"/><rect x="24.5" y="1" width="3" height="4" rx="1" class="r-tooth"/><rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/><rect x="1" y="24.5" width="4" height="3" rx="1" class="r-tooth"/><rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">REEL · 01</div>
+        <div class="nav-info-name">Amazon 数据整理</div>
+        <div class="nav-info-meta">14 CATEGORIES · EXCEL</div>
+      </div>
+    </li>
+
+    <li class="nav-item" data-target="r2">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" class="r-outer"/><circle cx="26" cy="26" r="21.5" class="r-rim"/><circle cx="26" cy="26" r="13" class="r-hub"/><circle cx="26" cy="26" r="4.5" class="r-center"/><line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/><line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/><line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/><line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/><line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/><line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/><circle cx="26" cy="16" r="2.2" class="r-hole"/><circle cx="26" cy="36" r="2.2" class="r-hole"/><circle cx="16.9" cy="21" r="2.2" class="r-hole"/><circle cx="35.1" cy="21" r="2.2" class="r-hole"/><circle cx="16.9" cy="31" r="2.2" class="r-hole"/><circle cx="35.1" cy="31" r="2.2" class="r-hole"/><rect x="24.5" y="1" width="3" height="4" rx="1" class="r-tooth"/><rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/><rect x="1" y="24.5" width="4" height="3" rx="1" class="r-tooth"/><rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">REEL · 02</div>
+        <div class="nav-info-name">Reddit 数据分析</div>
+        <div class="nav-info-meta">25,738 POSTS · 用户洞察</div>
+      </div>
+    </li>
+
+    <li class="nav-item" data-target="r3">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" class="r-outer"/><circle cx="26" cy="26" r="21.5" class="r-rim"/><circle cx="26" cy="26" r="13" class="r-hub"/><circle cx="26" cy="26" r="4.5" class="r-center"/><line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/><line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/><line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/><line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/><line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/><line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/><circle cx="26" cy="16" r="2.2" class="r-hole"/><circle cx="26" cy="36" r="2.2" class="r-hole"/><circle cx="16.9" cy="21" r="2.2" class="r-hole"/><circle cx="35.1" cy="21" r="2.2" class="r-hole"/><circle cx="16.9" cy="31" r="2.2" class="r-hole"/><circle cx="35.1" cy="31" r="2.2" class="r-hole"/><rect x="24.5" y="1" width="3" height="4" rx="1" class="r-tooth"/><rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/><rect x="1" y="24.5" width="4" height="3" rx="1" class="r-tooth"/><rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">REEL · 03</div>
+        <div class="nav-info-name">快速信息收集</div>
+        <div class="nav-info-meta">MRD 支撑材料</div>
+      </div>
+    </li>
+
+    <li class="nav-item" data-target="r4">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" class="r-outer"/><circle cx="26" cy="26" r="21.5" class="r-rim"/><circle cx="26" cy="26" r="13" class="r-hub"/><circle cx="26" cy="26" r="4.5" class="r-center"/><line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/><line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/><line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/><line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/><line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/><line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/><circle cx="26" cy="16" r="2.2" class="r-hole"/><circle cx="26" cy="36" r="2.2" class="r-hole"/><circle cx="16.9" cy="21" r="2.2" class="r-hole"/><circle cx="35.1" cy="21" r="2.2" class="r-hole"/><circle cx="16.9" cy="31" r="2.2" class="r-hole"/><circle cx="35.1" cy="31" r="2.2" class="r-hole"/><rect x="24.5" y="1" width="3" height="4" rx="1" class="r-tooth"/><rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/><rect x="1" y="24.5" width="4" height="3" rx="1" class="r-tooth"/><rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">REEL · 04</div>
+        <div class="nav-info-name">Arb Agent 实践</div>
+        <div class="nav-info-meta">ONE CMD · AI AUTO</div>
+      </div>
+    </li>
+
+    <li class="nav-item" data-target="r5">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" class="r-outer"/><circle cx="26" cy="26" r="21.5" class="r-rim"/><circle cx="26" cy="26" r="13" class="r-hub"/><circle cx="26" cy="26" r="4.5" class="r-center"/><line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/><line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/><line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/><line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/><line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/><line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/><circle cx="26" cy="16" r="2.2" class="r-hole"/><circle cx="26" cy="36" r="2.2" class="r-hole"/><circle cx="16.9" cy="21" r="2.2" class="r-hole"/><circle cx="35.1" cy="21" r="2.2" class="r-hole"/><circle cx="16.9" cy="31" r="2.2" class="r-hole"/><circle cx="35.1" cy="31" r="2.2" class="r-hole"/><rect x="24.5" y="1" width="3" height="4" rx="1" class="r-tooth"/><rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/><rect x="1" y="24.5" width="4" height="3" rx="1" class="r-tooth"/><rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">REEL · 05 / META</div>
+        <div class="nav-info-name">这个分享页面</div>
+        <div class="nav-info-meta">5 MIN · ZERO CODE</div>
+      </div>
+    </li>
+
+    <div class="nav-divider"></div>
+
+    <li class="nav-item" data-target="roadmap">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" class="r-outer"/>
+          <circle cx="26" cy="26" r="21.5" class="r-rim"/>
+          <circle cx="26" cy="26" r="13" class="r-hub"/>
+          <circle cx="26" cy="26" r="4.5" class="r-center"/>
+          <line x1="26" y1="13" x2="26" y2="21.5" class="r-spoke"/>
+          <line x1="26" y1="30.5" x2="26" y2="39" class="r-spoke"/>
+          <line x1="14.7" y1="19.5" x2="19.9" y2="24.7" class="r-spoke"/>
+          <line x1="32.1" y1="27.3" x2="37.3" y2="32.5" class="r-spoke"/>
+          <line x1="14.7" y1="32.5" x2="19.9" y2="27.3" class="r-spoke"/>
+          <line x1="32.1" y1="24.7" x2="37.3" y2="19.5" class="r-spoke"/>
+          <circle cx="26" cy="16" r="2.2" class="r-hole"/>
+          <circle cx="26" cy="36" r="2.2" class="r-hole"/>
+          <circle cx="16.9" cy="21" r="2.2" class="r-hole"/>
+          <circle cx="35.1" cy="21" r="2.2" class="r-hole"/>
+          <circle cx="16.9" cy="31" r="2.2" class="r-hole"/>
+          <circle cx="35.1" cy="31" r="2.2" class="r-hole"/>
+          <rect x="24.5" y="1"  width="3" height="4" rx="1" class="r-tooth"/>
+          <rect x="24.5" y="47" width="3" height="4" rx="1" class="r-tooth"/>
+          <rect x="1"  y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+          <rect x="47" y="24.5" width="4" height="3" rx="1" class="r-tooth"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num">PART 03 · 工作计划</div>
+        <div class="nav-info-name">ARB Agent 计划</div>
+        <div class="nav-info-meta">3 PHASES</div>
+      </div>
+    </li>
+
+    <div class="nav-divider"></div>
+
+    <li class="nav-item" data-target="summary" style="border: 1px solid rgba(200,84,42,0.2);">
+      <div class="nav-reel">
+        <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" style="fill:none;stroke:var(--accent);stroke-width:1.5;"/>
+          <circle cx="26" cy="26" r="21.5" style="fill:none;stroke:rgba(200,84,42,0.3);stroke-width:3;"/>
+          <circle cx="26" cy="26" r="13" style="fill:rgba(200,84,42,0.25);"/>
+          <circle cx="26" cy="26" r="4.5" style="fill:var(--film-darker);stroke:var(--accent);stroke-width:1;"/>
+          <line x1="26" y1="13" x2="26" y2="21.5" style="stroke:var(--accent);stroke-width:1.2;"/><line x1="26" y1="30.5" x2="26" y2="39" style="stroke:var(--accent);stroke-width:1.2;"/><line x1="14.7" y1="19.5" x2="19.9" y2="24.7" style="stroke:var(--accent);stroke-width:1.2;"/><line x1="32.1" y1="27.3" x2="37.3" y2="32.5" style="stroke:var(--accent);stroke-width:1.2;"/><line x1="14.7" y1="32.5" x2="19.9" y2="27.3" style="stroke:var(--accent);stroke-width:1.2;"/><line x1="32.1" y1="24.7" x2="37.3" y2="19.5" style="stroke:var(--accent);stroke-width:1.2;"/>
+          <circle cx="26" cy="16" r="2.2" style="fill:var(--film-darker);"/><circle cx="26" cy="36" r="2.2" style="fill:var(--film-darker);"/><circle cx="16.9" cy="21" r="2.2" style="fill:var(--film-darker);"/><circle cx="35.1" cy="21" r="2.2" style="fill:var(--film-darker);"/><circle cx="16.9" cy="31" r="2.2" style="fill:var(--film-darker);"/><circle cx="35.1" cy="31" r="2.2" style="fill:var(--film-darker);"/>
+          <rect x="24.5" y="1" width="3" height="4" rx="1" style="fill:rgba(200,84,42,0.5);"/><rect x="24.5" y="47" width="3" height="4" rx="1" style="fill:rgba(200,84,42,0.5);"/><rect x="1" y="24.5" width="4" height="3" rx="1" style="fill:rgba(200,84,42,0.5);"/><rect x="47" y="24.5" width="4" height="3" rx="1" style="fill:rgba(200,84,42,0.5);"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-info-num" style="color:var(--accent);">FINAL</div>
+        <div class="nav-info-name" style="color:rgba(245,236,220,0.9);">思考与总结</div>
+        <div class="nav-info-meta">REFLECTION · 2026</div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="nav-footer">
+    <strong>陈娴 × YINTA</strong>
+    产品定义经理<br>
+    2026.04
+  </div>
+
+  <div class="nav-film-bottom">YNT-2026 · AI AGENT PRACTICE · 陈娴</div>
+</nav>
+
+<button class="nav-toggle" id="nav-toggle" style="display:none;">≡</button>
+
+<!-- ========== MAIN ========== -->
+<div class="main">
+
+  <div class="bar">
+    <div><span class="bar-dot"></span>陈娴 × YINTA · AI AGENT 实践分享</div>
+    <div>2026.04 · 10–15 MIN</div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow">A SHARING · AI Agent 工作实践</div>
+      <h1 class="hero-title">
+        AI Agent<br><em>应用分享</em>
+      </h1>
+      <div class="hero-bottom">
+        <div class="hero-by">
+          — 陈娴
+          <span class="hero-by-meta">产品定义经理 · YINTA · 2026.04</span>
+        </div>
+        <div class="hero-scroll">SCROLL TO BEGIN</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro-strip">
+    <div class="intro-strip-eyebrow">— 过去这段时间，AI 在帮我做什么 —</div>
+    <h2 class="intro-strip-h">
+      AI 就像我的<em>助手</em>，<br>
+      把我从收集整理的工作中解放出来，<br>把更多精力放在<span class="hl">思考、复盘和迭代</span>上。
+    </h2>
+    <div class="intro-strip-sub">↓ 每一卷，是一个真实项目。每一格，是一个真实瞬间。</div>
+  </section>
+
+  <!-- ══════════════ TOOLS SECTION ══════════════ -->
+  <section class="tools-section" id="tools" style="scroll-margin-top:60px;">
+    <div class="tools-eyebrow">第一部分 · 我使用的工具是什么</div>
+    <h2 class="tools-h">AI 正从"回答问题",<br>变成<em>执行任务</em>。</h2>
+
+    <!-- ① 大模型 → Agent -->
+    <div class="tools-landscape">
+      <div class="tools-landscape-label">— 1. 从大模型到 Agent —</div>
+      <p style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;max-width:900px;margin-bottom:18px;">
+        过去我们使用 AI，更多是在网页或聊天窗口里提问，让它给答案、文案、代码或思路——这个阶段的 AI 更像一个"高级问答工具"。
+      </p>
+      <p style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;max-width:900px;margin-bottom:22px;">
+        现在头部 AI 公司在推动的，是把大模型进一步做成 <strong>Agent 工具</strong>：<em style="color:var(--accent);font-style:normal;">不只回答，而是能根据目标拆解任务、调用工具、读写文件、执行命令，并在过程中不断调整方案。</em>
+      </p>
+      <p style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;max-width:900px;">
+        换句话说，它的能力从"给建议"升级为"<strong>帮我把事情做出来</strong>"。这次分享的核心，不是某个 AI 模型有多聪明，而是<strong>如何把 AI 变成一个可以参与日常工作的执行型助手</strong>。
+      </p>
+    </div>
+
+    <!-- ② 头部 AI 公司都在做 Agent 工具 -->
+    <div class="tools-landscape">
+      <div class="tools-landscape-label">— 2. 头部 AI 公司都在做自己的 Agent 工具 —</div>
+      <p style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;max-width:900px;margin-bottom:24px;">
+        全球最重要的几家 AI 大模型公司，除了持续升级基础模型，也在推出各自的 Agent 产品。要区分两个概念：<strong>大模型</strong>负责"思考和生成"，<strong>Agent 工具</strong>负责"组织任务和执行动作"。
+      </p>
+      <div class="tools-cards-row">
+
+        <!-- Anthropic / Claude Code -->
+        <div class="tool-card featured">
+          <div class="tool-card-logo">
+            <img src="图标logo/anthropic图标.png" alt="Anthropic Claude Code">
+          </div>
+          <div class="tool-card-body">
+            <div class="tool-card-company">Anthropic（An-thro-pic）</div>
+            <div class="tool-card-model">大模型：Claude 系列</div>
+            <div class="tool-card-agent">→ Agent 工具：Claude Code</div>
+            <div class="tool-card-badge">← 我用这个</div>
+          </div>
+        </div>
+
+        <!-- OpenAI / Codex -->
+        <div class="tool-card">
+          <div class="tool-card-logo">
+            <img src="图标logo/codex图标.png" alt="OpenAI Codex">
+          </div>
+          <div class="tool-card-body">
+            <div class="tool-card-company">OpenAI</div>
+            <div class="tool-card-model">大模型：GPT 系列</div>
+            <div class="tool-card-agent">→ Agent 工具：Codex</div>
+          </div>
+        </div>
+
+        <!-- Google / Gemini CLI -->
+        <div class="tool-card">
+          <div class="tool-card-logo">
+            <img src="图标logo/gemini徒步奥.png" alt="Google Gemini">
+          </div>
+          <div class="tool-card-body">
+            <div class="tool-card-company">Google</div>
+            <div class="tool-card-model">大模型：Gemini 系列</div>
+            <div class="tool-card-agent">→ Agent 工具：Gemini CLI</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ③ 开源/社区：OpenClaw 龙虾 -->
+    <div class="tools-notable">
+      <div class="tools-notable-logo" style="background:#1c1814;display:flex;align-items:center;justify-content:center;">
+        <span style="font-family:'Fraunces',serif;font-style:italic;font-weight:700;color:var(--accent);font-size:34px;">🦞</span>
+      </div>
+      <div>
+        <div class="tools-notable-label">开源 / 社区工具 · OpenClaw（龙虾）</div>
+        <div class="tools-notable-title">"个人 AI Agent 平台，可接入不同模型。"</div>
+        <div class="tools-notable-body">
+          OpenClaw 更像一个个人 AI Agent 平台，可以接入 <em>Claude、GPT、Gemini</em> 等模型，通过聊天工具、终端或网页执行任务。它的走红也说明：<em>市场对"AI 真正帮我做事"的期待，已经非常强烈</em>。
+        </div>
+      </div>
+    </div>
+
+    <!-- 概念区分小卡 -->
+    <div style="margin-top:32px;padding:20px 26px;background:var(--paper-deep);border-left:4px solid var(--accent);border-radius:0 4px 4px 0;max-width:900px;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.22em;color:var(--accent);text-transform:uppercase;margin-bottom:10px;">两个概念，一定要区分清楚</div>
+      <div style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;">
+        <strong>大模型</strong>（Claude Opus、GPT、Gemini、GLM）负责"<em style="color:var(--accent);font-style:normal;">思考和生成</em>"；<strong>Agent 工具</strong>（Claude Code、Codex、Gemini CLI、OpenClaw）负责"<em style="color:var(--accent);font-style:normal;">组织任务和执行动作</em>"。所以，Claude Code 本身不是模型，而是<strong>把模型能力连接到真实工作流的执行工具</strong>。
+      </div>
+    </div>
+
+  </section><!-- end .tools-section -->
+
+  <!-- ══════════════ 案例区过渡 ══════════════ -->
+  <section style="max-width:1100px;margin:0 auto;padding:0 56px 60px;">
+    <div class="section-eyebrow-lg" style="font-family:'IBM Plex Mono',monospace;text-transform:uppercase;margin-bottom:18px;">第二部分 · 执行案例展示</div>
+    <h2 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(28px,3.4vw,42px);line-height:1.3;color:var(--ink);max-width:880px;margin-bottom:28px;">
+      前面是工具和工作方式，<br>下面是<em style="color:var(--accent);font-style:italic;">具体执行结果</em>。
+    </h2>
+    <p style="font-family:'Noto Sans SC',sans-serif;font-size:15px;color:var(--ink-soft);line-height:1.9;max-width:840px;margin-bottom:22px;">
+      这些案例的共同点不是"AI 生成了什么"，而是：<strong>我提出业务需求，AI 负责拆解、执行、生成、修正；我再根据结果判断方向是否正确。</strong>
+    </p>
+    <p style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;max-width:840px;margin-bottom:22px;">
+      因此，这些案例可以理解为一次小规模验证：
+    </p>
+    <ul style="list-style:none;padding:0;margin:0;max-width:840px;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;">
+      <li style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.7;padding-left:22px;position:relative;">
+        <span style="position:absolute;left:0;top:0;color:var(--accent);font-family:'Fraunces',serif;font-weight:500;">①</span>
+        AI 能不能处理重复性、规则性强的工作？
+      </li>
+      <li style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.7;padding-left:22px;position:relative;">
+        <span style="position:absolute;left:0;top:0;color:var(--accent);font-family:'Fraunces',serif;font-weight:500;">②</span>
+        AI 能不能把零散材料整理成结构化结果？
+      </li>
+      <li style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.7;padding-left:22px;position:relative;">
+        <span style="position:absolute;left:0;top:0;color:var(--accent);font-family:'Fraunces',serif;font-weight:500;">③</span>
+        AI 能不能根据反馈持续修改页面和文件？
+      </li>
+      <li style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.7;padding-left:22px;position:relative;">
+        <span style="position:absolute;left:0;top:0;color:var(--accent);font-family:'Fraunces',serif;font-weight:500;">④</span>
+        哪些任务可以交给 AI，哪些还必须由人来判断？
+      </li>
+    </ul>
+  </section>
+
+  <section class="reels">
+
+    <!-- ══════════════ REEL 01: AMAZON ══════════════ -->
+    <div class="reel r1" id="r1">
+      <div class="reel-header">
+        <div class="reel-num">01</div>
+        <div class="reel-title-wrap">
+          <div class="reel-tag">REEL · 01 / 数据整合</div>
+          <h3 class="reel-title">Amazon <em>类目数据</em>整理。</h3>
+        </div>
+        <div class="reel-meta">
+          14 CATEGORIES · XLSX<br>
+          PROJECT · 品类地图
+        </div>
+      </div>
+
+      <div class="film-strip-wrap">
+        <div class="film-strip-scroll">
+          <div class="film-strip" id="strip-r1">
+            <div class="film-edge-text"><span>陈娴 × AI · 35mm · AMAZON DATA</span><span>R01-A</span></div>
+
+            <div class="frame" data-lightbox data-src="amazon/amaozn原始数据表.png" data-caption="<strong>原始数据</strong> · 14个类目 XLSX 原始表格，AI 自动整合">
+              <div class="frame-num"><span>01</span><span>YNT</span></div>
+              <div class="frame-img"><img src="amazon/amaozn原始数据表.png" alt="Amazon原始数据表" loading="lazy"></div>
+              <div class="frame-caption"><strong>原始数据</strong> · 14 个类目表格</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="amazon/amazon-品类地图.html" data-src="amazon/品类市场总览图.png" data-caption="<strong>品类地图</strong> · AI 生成可交互 HTML 页面 · 点击可打开">
+              <div class="frame-num"><span>02</span><span>YNT</span></div>
+              <div class="frame-img"><img src="amazon/品类市场总览图.png" alt="品类市场总览图" loading="lazy"></div>
+              <div class="frame-caption"><strong>品类地图 HTML</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="amazon/销售额趋势图.png" data-caption="<strong>销售额趋势</strong> · AI 自动生成可视化图表">
+              <div class="frame-num"><span>03</span><span>YNT</span></div>
+              <div class="frame-img"><img src="amazon/销售额趋势图.png" alt="销售额趋势图" loading="lazy"></div>
+              <div class="frame-caption"><strong>销售额趋势</strong> · AI 自动可视化</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="amazon/分析报告.png" data-caption="<strong>分析报告</strong> · 数据整合完成后的结构化报告">
+              <div class="frame-num"><span>04</span><span>YNT</span></div>
+              <div class="frame-img"><img src="amazon/分析报告.png" alt="分析报告" loading="lazy"></div>
+              <div class="frame-caption"><strong>分析报告</strong> · 结构化产出</div>
+            </div>
+
+            <div class="film-edge-text bottom"><span>R01 · END</span><span>陈娴 × AI</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL HORIZONTALLY · 横向滑动</div>
+
+      <div class="reel-narrative">
+        <div>
+          <div class="narrative-tag">— Reel No.1 —</div>
+          <h4 class="narrative-h">从 Excel 到<br><em>可交互页面</em>，<br>一句指令。</h4>
+        </div>
+        <div class="narrative-body">
+          <p>下载了 14 个品类的 Amazon 数据表，过去这种整合工作需要反复打开、复制、对齐格式，耗时半天以上。</p>
+          <p>AI 接手后：<strong>自动整合所有表格</strong>、生成趋势图、写分析报告，最后还做成了一个可以交互的 HTML 品类地图页面。</p>
+          <div class="narrative-handnote">节省的时间，用来思考品类策略。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════ REEL 02: REDDIT ══════════════ -->
+    <div class="reel r2" id="r2">
+      <div class="reel-header">
+        <div class="reel-num">02</div>
+        <div class="reel-title-wrap">
+          <div class="reel-tag">REEL · 02 / 用户洞察</div>
+          <h3 class="reel-title">Reddit <em>数据分析</em>。</h3>
+        </div>
+        <div class="reel-meta">
+          25,738 有效帖 · 33,201 原始<br>
+          PROJECT · 用户痛点研究
+        </div>
+      </div>
+
+      <div class="film-strip-wrap">
+        <div class="film-strip-scroll">
+          <div class="film-strip" id="strip-r2">
+            <div class="film-edge-text"><span>陈娴 × AI · 35mm · REDDIT SCRAPER</span><span>R02-A</span></div>
+
+            <div class="frame" data-lightbox data-src="reddit数据/subreddit爬虫脚本.png" data-caption="<strong>爬虫脚本</strong> · AI 自动编写 · 抓取 subreddit hot Top100 帖子+评论+点赞数">
+              <div class="frame-num"><span>01</span><span>YNT</span></div>
+              <div class="frame-img"><img src="reddit数据/subreddit爬虫脚本.png" alt="爬虫脚本" loading="lazy"></div>
+              <div class="frame-caption"><strong>爬虫脚本</strong> · AI 自动编写</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="reddit数据/各种数据分析脚本.png" data-caption="<strong>分析脚本</strong> · AI 自动写多个打标、统计、聚类脚本">
+              <div class="frame-num"><span>02</span><span>YNT</span></div>
+              <div class="frame-img"><img src="reddit数据/各种数据分析脚本.png" alt="各种数据分析脚本" loading="lazy"></div>
+              <div class="frame-caption"><strong>分析脚本</strong> · 打标 + 聚类</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="reddit数据/各个ai分析结果（多轮验证作证）.png" data-caption="<strong>多模型验证</strong> · Claude / GPT / 智谱 多轮跑，交叉验证结果">
+              <div class="frame-num"><span>03</span><span>YNT</span></div>
+              <div class="frame-img"><img src="reddit数据/各个ai分析结果（多轮验证作证）.png" alt="多轮验证结果" loading="lazy"></div>
+              <div class="frame-caption"><strong>多模型交叉验证</strong></div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="reddit数据/reddit分析报告.png" data-caption="<strong>分析报告</strong> · 结构化洞察输出">
+              <div class="frame-num"><span>04</span><span>YNT</span></div>
+              <div class="frame-img"><img src="reddit数据/reddit分析报告.png" alt="Reddit分析报告" loading="lazy"></div>
+              <div class="frame-caption"><strong>分析报告</strong> · 洞察输出</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="reddit数据/洞察结果-父母端.png" data-caption="<strong>最终洞察</strong> · 父母端痛点 · 直接支撑 MRD">
+              <div class="frame-num"><span>05</span><span>YNT</span></div>
+              <div class="frame-img"><img src="reddit数据/洞察结果-父母端.png" alt="洞察结果-父母端" loading="lazy"></div>
+              <div class="frame-caption"><strong>父母端洞察</strong> · MRD 核心依据</div>
+            </div>
+
+            <div class="film-edge-text bottom"><span>R02 · END · 25,738 POSTS</span><span>陈娴 × AI</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL HORIZONTALLY · 横向滑动</div>
+
+      <div class="reel-narrative">
+        <div>
+          <div class="narrative-tag">— Reel No.2 —</div>
+          <h4 class="narrative-h"><em>25,738</em> 条帖子，<br>我只提了<br>一个问题。</h4>
+        </div>
+        <div class="narrative-body">
+          <p>我定好研究问题：<strong>"AI 玩具在 3–9 岁家长群里的真实痛点是什么？"</strong> 剩下的全部给 AI——写爬虫、抓数据、打标分类、情绪聚类、生成报告。</p>
+          <p>用多个大模型<em>多轮交叉验证</em>，确保结论不是"幻觉"，而是真实信号。这份数据最终支撑了 MRD 的用户洞察部分。</p>
+          <div class="narrative-handnote">人做判断，AI做规模化执行。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════ REEL 03: 信息收集 ══════════════ -->
+    <div class="reel r3" id="r3">
+      <div class="reel-header">
+        <div class="reel-num">03</div>
+        <div class="reel-title-wrap">
+          <div class="reel-tag">REEL · 03 / MRD 支撑</div>
+          <h3 class="reel-title">快速<em>信息收集</em>。</h3>
+        </div>
+        <div class="reel-meta">
+          多维视角 · MRD 依据<br>
+          PROJECT · 产品定义基础
+        </div>
+      </div>
+
+      <div class="film-strip-wrap">
+        <div class="film-strip-scroll">
+          <div class="film-strip" id="strip-r3">
+            <div class="film-edge-text"><span>陈娴 × AI · 35mm · MRD RESEARCH</span><span>R03-A</span></div>
+
+            <div class="frame" data-lightbox data-src="信息收集/美国学制+夏令营信息.png" data-caption="<strong>美国学制 + 夏令营</strong> · 目标市场儿童成长路径研究">
+              <div class="frame-num"><span>01</span><span>YNT</span></div>
+              <div class="frame-img"><img src="信息收集/美国学制+夏令营信息.png" alt="美国学制+夏令营信息" loading="lazy"></div>
+              <div class="frame-caption"><strong>美国学制 + 夏令营</strong></div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="信息收集/竞品dex全部评论分析.png" data-caption="<strong>竞品评论全量分析</strong> · DEX 全部用户评论 AI 聚类">
+              <div class="frame-num"><span>02</span><span>YNT</span></div>
+              <div class="frame-img"><img src="信息收集/竞品dex全部评论分析.png" alt="竞品dex全部评论分析" loading="lazy"></div>
+              <div class="frame-caption"><strong>竞品评论分析</strong> · DEX</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="信息收集/社会心理学理论搜集.png" data-caption="<strong>社会心理学理论</strong> · 产品设计理论依据收集">
+              <div class="frame-num"><span>03</span><span>YNT</span></div>
+              <div class="frame-img"><img src="信息收集/社会心理学理论搜集.png" alt="社会心理学理论搜集" loading="lazy"></div>
+              <div class="frame-caption"><strong>社会心理学理论</strong> · 理论支撑</div>
+            </div>
+
+            <div class="film-edge-text bottom"><span>R03 · END</span><span>陈娴 × AI</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL HORIZONTALLY · 横向滑动</div>
+
+      <div class="reel-narrative">
+        <div>
+          <div class="narrative-tag">— Reel No.3 —</div>
+          <h4 class="narrative-h">MRD 在<em>立案前</em>，<br>已迭代了<br>很多版本。</h4>
+        </div>
+        <div class="narrative-body">
+          <p>做 MRD 的时候我会不断问自己：<strong>数据是否全面？视角是否受限？有没有遗漏的信息？</strong> AI 帮我快速填补这些盲区。</p>
+          <p>美国儿童学制、竞品用户评论的全量分析、社会心理学理论参考——这些过去需要花大量时间搜集的基础材料，现在由 AI 完成初步整理，<em>我再做判断和筛选</em>。</p>
+          <div class="narrative-handnote">更多时间留给思考，而不是搜集。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════ REEL 04: ARB AGENT ══════════════ -->
+    <div class="reel r4" id="r4">
+      <div class="reel-header">
+        <div class="reel-num">04</div>
+        <div class="reel-title-wrap">
+          <div class="reel-tag">REEL · 04 / 自动化实践</div>
+          <h3 class="reel-title">Arb <em>Agent</em> 实践。</h3>
+        </div>
+        <div class="reel-meta">
+          4 位同事需求 · ONE INSTRUCTION<br>
+          AI FULLY AUTOMATED
+        </div>
+      </div>
+
+      <div class="film-strip-wrap">
+        <div class="film-strip-scroll">
+          <div class="film-strip" id="strip-r4">
+            <div class="film-edge-text"><span>陈娴 × AI · 35mm · AGENT AUTO</span><span>R04-A</span></div>
+
+            <div class="frame" data-lightbox data-src="Arb Agent实践/初始需求.png" data-caption="<strong>四位同事的需求</strong> · 素材下载自动化">
+              <div class="frame-num"><span>01</span><span>YNT</span></div>
+              <div class="frame-img"><img src="Arb Agent实践/初始需求.png" alt="初始需求" loading="lazy"></div>
+              <div class="frame-caption"><strong>四位同事的需求</strong></div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="Arb Agent实践/初始指令-claude.png" data-caption="<strong>给 AI 一次指令</strong> · 之后去做别的事，全程 AI 自主完成">
+              <div class="frame-num"><span>02</span><span>YNT</span></div>
+              <div class="frame-img"><img src="Arb Agent实践/初始指令-claude.png" alt="初始指令" loading="lazy"></div>
+              <div class="frame-caption"><strong>一次指令</strong> · 然后离开</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="Arb Agent实践/结果：agent脚本设置.png" data-caption="<strong>Agent 脚本</strong> · AI 自主编写、测试、执行">
+              <div class="frame-num"><span>03</span><span>YNT</span></div>
+              <div class="frame-img"><img src="Arb Agent实践/结果：agent脚本设置.png" alt="agent脚本设置" loading="lazy"></div>
+              <div class="frame-caption"><strong>Agent 脚本</strong> · 自主编写执行</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="Arb Agent实践/结果案例-图片素材下载.png" data-caption="<strong>执行结果</strong> · 图片素材批量下载完成">
+              <div class="frame-num"><span>04</span><span>YNT</span></div>
+              <div class="frame-img"><img src="Arb Agent实践/结果案例-图片素材下载.png" alt="结果案例" loading="lazy"></div>
+              <div class="frame-caption"><strong>执行结果</strong> · 素材批量下载</div>
+            </div>
+
+            <div class="film-edge-text bottom"><span>R04 · END</span><span>陈娴 × AI</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL HORIZONTALLY · 横向滑动</div>
+
+      <!-- 1.0 修订：分享内容与 agent 实践同步运行 -->
+      <div style="max-width:1500px;margin:48px auto 0;padding:0 0;">
+        <div style="background:var(--paper-deep);border:1px solid var(--paper-edge);border-left:4px solid var(--accent);border-radius:0 4px 4px 0;padding:22px 26px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.28em;color:var(--accent-deep);text-transform:uppercase;font-weight:600;margin-bottom:14px;">— 同步运行 · PARALLEL TASKS —</div>
+          <div style="font-family:'Noto Sans SC',sans-serif;font-size:15px;color:var(--ink);line-height:1.85;margin-bottom:18px;">
+            <strong>分享内容和 agent 实践，同步运行。</strong>这边在做这次分享页面的同时，那边 ARB Agent 也在按指令自主执行素材下载任务，互不干扰。
+          </div>
+          <div style="background:#fff;border:1px solid var(--paper-edge);overflow:hidden;border-radius:2px;">
+            <img src="工作展示.jpg" alt="分享内容和 agent 实践，同步运行" style="width:100%;display:block;max-height:560px;object-fit:contain;background:#fff;" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-narrative">
+        <div>
+          <div class="narrative-tag">— Reel No.4 —</div>
+          <h4 class="narrative-h">只给了<em>一次</em>指令，<br>然后去做<br>别的事了。</h4>
+        </div>
+        <div class="narrative-body">
+          <p>收集了 4 位同事的素材下载需求，给 AI 写了一次指令后，<strong>全程 AI 自主完成：编写脚本 → 测试 → 执行</strong>，我中途没有干预。</p>
+          <p>目前是素材下载阶段，后续计划加入<em>分析向的工作</em>——对图片风格打标签、视频内容统计等，根据同事需求持续迭代。</p>
+          <div class="narrative-handnote">这只是起点，不是终点。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════ REEL 05: 本次分享页面 ══════════════ -->
+    <div class="reel r5" id="r5" style="background: linear-gradient(180deg, transparent, rgba(200,84,42,0.03), transparent);">
+      <div class="reel-header">
+        <div class="reel-num">05</div>
+        <div class="reel-title-wrap">
+          <div class="reel-tag">REEL · 05 / META</div>
+          <h3 class="reel-title">这个<em>分享页面</em>本身。</h3>
+        </div>
+        <div class="reel-meta">
+          5 MIN · ZERO CODE<br>
+          MADE WITH CLAUDE CODE
+        </div>
+      </div>
+
+      <div class="film-strip-wrap">
+        <div class="film-strip-scroll">
+          <div class="film-strip" id="strip-r5">
+            <div class="film-edge-text"><span>陈娴 × AI · 35mm · META · THIS PAGE</span><span>R05-A</span></div>
+
+            <div class="frame" data-lightbox data-src="html分享页/agent应用项目整理.png" data-caption="<strong>项目整理</strong> · 把做过的项目整理成说明，截图相关图片">
+              <div class="frame-num"><span>01</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html分享页/agent应用项目整理.png" alt="项目整理" loading="lazy"></div>
+              <div class="frame-caption"><strong>项目整理</strong> · 内容素材准备</div>
+            </div>
+
+            <div class="frame" data-lightbox data-src="html分享页/执行指令.png" data-caption="<strong>执行指令</strong> · 给 Claude Code 的完整 Prompt">
+              <div class="frame-num"><span>02</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html分享页/执行指令.png" alt="执行指令" loading="lazy"></div>
+              <div class="frame-caption"><strong>Prompt</strong> · 给 Claude 的指令</div>
+            </div>
+
+            <!-- 历史版本 v1–v8，每个可单独打开 -->
+            <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo.html">
+              <div class="frame-num"><span>03</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/v1.png" alt="V1 Editorial" loading="lazy"></div>
+              <div class="frame-caption"><strong>V1 · Editorial</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo_v2.html">
+              <div class="frame-num"><span>04</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/V2.png" alt="V2 Refined" loading="lazy"></div>
+              <div class="frame-caption"><strong>V2 · Refined</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo_v3_editorial.html">
+              <div class="frame-num"><span>05</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/v3.png" alt="V3 Editorial+" loading="lazy"></div>
+              <div class="frame-caption"><strong>V3 · Editorial+</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="历史html风格/sara_ceo_demo_v4_brutalist.html">
+              <div class="frame-num"><span>06</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/v4.png" alt="V4 Brutalist" loading="lazy"></div>
+              <div class="frame-caption"><strong>V4 · Brutalist</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="历史html风格/v5_manifesto.html">
+              <div class="frame-num"><span>07</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/v5.png" alt="V5 Manifesto" loading="lazy"></div>
+              <div class="frame-caption"><strong>V5 · Manifesto</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="历史html风格/v6_constellation.html">
+              <div class="frame-num"><span>08</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/v6.png" alt="V6 Constellation" loading="lazy"></div>
+              <div class="frame-caption"><strong>V6 · Constellation</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="历史html风格/v7_letterpress.html">
+              <div class="frame-num"><span>09</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/v7.png" alt="V7 Letterpress" loading="lazy"></div>
+              <div class="frame-caption"><strong>V7 · Letterpress</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="frame has-link" data-html-link data-href="历史html风格/v8_cinema.html">
+              <div class="frame-num"><span>10</span><span>YNT</span></div>
+              <div class="frame-img"><img src="html页面-预览图/v8.png" alt="V8 Cinema" loading="lazy"></div>
+              <div class="frame-caption"><strong>V8 · Cinema</strong> · 点击打开 ↗</div>
+            </div>
+
+            <div class="film-edge-text bottom"><span>R05 · META · THIS IS THE PAGE YOU ARE READING</span><span>陈娴 × AI</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL HORIZONTALLY · 横向滑动</div>
+
+      <div class="reel-narrative">
+        <div>
+          <div class="narrative-tag">— Reel No.5 / META —</div>
+          <h4 class="narrative-h">你正在看的<br>这个页面，<br>就是<em>证明</em>本身。</h4>
+        </div>
+        <div class="narrative-body">
+          <p>记录了做过的项目，截取了相关图片，写了说明，然后交给 AI——<strong>5 分钟，做出这个页面</strong>。</p>
+          <p>我是家具设计专业出身，完全<em>零代码基础</em>。这不是魔法，这是工具的力量。AI 时代，<strong>会提问题的人，能做到过去需要一个小团队才能完成的工作量</strong>。</p>
+          <div class="narrative-handnote">这个页面本身，就是最好的演示。</div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- end .reels -->
+
+  <!-- ══════════════ ROADMAP SECTION ══════════════ -->
+  <section class="roadmap-section" id="roadmap" style="scroll-margin-top:60px;">
+    <div class="roadmap-eyebrow">第三部分 · ARB Agent 的工作计划</div>
+    <h2 class="roadmap-h">从"AI 帮我做"<br>到一个能<em>参与业务流程</em>的工作系统。</h2>
+
+    <div class="roadmap-phases">
+
+      <!-- Phase 1 -->
+      <div class="roadmap-phase current">
+        <div class="roadmap-phase-dot">1</div>
+        <div class="roadmap-phase-status">PHASE 1 · 进行中</div>
+        <div class="roadmap-phase-title">提出需求，让 AI 执行</div>
+        <div class="roadmap-phase-body">
+          <strong>人提需求，AI 跑执行。</strong>先找到——<em>哪些工作能交给 AI 做 70%，由人做最后判断</em>。
+        </div>
+        <ul class="roadmap-phase-list">
+          <li>数据整理 / 文件批量处理</li>
+          <li>页面生成 / 文案初稿</li>
+          <li>表格优化 / 简单规则判断</li>
+        </ul>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="roadmap-phase next">
+        <div class="roadmap-phase-dot">2</div>
+        <div class="roadmap-phase-status">PHASE 2</div>
+        <div class="roadmap-phase-title">高频工作沉淀成脚本</div>
+        <div class="roadmap-phase-body">
+          反复验证过的任务，不必每次让 AI 从头思考。<strong>稳定、重复、规则清晰的工作沉淀成脚本。</strong>
+          <br><br>
+          ① <em>降 token 消耗</em>；<br>
+          ② <em>提高稳定性</em>。<br><br>
+          分工：<strong>规则交给脚本，判断交给 AI。</strong>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="roadmap-phase explore">
+        <div class="roadmap-phase-dot">3</div>
+        <div class="roadmap-phase-status">PHASE 3</div>
+        <div class="roadmap-phase-title">加入主观判断类任务</div>
+        <div class="roadmap-phase-body">
+          逐步尝试图片打标、素材筛选、质量判断。<em>主观判断、品牌风格容易偏差</em>，靠训练和校准持续靠近业务标准：
+        </div>
+        <ul class="roadmap-phase-list">
+          <li>建立样例 → AI 按规则打标</li>
+          <li>人工复核 → 找出错误类型</li>
+          <li>反向优化提示词与规则</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- 三层能力模型 -->
+    <div style="margin-top:80px;">
+      <div class="tools-why-label" style="margin-bottom:18px;">— 4. 最终希望形成的工作模式：三层能力 —</div>
+      <p style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;max-width:900px;margin-bottom:30px;">
+        未来 ARB Agent 的目标不是做一个"聊天机器人"，而是形成一个<strong>能参与实际业务流程的工作系统</strong>。它应该具备三层能力：
+      </p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;max-width:1080px;">
+        <div style="padding:22px 22px 24px;background:#fff;border:1px solid var(--paper-edge);border-top:3px solid var(--ink);border-radius:2px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.22em;color:var(--faded);text-transform:uppercase;margin-bottom:10px;">第一层</div>
+          <div style="font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:var(--ink);line-height:1.3;margin-bottom:10px;">脚本自动化</div>
+          <div style="font-family:'Noto Sans SC',sans-serif;font-size:13px;color:var(--accent);font-weight:500;margin-bottom:12px;">稳定 · 低成本 · 可重复</div>
+          <div style="font-family:'Noto Sans SC',sans-serif;font-size:13px;color:var(--ink-soft);line-height:1.75;">批量处理、格式转换、字段清洗、基础检查</div>
+        </div>
+        <div style="padding:22px 22px 24px;background:#fff;border:1px solid var(--paper-edge);border-top:3px solid var(--accent);border-radius:2px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.22em;color:var(--faded);text-transform:uppercase;margin-bottom:10px;">第二层</div>
+          <div style="font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:var(--ink);line-height:1.3;margin-bottom:10px;">AI Agent 执行</div>
+          <div style="font-family:'Noto Sans SC',sans-serif;font-size:13px;color:var(--accent);font-weight:500;margin-bottom:12px;">能理解需求并调用工具</div>
+          <div style="font-family:'Noto Sans SC',sans-serif;font-size:13px;color:var(--ink-soft);line-height:1.75;">页面生成、数据整理、复杂文件处理、跨步骤任务</div>
+        </div>
+        <div style="padding:22px 22px 24px;background:#fff;border:1px solid var(--paper-edge);border-top:3px solid var(--ink-soft);border-radius:2px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.22em;color:var(--faded);text-transform:uppercase;margin-bottom:10px;">第三层</div>
+          <div style="font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:var(--ink);line-height:1.3;margin-bottom:10px;">AI 辅助判断</div>
+          <div style="font-family:'Noto Sans SC',sans-serif;font-size:13px;color:var(--accent);font-weight:500;margin-bottom:12px;">能参与主观判断 · 需要训练</div>
+          <div style="font-family:'Noto Sans SC',sans-serif;font-size:13px;color:var(--ink-soft);line-height:1.75;">图片打标、素材筛选、质量判断、风格判断</div>
+        </div>
+      </div>
+
+      <div style="margin-top:36px;padding:24px 28px;background:var(--paper-deep);border-left:4px solid var(--accent);border-radius:0 4px 4px 0;max-width:900px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.22em;color:var(--accent);text-transform:uppercase;margin-bottom:10px;">核心思路</div>
+        <div style="font-family:'Noto Sans SC',sans-serif;font-size:14px;color:var(--ink-soft);line-height:1.85;">
+          我们不是把所有事情都交给 AI，而是<strong>把工作拆成不同层级</strong>：能脚本化的脚本化，需要判断的让 AI 辅助，<em style="color:var(--accent);font-style:normal;">人保留最终判断权</em>。
+        </div>
+      </div>
+    </div>
+
+  </section><!-- end .roadmap-section -->
+
+  <!-- ══════════════ SUMMARY ══════════════ -->
+  <section class="summary-section" id="summary">
+    <div class="summary-inner">
+      <div class="summary-header">
+        <div class="summary-label">— FINAL REEL · 这次实践给我的启发 —</div>
+        <h2 class="summary-title">
+          人把目标讲清楚，<br>
+          <em>AI 把过程跑起来</em>。
+        </h2>
+        <p class="summary-subtitle">
+          AI Agent 的价值，不只是"生成内容更快"，<br>
+          而是<em>改变工作分工</em>——让人更专注于判断什么值得做、什么是好结果。
+        </p>
+      </div>
+
+      <div class="summary-grid">
+
+        <div class="summary-block">
+          <div class="summary-block-num">I</div>
+          <div>
+            <div class="summary-block-tag">过去工作卡在哪里</div>
+            <h3 class="summary-block-title">想法有了，但没有足够时间把它做出来。</h3>
+            <div class="summary-block-body">
+              <p>过去很多工作卡在两个地方——<strong>想法有了，但没时间把它做出来</strong>；需求知道，但实现过程太零散、太耗人力。</p>
+              <p>现在 Agent 工具让这件事发生变化：人把目标讲清楚，AI 把过程跑起来。我们可以用更低成本验证更多想法，用更短周期完成更多基础工作，<em>把人的精力更多放在判断、标准和方向上</em>。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-block">
+          <div class="summary-block-num">II</div>
+          <div>
+            <div class="summary-block-tag">分工的转变</div>
+            <h3 class="summary-block-title">我负责判断什么值得做，AI 负责把它先做出来。</h3>
+            <div class="summary-block-body">
+              <p>在我的实践中，分工已经发生了清晰的变化——</p>
+            </div>
+            <div class="pros-cons">
+              <div class="pros">
+                <div class="pros-label">✦ 人负责</div>
+                <ul>
+                  <li>判断什么值得做</li>
+                  <li>把业务目标讲清楚</li>
+                  <li>对结果做<strong>最终判断</strong>和方向校准</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <div class="cons-label">✦ AI 负责</div>
+                <ul>
+                  <li>拆解任务、调用工具、读写文件</li>
+                  <li>执行命令、生成内容、修正错误</li>
+                  <li>在过程中<em>不断调整方案</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-block">
+          <div class="summary-block-num">III</div>
+          <div>
+            <div class="summary-block-tag">ARB Agent 的定位</div>
+            <h3 class="summary-block-title">不是替代人，而是把人从重复执行中释放出来。</h3>
+            <div class="summary-block-body">
+              <p>所以，我对 ARB Agent 的定位是——<strong>它不是替代人，而是把人从重复执行中释放出来，让人更专注于判断什么值得做、什么是好结果</strong>。</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CODA -->
+  <div class="coda">
+    <div class="coda-num">FIN.</div>
+    <div class="coda-text">
+      人把目标讲清楚，<br>
+      <em>AI 把过程跑起来</em>。
+    </div>
+    <div class="coda-sig">— 陈娴, YINTA, 2026.04</div>
+  </div>
+
+  <div class="demo-note">YNT-2026 · AI AGENT 实践分享 · 陈娴 × YINTA · 产品定义经理 · 2026.04</div>
+
+</div><!-- end .main -->
+
+<!-- ========== LIGHTBOX ========== -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-frame">
+    <div class="lightbox-meta">
+      <span id="lb-reel">R01</span>
+      <span id="lb-code">陈娴 × YINTA · 2026</span>
+    </div>
+    <div class="lightbox-img" id="lb-img">
+      <img id="lb-img-el" src="" alt="">
+    </div>
+    <div class="lightbox-caption" id="lb-caption"></div>
+    <button class="lightbox-close" id="lb-close">×</button>
+    <div class="lightbox-arrows">
+      <button class="lightbox-arrow" id="lb-prev">←</button>
+      <span class="lightbox-counter" id="lb-counter">1 / 1</span>
+      <button class="lightbox-arrow" id="lb-next">→</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ========== CURTAIN ==========
+(function(){
+  const curtain = document.getElementById('curtain');
+  function openCurtain(){
+    curtain.classList.add('open');
+    setTimeout(() => curtain.classList.add('hidden'), 1400);
+  }
+  curtain.addEventListener('click', openCurtain);
+  // also allow keyboard
+  document.addEventListener('keydown', function(e){
+    if(!curtain.classList.contains('open') && (e.key === 'Enter' || e.key === ' ')){
+      openCurtain();
+    }
+  });
+})();
+
+// ========== HERO CANVAS ==========
+(function(){
+  const canvas = document.getElementById('hero-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [];
+  function resize(){ W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
+  function Particle(){
+    this.x = Math.random()*W; this.y = Math.random()*H;
+    this.vx = (Math.random()-0.5)*0.4; this.vy = (Math.random()-0.5)*0.4;
+    this.r = Math.random()*1.5+0.5; this.a = Math.random()*0.12+0.03;
+  }
+  Particle.prototype.update = function(){
+    this.x += this.vx; this.y += this.vy;
+    if(this.x<0) this.x=W; if(this.x>W) this.x=0;
+    if(this.y<0) this.y=H; if(this.y>H) this.y=0;
+  };
+  function init(){ resize(); particles=[]; for(let i=0;i<80;i++) particles.push(new Particle()); }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    particles.forEach(p=>{ p.update(); ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fillStyle=`rgba(200,84,42,${p.a})`; ctx.fill(); });
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', resize);
+  init(); draw();
+})();
+
+// ========== NAV ACTIVE ON SCROLL ==========
+const navItems = document.querySelectorAll('.nav-item[data-target]');
+const sections = {};
+navItems.forEach(item => {
+  const id = item.dataset.target;
+  const el = document.getElementById(id);
+  if(el) sections[id] = el;
+  item.addEventListener('click', () => {
+    const target = document.getElementById(item.dataset.target);
+    if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      navItems.forEach(n => n.classList.remove('active'));
+      const active = document.querySelector(`.nav-item[data-target="${e.target.id}"]`);
+      if(active) active.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+Object.values(sections).forEach(s => observer.observe(s));
+
+// ========== FILM REEL EXPAND ANIMATION ==========
+const reelObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting && !e.target.classList.contains('seen')){
+      e.target.classList.add('seen');
+      const strip = e.target.querySelector('.film-strip');
+      if(strip){
+        strip.style.opacity = '0';
+        strip.style.transform = 'scaleX(0.05) translateX(-200px)';
+        setTimeout(()=>{
+          strip.style.transition = 'opacity 0.3s, transform 1s cubic-bezier(0.16,1,0.3,1)';
+          strip.style.opacity = '1';
+          strip.style.transform = '';
+        }, 100);
+      }
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reel').forEach(r => reelObserver.observe(r));
+
+// ========== LIGHTBOX ==========
+const lightbox = document.getElementById('lightbox');
+const lbImg = document.getElementById('lb-img-el');
+const lbCaption = document.getElementById('lb-caption');
+const lbClose = document.getElementById('lb-close');
+const lbPrev = document.getElementById('lb-prev');
+const lbNext = document.getElementById('lb-next');
+const lbCounter = document.getElementById('lb-counter');
+const lbReel = document.getElementById('lb-reel');
+
+let lbFrames = [], lbIdx = 0;
+
+function openLightbox(frames, idx){
+  lbFrames = frames; lbIdx = idx;
+  showLbFrame(lbIdx);
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function showLbFrame(i){
+  const f = lbFrames[i];
+  lbImg.src = f.src; lbImg.alt = '';
+  lbCaption.innerHTML = f.caption || '';
+  lbCounter.textContent = `${i+1} / ${lbFrames.length}`;
+  lbPrev.disabled = (i === 0);
+  lbNext.disabled = (i === lbFrames.length-1);
+}
+function closeLightbox(){ lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+
+lbClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if(e.target === lightbox) closeLightbox(); });
+lbPrev.addEventListener('click', () => { if(lbIdx>0){ lbIdx--; showLbFrame(lbIdx); } });
+lbNext.addEventListener('click', () => { if(lbIdx<lbFrames.length-1){ lbIdx++; showLbFrame(lbIdx); } });
+document.addEventListener('keydown', e => {
+  if(!lightbox.classList.contains('active')) return;
+  if(e.key==='Escape') closeLightbox();
+  if(e.key==='ArrowLeft' && lbIdx>0){ lbIdx--; showLbFrame(lbIdx); }
+  if(e.key==='ArrowRight' && lbIdx<lbFrames.length-1){ lbIdx++; showLbFrame(lbIdx); }
+});
+
+// Collect lightbox frames per strip and bind click
+document.querySelectorAll('.film-strip').forEach(strip => {
+  const frames = [];
+  strip.querySelectorAll('.frame[data-lightbox]').forEach(frame => {
+    frames.push({ src: frame.dataset.src, caption: frame.dataset.caption });
+  });
+  strip.querySelectorAll('.frame[data-lightbox]').forEach((frame, i) => {
+    frame.addEventListener('click', () => openLightbox(frames, i));
+  });
+});
+
+// Missing local screenshots are not part of the shared HTML attachment.
+function markMissingAsset(img){
+  if(img.classList.contains('asset-missing')) return;
+  const wrap = img.parentElement;
+  if(!wrap) return;
+  img.classList.add('asset-missing');
+  wrap.classList.add('asset-missing-wrap');
+  wrap.dataset.missingLabel = img.alt || '图片素材';
+}
+document.querySelectorAll('img[src]').forEach(img => {
+  if(!img.getAttribute('src')) return;
+  img.addEventListener('error', () => markMissingAsset(img), { once: true });
+  if(img.complete && img.naturalWidth === 0) markMissingAsset(img);
+});
+document.addEventListener('error', event => {
+  if(event.target instanceof HTMLImageElement) markMissingAsset(event.target);
+}, true);
+
+// The linked demo HTML files were not included with the shared attachment.
+document.querySelectorAll('.frame[data-html-link]').forEach(frame => {
+  frame.classList.add('asset-unavailable');
+  frame.setAttribute('aria-disabled', 'true');
+  frame.removeAttribute('tabindex');
+});
+
+// ========== MOBILE NAV TOGGLE ==========
+const navToggle = document.getElementById('nav-toggle');
+const nav = document.getElementById('nav');
+if(window.innerWidth <= 768){ navToggle.style.display = 'flex'; }
+navToggle.addEventListener('click', () => nav.classList.toggle('open'));
+window.addEventListener('resize', () => {
+  navToggle.style.display = window.innerWidth <= 768 ? 'flex' : 'none';
+  if(window.innerWidth > 768) nav.classList.remove('open');
+});
+</script>
+</body>
+</html>
