@@ -6,6 +6,8 @@
 
 **[打开 WAIC 2026 参展笔记网站](https://sara-chen111.github.io/waic-2026-field-notes/)**
 
+**[打开 AI Agent 实践分享](https://sara-chen111.github.io/waic-2026-field-notes/ai-agent/)**
+
 ## 这是什么
 
 这是 Sara 在 WAIC 2026 现场参观、拍摄和整理的一份个人记录。

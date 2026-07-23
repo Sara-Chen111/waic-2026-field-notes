@@ -13,6 +13,15 @@ import {
 const root = new URL("../", import.meta.url);
 const read = (path) => readFile(new URL(path, root), "utf8");
 
+test("publishes the AI Agent share as a standalone page", async () => {
+  const page = await read("public/ai-agent/index.html");
+
+  assert.match(page, /<title>AI Agent 实践分享 · 陈娴 × YINTA<\/title>/);
+  assert.match(page, /图片素材未随 HTML 文件附带/);
+  assert.doesNotMatch(page, /window\.open\(frame\.dataset\.href/);
+  await access(new URL("out/ai-agent/index.html", root));
+});
+
 test("ships the requested navigation and three public application surfaces", async () => {
   const [header, overview, overviewComponent, insights, agent] = await Promise.all([
     read("components/site-header.tsx"),
