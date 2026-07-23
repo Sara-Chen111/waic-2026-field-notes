@@ -8,6 +8,7 @@ import { useWaicData } from "./use-waic-data";
 import {
   normalizeKey,
   prioritizeExhibitorsWithPhotos,
+  resolvePublicUrl,
   type Exhibitor,
 } from "@/lib/waic";
 
@@ -67,7 +68,10 @@ export function OverviewPage() {
   return (
     <>
       <section className="overview-hero" aria-labelledby="overview-title">
-        <img src="/archive/assets/photos/3f847a339633c5.jpg" alt="WAIC 2026 宇树科技现场展台" />
+        <img
+          src={resolvePublicUrl("/archive/assets/photos/3f847a339633c5.jpg")}
+          alt="WAIC 2026 宇树科技现场展台"
+        />
         <div className="overview-hero__shade" />
         <div className="overview-hero__content page-shell">
           <p>WORLD ARTIFICIAL INTELLIGENCE CONFERENCE</p>

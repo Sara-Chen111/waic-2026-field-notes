@@ -14,9 +14,10 @@ const root = new URL("../", import.meta.url);
 const read = (path) => readFile(new URL(path, root), "utf8");
 
 test("ships the requested navigation and three public application surfaces", async () => {
-  const [header, overview, insights, agent] = await Promise.all([
+  const [header, overview, overviewComponent, insights, agent] = await Promise.all([
     read("components/site-header.tsx"),
     read("app/overview/page.tsx"),
+    read("components/overview-page.tsx"),
     read("app/insights/page.tsx"),
     read("app/agent/page.tsx"),
   ]);
@@ -26,6 +27,7 @@ test("ships the requested navigation and three public application surfaces", asy
   assert.match(header, /展商速查/);
   assert.doesNotMatch(header, /Agent/);
   assert.match(overview, /OverviewPage/);
+  assert.match(overviewComponent, /resolvePublicUrl\("\/archive\/assets\/photos\/3f847a339633c5\.jpg"\)/);
   assert.match(insights, /InsightsPage/);
   assert.match(agent, /ExhibitorFinderPage/);
   assert.doesNotMatch(header, /管理者后台|\/admin/);

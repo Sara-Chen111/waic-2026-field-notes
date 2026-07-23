@@ -1,40 +1,64 @@
-# WAIC 2026 分享站
+# WAIC 2026 参展笔记
 
-WAIC 2026 展商总览、Sara 参展心得与展商速查。网站为纯静态站点，所有公开内容来自仓库中的 JSON、图片和视频文件。
+> 把一场很难逛完的 AI 大会，整理成一份可以慢慢看的现场地图。
 
-## 本地运行
+## 在线浏览
+
+**[打开 WAIC 2026 参展笔记网站](https://sara-chen111.github.io/waic-2026-field-notes/)**
+
+## 这是什么
+
+这是 Sara 在 WAIC 2026 现场参观、拍摄和整理的一份个人记录。
+
+展会现场的信息量很大：大模型、机器人、AI 芯片、智能硬件和各种行业应用同时出现。这个网站把分散的展商资料、现场照片和参展感受放到一起，希望让没有到场的人也能快速了解展会，也方便到过现场的人回来查找某家公司或产品。
+
+它不是一份冷冰冰的展商名单，更像是一份可以搜索的观展手记。
+
+## 你可以在这里看到
+
+- **展会总览**：浏览和搜索 900 多家参展商，按展馆、行业和细分领域筛选。
+- **Sara 参展心得**：从现场体验出发，记录值得关注的产品、趋势和真实感受。
+- **展商速查**：围绕大模型、具身智能、AI 芯片、教育、医疗健康等方向快速寻找相关公司。
+- **现场影像**：通过 300 多张照片和精选视频，还原展台、产品和互动体验。
+
+## 为什么做这个网站
+
+逛展时，我们经常会遇到三个问题：现场来不及看完、回去后想不起公司名字、展商介绍又很难和真实产品对应起来。
+
+因此，这份参展笔记尽量把“公司是谁、在做什么、现场看到了什么”放在同一个页面里。它既可以当作 WAIC 2026 的回顾，也可以作为观察 AI 产品与行业变化的一份参考。
+
+## 关于内容
+
+内容来自现场拍摄、展商公开资料和后续整理。部分公司会跨场馆或以不同展区形式重复出现，网站会尽量合并展示。资料可能存在遗漏或更新不及时的情况，重要信息请以企业和大会官方发布为准。
+
+---
+
+## 给维护者
+
+这是一个纯静态网站，不包含反馈提交、后台编辑、图片上传、数据库或其他服务端功能。公开内容均来自仓库中的 JSON、图片和视频文件。
+
+### 本地运行
 
 需要 Node.js `>=22.13.0`。
 
 ```bash
-cd "WAIC web"
 npm install
 npm run dev
 ```
 
-## 数据与内容
+### 主要内容文件
 
-- `public/data/exhibitors.json`：980 条展商资料（含 17 条由现场照片补录的展商或展区）；页面按跨场馆重复规则合并为 953 张卡片。
-- `public/data/photo_matches.json`：185 个展商或展区与 322 张照片的对应关系。
-- `public/data/exhibitor_research.json`：公司与产品补充资料。
-- `public/data/agent-index.json`：由 `npm run build:agent-index` 生成的展商筛选标签索引。
-- `public/data/insights.json`：Sara 心得正文与精选展商卡片配置。
+- `public/data/exhibitors.json`：展商资料
+- `public/data/photo_matches.json`：展商与现场照片的对应关系
+- `public/data/exhibitor_research.json`：公司与产品补充资料
+- `public/data/agent-index.json`：展商筛选标签索引
+- `public/data/insights.json`：参展心得和精选展商配置
 
-工作区根目录的 `../data/` 是处理层数据，`public/data/` 是网站发布副本。外部公开报道补图的原图与来源记录保存在 `../materials/外部补图/`。
-
-重新生成展商筛选标签索引：
-
-```bash
-node scripts/build-agent-index.mjs
-```
-
-## 验证
+### 检查与发布
 
 ```bash
 npm run lint
 npm test
 ```
 
-## GitHub Pages 部署
-
-推送到 `main` 分支后，`.github/workflows/deploy-pages.yml` 会构建静态文件并发布到 GitHub Pages。
+推送到 `main` 分支后，GitHub Actions 会自动构建并发布到 GitHub Pages。
