@@ -9,12 +9,5 @@
     "directory": "dist/client",
     "not_found_handling": "none",
     "binding": "ASSETS"
-  },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "waic-2026-db",
-      "database_id": "7911ae5c-be8d-4447-b3d6-7d6a1fdfa5bb"
-    }
-  ]
+  }
 }

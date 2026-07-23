@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, ExternalLink, Flag, Globe2, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, Globe2, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import {
   resolvePhotoUrl,
@@ -16,27 +16,18 @@ export function ExhibitorDialog({
   photoMatch,
   research,
   onClose,
-  allowFeedback = true,
 }: {
   exhibitor: Exhibitor | null;
   photos: string[];
   photoMatch?: PhotoMatch;
   research?: ResearchRecord;
   onClose: () => void;
-  allowFeedback?: boolean;
 }) {
   const [photoIndex, setPhotoIndex] = useState<number | null>(null);
-  const [reporting, setReporting] = useState(false);
-  const [message, setMessage] = useState("");
-  const [notice, setNotice] = useState("");
-  const [sending, setSending] = useState(false);
 
   useEffect(() => {
     /* eslint-disable react-hooks/set-state-in-effect -- reset transient modal state for a new record. */
     setPhotoIndex(null);
-    setReporting(false);
-    setMessage("");
-    setNotice("");
     /* eslint-enable react-hooks/set-state-in-effect */
   }, [exhibitor?.id]);
 
@@ -75,32 +66,6 @@ export function ExhibitorDialog({
     ["所在地", exhibitor.location],
     ["融资", exhibitor.financing],
   ].filter(([, value]) => value);
-
-  const submitFeedback = async (event: React.FormEvent) => {
-    event.preventDefault();
-    if (!message.trim()) return;
-    setSending(true);
-    setNotice("");
-    try {
-      const response = await fetch("/api/feedback", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          exhibitorId: exhibitor.id,
-          exhibitorName: exhibitor.company,
-          message,
-        }),
-      });
-      const result = (await response.json()) as { error?: string };
-      if (!response.ok) throw new Error(result.error || "提交失败");
-      setMessage("");
-      setNotice("已提交，管理员会在后台看到这条问题。");
-    } catch (reason) {
-      setNotice(reason instanceof Error ? reason.message : "提交失败，请稍后再试。");
-    } finally {
-      setSending(false);
-    }
-  };
 
   return (
     <div className="modal-layer" role="dialog" aria-modal="true" aria-labelledby="exhibitor-title">
@@ -204,32 +169,6 @@ export function ExhibitorDialog({
           </section>
         )}
 
-        {allowFeedback && (
-          <section className="feedback-box">
-            <button className="text-action" type="button" onClick={() => setReporting((value) => !value)}>
-              <Flag size={16} /> 报告资料问题
-            </button>
-            {reporting && (
-              <form onSubmit={submitFeedback}>
-                <label htmlFor="feedback-message">问题描述</label>
-                <textarea
-                  id="feedback-message"
-                  value={message}
-                  onChange={(event) => setMessage(event.target.value)}
-                  placeholder="例如：照片不属于该公司，或产品描述有误"
-                  maxLength={1000}
-                  rows={4}
-                />
-                <div>
-                  <span className="form-notice" role="status">{notice}</span>
-                  <button className="primary-button" type="submit" disabled={sending || !message.trim()}>
-                    {sending ? "提交中" : "提交问题"}
-                  </button>
-                </div>
-              </form>
-            )}
-          </section>
-        )}
       </section>
 
       {photoIndex !== null && (

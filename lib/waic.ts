@@ -50,22 +50,6 @@ export interface ResearchRecord {
   sources?: Array<{ title: string; url: string; description?: string }>;
 }
 
-export interface ExhibitorOverride {
-  exhibitorId: string;
-  fields?: Partial<Omit<Exhibitor, "id" | "sequence">>;
-  photos?: string[];
-  updatedAt?: string;
-}
-
-export interface FeedbackRecord {
-  id: string;
-  exhibitorId: string;
-  exhibitorName: string;
-  message: string;
-  status: "open" | "resolved";
-  createdAt: string;
-}
-
 export const normalizeKey = (value = "") =>
   value
     .toLocaleLowerCase("zh-CN")
@@ -88,13 +72,6 @@ const exhibitorGroupKey = (exhibitor: Exhibitor) => {
 export function splitCompanyName(company: string) {
   const [name, ...english] = company.split(/\s+\/\s+/);
   return { name: name || company, english: english.join(" / ") };
-}
-
-export function mergeExhibitor(
-  exhibitor: Exhibitor,
-  override?: ExhibitorOverride,
-) {
-  return override?.fields ? { ...exhibitor, ...override.fields } : exhibitor;
 }
 
 export function consolidateExhibitors(exhibitors: Exhibitor[]) {
@@ -146,6 +123,12 @@ export function photosForVenue(match: PhotoMatch | undefined, venue: string) {
 }
 
 export function resolvePhotoUrl(photo: string) {
-  if (/^(?:https?:|data:|\/)/.test(photo)) return photo;
-  return `/archive/${photo}`;
+  if (/^(?:https?:|data:)/.test(photo)) return photo;
+  return resolvePublicUrl(photo.startsWith("/") ? photo : `/archive/${photo}`);
+}
+
+export function resolvePublicUrl(path: string) {
+  if (/^(?:https?:|data:)/.test(path)) return path;
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${normalized}`;
 }

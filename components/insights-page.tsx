@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { ExhibitorCard } from "./exhibitor-card";
 import { ExhibitorDialog } from "./exhibitor-dialog";
 import { useWaicData } from "./use-waic-data";
-import type { Exhibitor } from "@/lib/waic";
+import { resolvePublicUrl, type Exhibitor } from "@/lib/waic";
 
 interface InsightBlock {
   type: "paragraph" | "list";
@@ -54,7 +54,7 @@ export function InsightsPage() {
   const [selected, setSelected] = useState<Exhibitor | null>(null);
 
   useEffect(() => {
-    fetch("/data/insights.json")
+    fetch(resolvePublicUrl("/data/insights.json"))
       .then((response) => response.json() as Promise<InsightContent>)
       .then(setContent)
       .catch(() => setContent(null));
@@ -76,7 +76,7 @@ export function InsightsPage() {
 
       <div className="article-hero">
         <img
-          src={content?.hero.src || "/archive/assets/photos/796708bc5f2702.jpg"}
+          src={resolvePublicUrl(content?.hero.src || "/archive/assets/photos/796708bc5f2702.jpg")}
           alt={content?.hero.alt || "WAIC 2026 展会现场"}
         />
       </div>
@@ -143,14 +143,14 @@ export function InsightsPage() {
                                       controls
                                       playsInline
                                       preload="metadata"
-                                      poster={media.poster}
+                                      poster={media.poster ? resolvePublicUrl(media.poster) : undefined}
                                       aria-label={media.alt}
                                     >
-                                      <source src={media.src} type="video/mp4" />
+                                      <source src={resolvePublicUrl(media.src)} type="video/mp4" />
                                       浏览器不支持视频播放。
                                     </video>
                                   ) : (
-                                    <img src={media.src} alt={media.alt} loading="lazy" />
+                                    <img src={resolvePublicUrl(media.src)} alt={media.alt} loading="lazy" />
                                   )}
                                 </div>
                                 <figcaption>{media.caption}</figcaption>

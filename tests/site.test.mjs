@@ -7,18 +7,18 @@ import {
   normalizeKey,
   photosForVenue,
   prioritizeExhibitorsWithPhotos,
+  resolvePublicUrl,
 } from "../lib/waic.ts";
 
 const root = new URL("../", import.meta.url);
 const read = (path) => readFile(new URL(path, root), "utf8");
 
-test("ships the requested navigation and four application surfaces", async () => {
-  const [header, overview, insights, agent, admin] = await Promise.all([
+test("ships the requested navigation and three public application surfaces", async () => {
+  const [header, overview, insights, agent] = await Promise.all([
     read("components/site-header.tsx"),
     read("app/overview/page.tsx"),
     read("app/insights/page.tsx"),
     read("app/agent/page.tsx"),
-    read("app/admin/page.tsx"),
   ]);
 
   assert.match(header, /2026 WAIC 展会总览/);
@@ -28,7 +28,8 @@ test("ships the requested navigation and four application surfaces", async () =>
   assert.match(overview, /OverviewPage/);
   assert.match(insights, /InsightsPage/);
   assert.match(agent, /ExhibitorFinderPage/);
-  assert.match(admin, /AdminPage/);
+  assert.doesNotMatch(header, /管理者后台|\/admin/);
+  await assert.rejects(access(new URL("app/admin/page.tsx", root)), { code: "ENOENT" });
 });
 
 test("keeps the data index complete and links insight cards to published exhibitors", async () => {
@@ -293,12 +294,15 @@ test("uses short names consistently and preserves corrected exhibitor details", 
   assert.match(rongyinResearch.productSummary, /^儿童AI探索硬件。/);
 });
 
-test("ships an automatic tag finder without chat or an orphaned model endpoint", async () => {
-  const [finder, metadata, exampleEnv, worker] = await Promise.all([
+test("ships an automatic tag finder as a GitHub Pages-compatible static site", async () => {
+  const [finder, metadata, worker, config, workflow, dialog, dataHook] = await Promise.all([
     read("components/agent-page.tsx"),
     read("app/agent/page.tsx"),
-    read(".env.example"),
     read("worker/index.ts"),
+    read("next.config.ts"),
+    read(".github/workflows/deploy-pages.yml"),
+    read("components/exhibitor-dialog.tsx"),
+    read("components/use-waic-data.ts"),
   ]);
 
   assert.match(finder, /aria-pressed=\{selectedTag === tag\}/);
@@ -308,7 +312,25 @@ test("ships an automatic tag finder without chat or an orphaned model endpoint",
   assert.match(finder, /ExhibitorDialog/);
   assert.doesNotMatch(finder, /<textarea|\/api\/agent|Agent 回答|本地检索/);
   assert.doesNotMatch(metadata, /Agent/);
-  assert.doesNotMatch(exampleEnv, /DEEPSEEK/);
-  assert.doesNotMatch(worker, /DEEPSEEK/);
-  await assert.rejects(access(new URL("app/api/agent/route.ts", root)), { code: "ENOENT" });
+  assert.doesNotMatch(worker, /D1Database|R2Bucket|WAIC_ADMIN_TOKEN/);
+  assert.match(config, /output: isGitHubPages \? "export"/);
+  assert.match(config, /\/waic-2026-field-notes/);
+  assert.match(workflow, /npm run build:static/);
+  assert.doesNotMatch(dialog, /feedback|反馈|\/api\//i);
+  assert.doesNotMatch(dataHook, /\/api\//);
+
+  const previousBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
+  process.env.NEXT_PUBLIC_BASE_PATH = "/waic-2026-field-notes";
+  assert.equal(
+    resolvePublicUrl("/data/exhibitors.json"),
+    "/waic-2026-field-notes/data/exhibitors.json",
+  );
+  if (previousBasePath === undefined) delete process.env.NEXT_PUBLIC_BASE_PATH;
+  else process.env.NEXT_PUBLIC_BASE_PATH = previousBasePath;
+
+  await Promise.all([
+    assert.rejects(access(new URL("app/api/feedback/route.ts", root)), { code: "ENOENT" }),
+    assert.rejects(access(new URL("lib/server-store.ts", root)), { code: "ENOENT" }),
+    assert.rejects(access(new URL("db/schema.ts", root)), { code: "ENOENT" }),
+  ]);
 });

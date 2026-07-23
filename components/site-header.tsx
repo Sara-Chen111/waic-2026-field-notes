@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LockKeyhole, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navigation = [
@@ -41,9 +41,6 @@ export function SiteHeader() {
         </nav>
 
         <div className="header-tools">
-          <Link className="icon-link" href="/admin" aria-label="管理者后台" title="管理者后台">
-            <LockKeyhole size={18} strokeWidth={1.8} />
-          </Link>
           <button
             className="icon-button menu-button"
             type="button"

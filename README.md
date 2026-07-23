@@ -1,6 +1,6 @@
 # WAIC 2026 分享站
 
-WAIC 2026 展商总览、Sara 参展心得、展商速查与管理者后台。
+WAIC 2026 展商总览、Sara 参展心得与展商速查。网站为纯静态站点，所有公开内容来自仓库中的 JSON、图片和视频文件。
 
 ## 本地运行
 
@@ -11,16 +11,6 @@ cd "WAIC web"
 npm install
 npm run dev
 ```
-
-本地未设置管理口令时，后台预览口令为 `preview`。生产环境不接受该口令。
-
-## 环境变量
-
-复制 `.env.example` 中的变量名到部署平台的服务端环境配置：
-
-- `WAIC_ADMIN_TOKEN`：管理者后台口令，应使用长随机值。
-
-密钥不能写入客户端代码、公共 JSON 或 Git 仓库。
 
 ## 数据与内容
 
@@ -45,6 +35,6 @@ npm run lint
 npm test
 ```
 
-## 部署边界
+## GitHub Pages 部署
 
-反馈、后台编辑和图片上传依赖 D1、R2 与服务端环境变量，不能部署为纯 GitHub Pages 静态站。GitHub 可用于代码托管，站点需要部署到当前项目支持的 Cloudflare 全栈运行时，并配置 `DB` 与 `MEDIA` 绑定。
+推送到 `main` 分支后，`.github/workflows/deploy-pages.yml` 会构建静态文件并发布到 GitHub Pages。
